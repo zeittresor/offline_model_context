@@ -1,27 +1,17 @@
-# Offline Model Update v4 - README
+# Offline Model Update Bundle v5 — 2026-06-20
 
-Created: 2026-06-19  
-Coverage: 2024-06-01 to 2026-06-19  
-Purpose: cumulative, dated, model-agnostic context package for local/offline LLMs.
+Purpose: model-agnostic offline/local AI context bridge. These files provide a dated external context snapshot from 2024-06-01 through 2026-06-20. They do not permanently update any model.
 
-## Recommended file choice
+Public project/reference: https://github.com/zeittresor/offline_model_context
+License note: The user's public project is MIT-licensed. This generated bundle is intended to follow the same general offline-model-context idea; verify license headers before redistribution if you modify it.
 
-- Small model / small context: `full_8k.md` or `full_16k.md`.
-- Medium context: `full_32k.md` or `full_64k.md`.
-- Large context / RAG / analysis: `full_128k.md` or `full_256k.md`.
-- Fast direct briefing: `context_only.md`.
-- Concrete timeline questions: `weekly_chronology.md` plus `event_index.md`.
-- RAG ingestion: `cards_context_only.jsonl`.
-- Human/online audit only: `source_registry.md`.
+Recommended use:
+- Small models / small context: start with `context_only.md` or `full_8k.md`.
+- 16k/32k models: use `full_16k.md` or `full_32k.md`.
+- 64k/128k/256k models: use the matching `full_*k.md` variant.
+- RAG/indexed systems: use `cards_context_only.jsonl`, `event_index.md`, and `weekly_chronology.md`.
+- Human/online audit: use `source_registry.md`; raw URLs are kept there, not in the main offline-facing context files.
 
-## Important usage rule for offline models
+No PDF. No images. Markdown/Text/JSONL only.
 
-These files are dated context snapshots, not permanent model updates. They only help when present in the prompt/context/RAG/memory system. Later real developments must be added by later-dated updates.
-
-## URL policy
-
-Offline-facing files contain context, not raw web links. Raw URLs are isolated in `source_registry.md` because offline models cannot open them.
-
-## File format policy
-
-Markdown/Text/JSONL only. No PDF. No images. No generated visuals.
+Important: token counts are approximate context-window classes, not exact tokenizer-specific counts. Keep room for system prompt, user query and answer output.

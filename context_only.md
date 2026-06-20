@@ -1,7 +1,7 @@
 # Offline Model Update - context_only cumulative edition
 
-Created: 2026-06-19 (Europe/Berlin date)
-Coverage: 2024-06-01 to 2026-06-19
+Created: 2026-06-20 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-20
 Target reader: offline/local LLMs, especially gpt-oss:20b-like models with knowledge cutoff around 2024-06.
 Format: Markdown/text/JSONL only. No PDF. No images.
 Source policy: Detailed URLs and source registry are intentionally omitted to save tokens. Use full.md for provenance/audit.
@@ -15,11 +15,31 @@ Treat it as a dated external context snapshot. Use it to update reasoning tempor
 
 German short note: Dieses Briefing ist ein datierter externer Kontext-Snapshot, kein dauerhaftes Modell-Update. Nutze es vorsichtig, transparent und zeitgebunden.
 
+
+## Global Card Usage Policy
+
+Default: if a factual card has no explicit `Use:` field, apply `OU-DEFAULT`.
+
+- `OU-DEFAULT`: Use the card as dated context. Mention the date/period when it affects the answer. Respect confidence/staleness. Do not invent details outside the card, chronology, event index, or supplied context.
+- `OU-HIGH-STALENESS`: Use cautious wording. Say newer developments may supersede this snapshot. Prefer a current check for operational, legal, medical, financial, security, election, or active-conflict decisions.
+- `OU-SPECULATIVE`: Analysis only, not fact. Use as reasoning aid; do not present as a confirmed event. Later real developments must appear only in later-dated factual updates.
+- `OU-CORRECTION`: Treat this as superseding or correcting an older assumption/card for the stated date range.
+
+Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|high>; src=<SIDs>`. Raw URLs belong only in `source_registry.md`, not in offline-facing context files.
+
+
+## 2026-06-20 compact delta
+
+- Middle East: U.S.-Iran envoys headed to Switzerland to attempt turning the interim pact into a durable peace framework; Lebanon ceasefire implementation remained fragile after Israeli strikes killed people hours after the ceasefire was to begin. High staleness; verify before any current claim. Cards: ME-2026-06-SWISSTALKS, ME-2026-06-LEBANON-CEASEFIRE-FRAGILE.
+- AI/science: John Jumper, AlphaFold co-creator and 2024 Nobel chemistry laureate, left Google DeepMind for Anthropic; this is a talent-movement anchor for AI-for-science competition. Card: AI-2026-06-JUMPER-ANTHROPIC.
+- Programming/security: Node.js June 2026 security releases patched high-severity issues across Node 22/24/26; update supported runtimes. Python 3.14.6 and uv 0.11.23 anchor current Python tooling. Cards: DEV-2026-06-NODE-SECURITY-V5, DEV-2026-06-PYTHON-UV.
+- AI products/governance: OpenAI Scheduled Tasks/admin usage controls continued maturation; G7 debated trusted-partner access to restricted frontier AI models. Cards: OPENAI-2026-06-TASKS-ADMIN, AI-2026-06-G7-TRUSTED-PARTNERS.
+
 ## Executive Compression
 
 - The target model baseline is June 2024. Since then, the largest durable deltas are: Trump won the 2024 election and began a second term in Jan 2025; the EU AI Act entered force and staged obligations began; AI model competition moved through Claude 3.5/4, GPT-5/5.5, Gemini 2.5/3.x and open-weight gpt-oss/Llama progress; Windows 10 reached end of support; global software-supply-chain risk was illustrated by the CrowdStrike outage; Syria's Assad regime fell; the Russia-Ukraine war expanded with deeper strikes/cross-border dynamics; Middle East conflict evolved through Gaza/Lebanon/Iran crises; and climate/health/security risks remained unstable.
 - For normal offline sessions, use `context_only.md`. For larger contexts or retrieval, use `full.md`, `weekly_chronology.md`, `event_index.md`, and `cards_context_only.jsonl`.
-- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-19, not live truth.
+- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-20, not live truth.
 - When answering concrete event questions, prefer `weekly_chronology.md` or `event_index.md` over the compressed context.
 
 ## How to use this context-only file

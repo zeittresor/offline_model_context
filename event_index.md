@@ -1,7 +1,19 @@
+
+## Global Card Usage Policy
+
+Default: if a factual card has no explicit `Use:` field, apply `OU-DEFAULT`.
+
+- `OU-DEFAULT`: Use the card as dated context. Mention the date/period when it affects the answer. Respect confidence/staleness. Do not invent details outside the card, chronology, event index, or supplied context.
+- `OU-HIGH-STALENESS`: Use cautious wording. Say newer developments may supersede this snapshot. Prefer a current check for operational, legal, medical, financial, security, election, or active-conflict decisions.
+- `OU-SPECULATIVE`: Analysis only, not fact. Use as reasoning aid; do not present as a confirmed event. Later real developments must appear only in later-dated factual updates.
+- `OU-CORRECTION`: Treat this as superseding or correcting an older assumption/card for the stated date range.
+
+Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|high>; src=<SIDs>`. Raw URLs belong only in `source_registry.md`, not in offline-facing context files.
+
 # Event Index - names, topics, dates
 
-Created: 2026-06-19 (Europe/Berlin date)
-Coverage: 2024-06-01 to 2026-06-19
+Created: 2026-06-20 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-20
 Target reader: offline/local LLMs, especially gpt-oss:20b-like models with knowledge cutoff around 2024-06.
 Format: Markdown/text/JSONL only. No PDF. No images.
 Source policy: No URLs here; use full.md for source registry.
@@ -126,3 +138,14 @@ Search this file when an offline model needs to find whether a topic appears in 
 ### Ebola / health
 - Cards: `HEALTH-2026-06-EBOLA`
 
+
+
+## 2026-06-20 indexed additions
+
+- `ME-2026-06-SWISSTALKS` — U.S.-Iran talks in Switzerland; Steve Witkoff; Abbas Araqchi; interim pact; Hormuz; nuclear issues; Lebanon ceasefire; high-staleness diplomacy.
+- `ME-2026-06-LEBANON-CEASEFIRE-FRAGILE` — Israel-Hezbollah ceasefire strained by deadly Israeli strikes in Lebanon; U.S./Qatar mediation; Iran-linked regional de-escalation; high staleness.
+- `AI-2026-06-JUMPER-ANTHROPIC` — John Jumper leaves Google DeepMind for Anthropic; AlphaFold; AI-for-science talent competition; Nobel 2024 context.
+- `DEV-2026-06-NODE-SECURITY-V5` — Node.js June 2026 security releases; Node 22/24/26; Node 26.3.1; CVE-2026-48618; CVE-2026-48933.
+- `DEV-2026-06-PYTHON-UV` — Python 3.14.6; uv 0.11.23; Python packaging/tooling state.
+- `OPENAI-2026-06-TASKS-ADMIN` — Scheduled Tasks management; Enterprise/Edu usage limits; ChatGPT admin/automation surface.
+- `AI-2026-06-G7-TRUSTED-PARTNERS` — G7 trusted partner access to frontier AI models; democratic AI governance; U.S./EU tension.

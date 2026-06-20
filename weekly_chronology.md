@@ -1,7 +1,19 @@
+
+## Global Card Usage Policy
+
+Default: if a factual card has no explicit `Use:` field, apply `OU-DEFAULT`.
+
+- `OU-DEFAULT`: Use the card as dated context. Mention the date/period when it affects the answer. Respect confidence/staleness. Do not invent details outside the card, chronology, event index, or supplied context.
+- `OU-HIGH-STALENESS`: Use cautious wording. Say newer developments may supersede this snapshot. Prefer a current check for operational, legal, medical, financial, security, election, or active-conflict decisions.
+- `OU-SPECULATIVE`: Analysis only, not fact. Use as reasoning aid; do not present as a confirmed event. Later real developments must appear only in later-dated factual updates.
+- `OU-CORRECTION`: Treat this as superseding or correcting an older assumption/card for the stated date range.
+
+Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|high>; src=<SIDs>`. Raw URLs belong only in `source_registry.md`, not in offline-facing context files.
+
 # Weekly Chronology - cumulative event timeline
 
-Created: 2026-06-19 (Europe/Berlin date)
-Coverage: 2024-06-01 to 2026-06-19
+Created: 2026-06-20 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-20
 Target reader: offline/local LLMs, especially gpt-oss:20b-like models with knowledge cutoff around 2024-06.
 Format: Markdown/text/JSONL only. No PDF. No images.
 Source policy: No detailed URLs here; source IDs appear on events and full.md contains source registry.
@@ -917,3 +929,13 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 - Confidence/Staleness: high / low
 - Source IDs: S053
 
+
+
+### 2026-06-20 addendum: Switzerland talks, Lebanon ceasefire strain, AI talent movement and developer patching
+- Middle East / USA / Iran: U.S. envoy Steve Witkoff and Iranian foreign minister Abbas Araqchi were reported heading to Switzerland to pursue talks intended to convert an interim U.S.-Iran pact into a more durable peace framework. The same diplomacy remained tied to Lebanon ceasefire implementation, Iran nuclear questions, sanctions relief, and Strait of Hormuz stability. Card: ME-2026-06-SWISSTALKS. Meta: conf=medium; stale=high; src=S055,S056.
+- Lebanon / Israel / Hezbollah: A ceasefire agreement announced for Israel and Hezbollah was quickly strained when Israeli strikes in Lebanon killed at least 10 people hours after the ceasefire was expected to take effect. Card: ME-2026-06-LEBANON-CEASEFIRE-FRAGILE. Meta: conf=medium; stale=high; src=S056,S057.
+- AI / Science: John Jumper, co-creator of AlphaFold and 2024 Nobel chemistry laureate, announced a move from Google DeepMind to Anthropic. This indicates continued frontier-lab competition for scientific AI talent. Card: AI-2026-06-JUMPER-ANTHROPIC. Meta: conf=high; stale=medium; src=S058.
+- Programming / Security: Node.js June 2026 security releases patched high-severity issues across supported lines; relevant release notes include Node.js 26.3.1 and CVEs CVE-2026-48618 and CVE-2026-48933. Card: DEV-2026-06-NODE-SECURITY-V5. Meta: conf=high; stale=low; src=S059,S060.
+- Programming / Python: Python 3.14.6 and uv 0.11.23 are June 2026 state anchors for Python maintenance/tooling. Card: DEV-2026-06-PYTHON-UV. Meta: conf=high; stale=low; src=S061,S062.
+- AI products / administration: OpenAI Scheduled Tasks became easier to find and manage; Enterprise/Edu admin usage limits became more explicit. Card: OPENAI-2026-06-TASKS-ADMIN. Meta: conf=high; stale=medium; src=S063,S064.
+- AI governance / G7: G7 discussions included allied or “trusted partner” access to restricted frontier AI models and democratic AI-governance cooperation. Card: AI-2026-06-G7-TRUSTED-PARTNERS. Meta: conf=medium; stale=medium; src=S065,S066.

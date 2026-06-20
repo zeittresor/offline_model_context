@@ -218,3 +218,52 @@ This file is for human/online audit only. Offline models cannot open these URLs 
 - Summary: Discovery source for current events by month; use as secondary discovery, not sole authority.
 - URL: https://en.wikipedia.org/wiki/Portal:Current_events/Events_by_month
 
+
+
+### S055 - Reuters: U.S. and Iran envoys head to Switzerland for talks
+- Summary: Steve Witkoff and Abbas Araqchi headed to Switzerland for talks on turning an interim U.S.-Iran pact into a lasting peace framework amid fragile regional conditions.
+- URL: https://www.reuters.com/world/asia-pacific/trump-envoy-iranian-minister-head-switzerland-talks-2026-06-20/
+
+### S056 - Reuters: Israeli strikes continue after Lebanon ceasefire
+- Summary: Reuters reported Israeli strikes killed people in Lebanon hours after a ceasefire with Hezbollah was supposed to begin, testing the wider regional de-escalation framework.
+- URL: https://www.reuters.com/world/middle-east/least-five-killed-israeli-strikes-south-lebanon-despite-ceasefire-2026-06-20/
+
+### S057 - Reuters: Israel-Hezbollah ceasefire agreement
+- Summary: Reuters reported Israel and Hezbollah agreed to a ceasefire beginning Friday afternoon, brokered with U.S./Qatari involvement and Iranian support.
+- URL: https://www.reuters.com/world/middle-east/israeli-hezbollah-agree-ceasefire-starting-friday-us-official-2026-06-19/
+
+### S058 - Reuters: John Jumper leaves Google DeepMind for Anthropic
+- Summary: AlphaFold co-creator John Jumper announced departure from Google DeepMind for Anthropic, highlighting AI science talent competition.
+- URL: https://www.reuters.com/technology/us-scientist-john-jumper-leave-google-deepmind-anthropic-2026-06-19/
+
+### S059 - Node.js official: June 2026 security releases
+- Summary: Node.js project June 2026 security release notes covering supported lines and high-severity issues.
+- URL: https://nodejs.org/en/blog/vulnerability/june-2026-security-releases
+
+### S060 - Node.js official: Node.js 26.3.1 security release
+- Summary: Node.js 26.3.1 security release notes listing CVE-2026-48618, CVE-2026-48933 and other fixes.
+- URL: https://nodejs.org/en/blog/release/v26.3.1
+
+### S061 - Python.org: Python 3.14.6 release
+- Summary: Python 3.14.6 maintenance release with bugfixes/build/doc updates.
+- URL: https://www.python.org/downloads/release/python-3146/
+
+### S062 - PyPI: uv 0.11.23
+- Summary: PyPI release metadata for uv 0.11.23, released June 19, 2026.
+- URL: https://pypi.org/project/uv/
+
+### S063 - OpenAI Help: ChatGPT release notes, Scheduled Tasks
+- Summary: OpenAI release notes describing Scheduled Tasks management improvements and dedicated Scheduled page.
+- URL: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+
+### S064 - OpenAI Help: Enterprise/Edu release notes, usage limits
+- Summary: OpenAI Enterprise/Edu release notes describing workspace/group/user usage limits and billing/analytics administration.
+- URL: https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes
+
+### S065 - Reuters: G7 trusted partner access to cutting-edge U.S. AI models
+- Summary: Reuters reported G7 discussions over trusted-partner access to restricted advanced U.S. AI models for cybersecurity and allied use.
+- URL: https://www.reuters.com/legal/government/g7-leaders-discuss-trusted-partners-access-cutting-edge-us-ai-models-sources-say-2026-06-16/
+
+### S066 - AP: Macron urges U.S. to share cutting-edge AI / democratic AI cooperation
+- Summary: AP reported Macron and AI leaders argued for democratic cooperation on AI regulation and model access at the G7 summit.
+- URL: https://apnews.com/article/7d783c6de4356962e338b8b8563d48ea

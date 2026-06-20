@@ -1,7 +1,7 @@
-# Offline Model Update v4 - Scaled full editions
+# Offline Model Update v5 - Scaled full editions
 
-Created: 2026-06-19 (Europe/Berlin date)  
-Coverage: 2024-06-01 to 2026-06-19  
+Created: 2026-06-20 (Europe/Berlin date)  
+Coverage: 2024-06-01 to 2026-06-20  
 Audience: local/offline language models in general. gpt-oss:20b is only a reference cutoff anchor, not the only target model.  
 Format: Markdown/text/JSONL only. No PDF. No images.  
 Offline policy: full_* files intentionally contain context, not raw web links. URLs are isolated in source_registry.md for human/online audit only.  
@@ -15,6 +15,18 @@ Treat it as a dated external context snapshot. Use it to update reasoning tempor
 
 German short note: Dieses Briefing ist ein datierter externer Kontext-Snapshot, kein dauerhaftes Modell-Update. Nutze es vorsichtig, transparent und zeitgebunden.
 
+
+## Global Card Usage Policy
+
+Default: if a factual card has no explicit `Use:` field, apply `OU-DEFAULT`.
+
+- `OU-DEFAULT`: Use the card as dated context. Mention the date/period when it affects the answer. Respect confidence/staleness. Do not invent details outside the card, chronology, event index, or supplied context.
+- `OU-HIGH-STALENESS`: Use cautious wording. Say newer developments may supersede this snapshot. Prefer a current check for operational, legal, medical, financial, security, election, or active-conflict decisions.
+- `OU-SPECULATIVE`: Analysis only, not fact. Use as reasoning aid; do not present as a confirmed event. Later real developments must appear only in later-dated factual updates.
+- `OU-CORRECTION`: Treat this as superseding or correcting an older assumption/card for the stated date range.
+
+Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|high>; src=<SIDs>`. Raw URLs belong only in `source_registry.md`, not in offline-facing context files.
+
 ## File variant note
 
 This ZIP contains multiple full editions: full_8k.md, full_16k.md, full_32k.md, full_64k.md, full_128k.md, and full_256k.md. The suffix is a target context-window class, not an exact token count. Smaller files prioritize essential corrections; larger files include more retrieval notes, entity context, chronology hooks, and reasoning guardrails.
@@ -23,7 +35,7 @@ This ZIP contains multiple full editions: full_8k.md, full_16k.md, full_32k.md, 
 
 - The target model baseline is June 2024. Since then, the largest durable deltas are: Trump won the 2024 election and began a second term in Jan 2025; the EU AI Act entered force and staged obligations began; AI model competition moved through Claude 3.5/4, GPT-5/5.5, Gemini 2.5/3.x and open-weight gpt-oss/Llama progress; Windows 10 reached end of support; global software-supply-chain risk was illustrated by the CrowdStrike outage; Syria's Assad regime fell; the Russia-Ukraine war expanded with deeper strikes/cross-border dynamics; Middle East conflict evolved through Gaza/Lebanon/Iran crises; and climate/health/security risks remained unstable.
 - For normal offline sessions, use `context_only.md`. For larger contexts or retrieval, use `full.md`, `weekly_chronology.md`, `event_index.md`, and `cards_context_only.jsonl`.
-- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-19, not live truth.
+- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-20, not live truth.
 - When answering concrete event questions, prefer `weekly_chronology.md` or `event_index.md` over the compressed context.
 
 ## Source Digest (no URLs)
@@ -257,7 +269,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S040: Reuters: G7 2026 summit (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD RUSSIA-2025-08-ALASKA - Trump-Putin Alaska meeting attempted Ukraine diplomacy
 - Date/period: 2025-08
@@ -268,7 +279,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S038: Reuters: Putin birthday greeting to Trump 2026 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD ME-2026-06-USIRANDEAL - U.S.-Iran interim agreement aimed at ceasefire and negotiations
 - Date/period: 2026-06-18
@@ -279,7 +289,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: high
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S041: Reuters: U.S.-Iran interim deal 2026 (news/analysis source); S042: Reuters: Trump goals in Iran war (news/analysis source); S043: AP: Iran nuclear watchdog inspection (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD UA-2026-06-MOSCOWREFINERY - Ukrainian drone strikes hit Moscow refinery infrastructure
 - Date/period: 2026-06-18
@@ -290,7 +299,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: high
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S044: Reuters: Ukraine Moscow refinery attack (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD WAR-2024-08-KURSK - Ukraine launched cross-border operations into Russia's Kursk region
 - Date/period: 2024-08
@@ -301,7 +309,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S054: Wikipedia Current events portal (news/primary-source/audit); S002: CFR: Ten Most Significant World Events in 2024 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD ME-2026-03-US-IRAN-WAR - U.S.-Iran war/conflict escalated before June 2026 ceasefire talks
 - Date/period: 2026-03..2026-06
@@ -312,7 +319,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: high
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S041: Reuters: U.S.-Iran interim deal 2026 (news/analysis source); S042: Reuters: Trump goals in Iran war (news/analysis source); S043: AP: Iran nuclear watchdog inspection (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD RUNTIME-2026-05-NODE26 - Node.js 26 appeared as current/upcoming LTS line
 - Date/period: 2026-05-05
@@ -323,7 +329,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S034: endoflife.date Node.js (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2026-OPENAI-RETIREMENTS - OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained
 - Date/period: 2026-06-12
@@ -334,7 +339,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S012: OpenAI ChatGPT/model release notes (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2025-01-TRUMP-INAG - Trump began second term
 - Date/period: 2025-01-20
@@ -345,7 +349,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S003: CFR: Ten Most Significant World Events in 2025 (news/analysis source); S021: Reuters: Anthropic disables top-tier models (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2025-06-NOKINGS - No Kings protests and military parade on Trump's 79th birthday
 - Date/period: 2025-06-14
@@ -356,7 +359,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S035: Reuters: 2025 Trump military parade/No Kings (news/analysis source); S036: Reuters: Trump warns protest at parade (news/analysis source); S037: Reuters: No Kings March 2026 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-07-US-AI-PLAN - Trump White House AI policy favored exports and lighter state rules
 - Date/period: 2025-07-22
@@ -367,7 +369,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S021: Reuters: Anthropic disables top-tier models (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-08-GPT5 - OpenAI released GPT-5
 - Date/period: 2025-08-07
@@ -378,7 +379,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S013: OpenAI: Introducing GPT-5 (official/primary or vendor documentation); S014: OpenAI model release notes (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-08-GPTOSS - OpenAI released gpt-oss open-weight models
 - Date/period: 2025-08
@@ -389,7 +389,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S001: OpenAI gpt-oss-20b model docs (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2026-04-GPT55 - OpenAI GPT-5.5 generation became current frontier product line
 - Date/period: 2026-04
@@ -400,7 +399,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S012: OpenAI ChatGPT/model release notes (official/primary or vendor documentation); S014: OpenAI model release notes (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD ME-2025-GAZA-CEASEFIRE - Gaza ceasefire/hostage diplomacy remained fragile
 - Date/period: 2025-01
@@ -411,7 +409,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: high
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S003: CFR: Ten Most Significant World Events in 2025 (news/analysis source); S054: Wikipedia Current events portal (news/primary-source/audit)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2025-10-NOKINGS2 - Second No Kings mobilization expanded anti-Trump protest network
 - Date/period: 2025-10-18
@@ -422,7 +419,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S037: Reuters: No Kings March 2026 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-11-GPT51 - GPT-5.1 reorganized OpenAI product variants
 - Date/period: 2025-11
@@ -433,7 +429,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S012: OpenAI ChatGPT/model release notes (official/primary or vendor documentation); S014: OpenAI model release notes (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD HEALTH-2026-06-EBOLA - DRC/Uganda Bundibugyo Ebola outbreak worsened
 - Date/period: 2026-06-18
@@ -444,7 +439,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: high
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S045: WHO: DRC/Uganda Ebola 2026 (official/primary or vendor documentation); S046: Reuters: DRC Ebola cases 18 Jun 2026 (news/analysis source); S047: Reuters: CDC Ebola emergency funding (news/analysis source); S048: ECDC Ebola DRC/Uganda 2026 (news/primary-source/audit)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD TRADE-2025-TARIFFS - Trump tariff policy reshaped global trade risk
 - Date/period: 2025
@@ -455,7 +449,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S003: CFR: Ten Most Significant World Events in 2025 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2024-06-DEBATE - Biden-Trump debate intensified concerns about Biden candidacy
 - Date/period: 2024-06-27
@@ -466,7 +459,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S002: CFR: Ten Most Significant World Events in 2024 (news/analysis source); S054: Wikipedia Current events portal (news/primary-source/audit)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2024-07-TRUMP-ASSASSINATION - Attempted assassination of Donald Trump at Butler rally
 - Date/period: 2024-07-13
@@ -477,7 +469,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S002: CFR: Ten Most Significant World Events in 2024 (news/analysis source); S054: Wikipedia Current events portal (news/primary-source/audit)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD CYBER-2024-07-CROWDSTRIKE - CrowdStrike faulty update caused global Windows outage
 - Date/period: 2024-07-19
@@ -488,7 +479,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S007: Reuters: CrowdStrike global outage (news/analysis source); S008: Reuters: Microsoft estimates CrowdStrike device impact (official/primary or vendor documentation); S053: Reuters: US closes Delta CrowdStrike probe 2026 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD EU-2024-08-AI-ACT-FORCE - EU AI Act entered into force
 - Date/period: 2024-08-01
@@ -499,7 +489,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S005: EU Commission: AI Act timeline (official/primary or vendor documentation); S006: EU AI Act implementation timeline (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2024-11-TRUMP-WINS - Donald Trump won the 2024 U.S. presidential election
 - Date/period: 2024-11-05
@@ -510,7 +499,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S002: CFR: Ten Most Significant World Events in 2024 (news/analysis source); S003: CFR: Ten Most Significant World Events in 2025 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2026-03-NOKINGS3 - Third No Kings protest wave occurred amid Iran-war politics
 - Date/period: 2026-03-28
@@ -521,7 +509,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S037: Reuters: No Kings March 2026 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2026-05-GEMINI3 - Gemini 3.x enterprise model line appeared
 - Date/period: 2026-05
@@ -532,7 +519,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S023: Google Cloud Gemini model lifecycle (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD PY-2026-06-3146 - Python 3.14.6 and 3.13.14 released
 - Date/period: 2026-06-10
@@ -543,7 +529,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S030: Python Insider: Python 3.14.6 (official/primary or vendor documentation); S029: Python PEP 745 (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD UV-2026-06-01121 - uv 0.11.21 added CPython 3.13.14 and 3.14.6 support
 - Date/period: 2026-06-11
@@ -554,7 +539,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S031: uv changelog (official/primary or vendor documentation); S032: uv PyPI/project docs (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2026-06-ANTHROPIC-EXPORT - Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order
 - Date/period: 2026-06-13
@@ -565,7 +549,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S020: Anthropic Claude models overview (official/primary or vendor documentation); S021: Reuters: Anthropic disables top-tier models (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD TRUMP-2026-06-BDAY - Trump's 80th birthday featured Putin call and controversial White House UFC event
 - Date/period: 2026-06-14
@@ -576,7 +559,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S038: Reuters: Putin birthday greeting to Trump 2026 (news/analysis source); S039: Guardian: Trump UFC birthday event 2026 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD NODE-2026-06-SECURITY - Node.js security releases updated 26.x, 24.x and 22.x lines
 - Date/period: 2026-06-18
@@ -587,7 +569,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S033: Node.js June 2026 security release (official/primary or vendor documentation); S034: endoflife.date Node.js (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD CROWDSTRIKE-2026-DELTA-PROBE - U.S. closed Delta probe from 2024 CrowdStrike meltdown
 - Date/period: 2026-06-15
@@ -598,7 +579,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S053: Reuters: US closes Delta CrowdStrike probe 2026 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2025-01-NEWORLEANS - New Orleans vehicle attack on New Year's Day
 - Date/period: 2025-01-01
@@ -609,7 +589,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S003: CFR: Ten Most Significant World Events in 2025 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-01-STARGATE - Stargate AI infrastructure project announced
 - Date/period: 2025-01-21
@@ -620,7 +599,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S017: Chatham House: Trump, Stargate, DeepSeek (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-01-DEEPSEEK - DeepSeek shock challenged U.S. frontier-cost assumptions
 - Date/period: 2025-01
@@ -631,7 +609,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S015: Reuters: DeepSeek wake-up call (news/analysis source); S016: Reuters: DeepSeek regulatory scrutiny (news/analysis source); S017: Chatham House: Trump, Stargate, DeepSeek (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD EU-2025-02-AI-ACT-PROHIBITIONS - EU AI Act prohibited-practices and AI-literacy provisions began applying
 - Date/period: 2025-02-02
@@ -642,7 +619,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S005: EU Commission: AI Act timeline (official/primary or vendor documentation); S006: EU AI Act implementation timeline (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD DE-2025-02-ELECTION - German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second
 - Date/period: 2025-02-23
@@ -653,7 +629,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S026: Reuters: Germany election 2025 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-05-CLAUDE4 - Anthropic released Claude Opus 4 and Sonnet 4
 - Date/period: 2025-05-22
@@ -664,7 +639,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S018: Anthropic: Claude 4 (official/primary or vendor documentation); S019: Anthropic system cards (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-06-GEMINI25 - Gemini 2.5 Pro/Flash reached stable enterprise lifecycle
 - Date/period: 2025-06-17
@@ -675,7 +649,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S023: Google Cloud Gemini model lifecycle (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-09-CLAUDE45 - Claude Sonnet 4.5 emphasized agents, coding and computer use
 - Date/period: 2025-09
@@ -686,7 +659,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S019: Anthropic system cards (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD WINDOWS-2025-10-EOL - Windows 10 reached end of support
 - Date/period: 2025-10-14
@@ -697,7 +669,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S027: Microsoft: Windows 10 support ended (official/primary or vendor documentation); S028: Microsoft Windows 10 ESU (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-12-GEMINI-TTS - Gemini API expanded TTS/live/audio capabilities
 - Date/period: 2025-12
@@ -708,7 +679,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S022: Google Gemini API changelog (official/primary or vendor documentation); S023: Google Cloud Gemini model lifecycle (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD IRAN-2026-01-SHUTDOWN - Iran internet shutdowns became major censorship/infrastructure case
 - Date/period: 2026-01
@@ -719,7 +689,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S054: Wikipedia Current events portal (news/primary-source/audit)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-AI-ACT-GPAI - EU AI Act GPAI/governance obligations entered staged application
 - Date/period: 2025-08-02
@@ -730,7 +699,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S005: EU Commission: AI Act timeline (official/primary or vendor documentation); S006: EU AI Act implementation timeline (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-02-CLAUDE37 - Claude Sonnet 3.7 era emphasized hybrid reasoning/coding
 - Date/period: 2025-02
@@ -741,7 +709,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S019: Anthropic system cards (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD AI-2025-04-LLAMA4 - Meta Llama 4 generation appeared
 - Date/period: 2025-04
@@ -752,7 +719,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S025: Meta Llama official model hub (official/primary or vendor documentation)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD US-2025-11-SHUTDOWN - Longest U.S. government shutdown ended after 43 days
 - Date/period: 2025-11-12
@@ -763,7 +729,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: low
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S003: CFR: Ten Most Significant World Events in 2025 (news/analysis source)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ### CARD MEDIA-2025-DIGITALNEWS - Digital news trust/platform shifts continued
 - Date/period: 2025-06
@@ -774,7 +739,6 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
 - Source note: S054: Wikipedia Current events portal (news/primary-source/audit)
-- Offline use: If answering from this card, mention the date/period. If staleness is high or medium, say that newer information may supersede this snapshot. Do not invent details not present in the card or related chronology.
 
 ## Domain-Level Context Maps
 
@@ -930,3 +894,101 @@ This section is explicitly speculative analysis based on the dated factual secti
 - Confidence: medium
 - Offline instruction: Use as reasoning aid only; do not state as fact.
 
+
+
+## 2026-06-20 Update Cards
+
+### CARD ME-2026-06-SWISSTALKS — U.S. and Iran envoys headed to Switzerland while ceasefire conditions remained fragile
+Date: 2026-06-20
+Cat: Middle East / USA / Iran / Diplomacy
+Meta: conf=medium; stale=high; src=S055,S056
+Use: OU-HIGH-STALENESS
+Event:
+U.S. envoy Steve Witkoff and Iranian foreign minister Abbas Araqchi were reported en route to Switzerland for talks intended to turn a recent interim U.S.-Iran pact into a more durable peace arrangement. The talks sit inside a fragile regional setting: Lebanon/Hezbollah ceasefire implementation, Israeli concerns and military action, Iran nuclear-program issues, and reopening or stabilizing the Strait of Hormuz.
+Why it matters:
+This is a high-staleness anchor for June 2026 because it connects energy markets, Gulf security, Israel/Lebanon dynamics, U.S. domestic politics, sanctions relief, nuclear verification and regional proxy issues. Offline models should not treat the talks as a completed settlement.
+Key details:
+- Main actors: Donald Trump administration; Steve Witkoff; Abbas Araqchi; Iran; Israel; Hezbollah; Switzerland as facilitation venue.
+- Reported objective: convert an interim pact into a longer-term peace or negotiation framework.
+- Open issues: nuclear restrictions/verification, sanctions relief, regional proxies, Lebanon ceasefire compliance, Israeli participation/objections, and Hormuz shipping/security.
+- Staleness note: fast-moving diplomacy and military incidents may have superseded this by the time it is read.
+
+### CARD ME-2026-06-LEBANON-CEASEFIRE-FRAGILE — Israel-Hezbollah ceasefire was immediately strained by deadly strikes
+Date: 2026-06-19..2026-06-20
+Cat: Middle East / Lebanon / Israel / Hezbollah / War
+Meta: conf=medium; stale=high; src=S056,S057
+Use: OU-HIGH-STALENESS
+Event:
+Reuters reported that Israel and Hezbollah had agreed to a ceasefire beginning Friday afternoon, but Israeli strikes in Lebanon killed at least 10 people hours after the ceasefire was supposed to take effect. Israel said the strikes responded to Hezbollah projectiles and threats; Lebanese reports included civilian casualties and at least one Lebanese soldier.
+Why it matters:
+The incident shows that a formal ceasefire can fail operationally even if diplomats announce it. For offline reasoning, this is a strong example of why Middle East cards require high-staleness treatment and why the U.S.-Iran deal cannot be read as automatically ending all linked conflicts.
+Key details:
+- Ceasefire brokered with U.S. and Qatari involvement and Iranian assistance/support.
+- Israel was not a direct party to the U.S.-Iran negotiation framework and continued to assert military-security needs.
+- Reported deaths and strikes make the Lebanon front a test case for whether the wider regional de-escalation is real or only declaratory.
+
+### CARD AI-2026-06-JUMPER-ANTHROPIC — AlphaFold co-creator John Jumper left Google DeepMind for Anthropic
+Date: 2026-06-19
+Cat: AI / Science / Talent / BioAI
+Meta: conf=high; stale=medium; src=S058
+Event:
+John Jumper, a senior Google DeepMind researcher and co-creator of AlphaFold, announced he was leaving DeepMind for Anthropic. Jumper shared the 2024 Nobel Prize in Chemistry with Demis Hassabis and David Baker for protein-structure work. His move became another marker of intense AI talent competition between major labs and startups.
+Why it matters:
+This connects foundation-model competition with scientific AI and biology. Anthropic's recruitment of a major AlphaFold figure suggests that frontier AI companies continue to treat science tooling, reasoning systems and high-end research talent as strategic assets, not just chat-product inputs.
+Key details:
+- Main actors: John Jumper; Google DeepMind; Anthropic; Demis Hassabis; AlphaFold.
+- Context: AI labs compete for top researchers, with startups offering focused missions and potentially less bureaucracy.
+- Offline relation: updates older assumptions that DeepMind retained most marquee AlphaFold leadership.
+
+### CARD DEV-2026-06-NODE-SECURITY-V5 — Node.js June 2026 security releases patched high-severity issues
+Date: 2026-06-18..2026-06-20
+Cat: Programming / Security / Node.js
+Meta: conf=high; stale=low; src=S059,S060
+Event:
+The Node.js project issued June 2026 security releases for supported release lines including 22.x, 24.x and 26.x. Node.js v26.3.1 notes listed high-severity fixes for TLS hostname normalization/wildcard-depth authentication behavior and a WebCrypto AES integer overflow that could lead to process abort/DoS. Additional medium-severity fixes covered proxy credential redaction, HTTP/2 origin-set memory growth, and SNI context matching.
+Why it matters:
+For admins and developers, this is a concrete patch-management item. Offline models advising on Node deployments should prefer patched runtime versions rather than generic advice.
+Key details:
+- Affected release lines: Node.js 22, 24 and 26.
+- Example patched current release: Node.js 26.3.1.
+- High-severity CVEs named in official notes: CVE-2026-48618 and CVE-2026-48933.
+- Action orientation: upgrade supported Node.js runtimes promptly, especially exposed services using TLS/WebCrypto/HTTP2/proxy paths.
+
+### CARD DEV-2026-06-PYTHON-UV — Python 3.14.6 and uv 0.11.23 anchored June 2026 Python tooling state
+Date: 2026-06-10..2026-06-19
+Cat: Programming / Python / Packaging
+Meta: conf=high; stale=low; src=S061,S062
+Event:
+Python 3.14.6 was released on 2026-06-10 as the sixth maintenance release of Python 3.14, with roughly 179 bugfixes, build improvements and documentation changes since 3.14.5. uv 0.11.23 appeared on PyPI with a 2026-06-19 release date; nearby uv release notes also show continued support for newer CPython patch releases.
+Why it matters:
+This is useful for offline developer assistance: Python 3.14 is no longer future-facing in this snapshot; it is an established maintenance line. uv remains an important Rust-based Python project/package manager and is relevant for fast, reproducible, cache-friendly local/offline Python workflows.
+Key details:
+- Python 3.14.6 release date: 2026-06-10.
+- uv latest observed PyPI release in this snapshot: 0.11.23 on 2026-06-19.
+- Offline install relevance: uv and local caches/wheelhouses remain useful for machines without reliable internet.
+
+### CARD OPENAI-2026-06-TASKS-ADMIN — ChatGPT Scheduled Tasks and admin usage controls matured
+Date: 2026-06-17..2026-06-20
+Cat: AI Products / OpenAI / Admin / Automation
+Meta: conf=high; stale=medium; src=S063,S064
+Event:
+OpenAI release notes described Scheduled Tasks in ChatGPT as easier to find and manage, with a Scheduled page in the sidebar for active tasks, next-run visibility, pause/resume/edit/delete controls, and reliability improvements. Enterprise/Edu notes described workspace usage-limit tools that let admins set monthly credit limits by workspace, group and user and review increase requests.
+Why it matters:
+For offline-context reasoning, this shows a broader 2026 product trend: AI systems are moving from passive chat toward scheduled work, monitoring, admin-governed usage and operational automation. It also affects how organizations manage AI cost and governance.
+Key details:
+- Scheduled Tasks: recurring/one-time work and monitoring-style workflows became more discoverable/manageable.
+- Enterprise/Edu: usage limits and billing/analytics controls became a workspace administration layer.
+- Offline-model relation: do not assume ChatGPT is only synchronous chat; by this snapshot it has explicit task scheduling/automation surfaces.
+
+### CARD AI-2026-06-G7-TRUSTED-PARTNERS — G7 discussed allied access to restricted frontier AI models
+Date: 2026-06-16..2026-06-18
+Cat: AI Governance / G7 / Security / Allies
+Meta: conf=medium; stale=medium; src=S065,S066
+Event:
+G7 discussions included the question of whether trusted democratic partners should receive access to cutting-edge U.S. AI models for cybersecurity and safety work, against the backdrop of U.S. restrictions on foreign access to certain advanced models. French President Emmanuel Macron publicly argued for democratic cooperation and warned against overly nationalist restrictions, while AI leaders including Sam Altman and Dario Amodei participated in summit-linked AI discussions.
+Why it matters:
+This is a key AI-governance tension for 2026: frontier AI is treated simultaneously as commercial infrastructure, national-security capability, allied-defense resource, and safety-governance object. Offline models should recognize that AI regulation and access policy became geopolitical, not merely technical.
+Key details:
+- Themes: trusted partner access, cybersecurity, democratic AI governance, U.S. export/security controls, EU concerns.
+- Actors: G7 leaders; U.S. Commerce officials; Macron; OpenAI/Anthropic/Google DeepMind leadership.
+- Interpretation: not a settled treaty; an active negotiation topic.
