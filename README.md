@@ -1,17 +1,17 @@
-# Offline Model Update Package v6 - 2026-06-21
+# Offline Model Update Bundle v6 — 2026-06-21
 
-This ZIP is a cumulative, model-agnostic offline context package for local/offline language models.
+Purpose: model-agnostic offline/local AI context bridge. These files provide a dated external context snapshot from 2024-06-01 through 2026-06-21. They do not permanently update any model.
 
-Coverage: 2024-06-01 to 2026-06-21.
-License/project context: designed for use with the public MIT-licensed offline_model_context workflow by zeittresor.
+Public project/reference: https://github.com/zeittresor/offline_model_context
+License note: The user's public project is MIT-licensed. This generated bundle is intended to follow the same general offline-model-context idea; verify license headers before redistribution if you modify it.
 
-Main usage:
-- Use context_only.md for small or normal context windows.
-- Use full_8k.md, full_16k.md, full_32k.md, full_64k.md, full_128k.md or full_256k.md depending on available context.
-- Use weekly_chronology.md and event_index.md when asking concrete what/when/who questions.
-- Use cards_context_only.jsonl for RAG/import workflows.
-- Use source_registry.md only for human/online audit; offline models cannot open its URLs.
+Recommended use:
+- Small models / small context: start with `context_only.md` or `full_8k.md`.
+- 16k/32k models: use `full_16k.md` or `full_32k.md`.
+- 64k/128k/256k models: use the matching `full_*k.md` variant.
+- RAG/indexed systems: use `cards_context_only.jsonl`, `event_index.md`, and `weekly_chronology.md`.
+- Human/online audit: use `source_registry.md`; raw URLs are kept there, not in the main offline-facing context files.
 
-No PDF. No images. Offline-facing files contain context, not raw web links.
+No PDF. No images. Markdown/Text/JSONL only.
 
-Latest v6 delta: 2026-06-21 continuity update for U.S.-Iran talks in Switzerland, Ukraine/Russia drone/air-strike escalation, G7/AI statecraft, a U.S. political controversy marker and a World Cup schedule marker.
+Important: token counts are approximate context-window classes, not exact tokenizer-specific counts. Keep room for system prompt, user query and answer output.
