@@ -12,8 +12,8 @@ Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|hi
 
 # Event Index - names, topics, dates
 
-Created: 2026-06-20 (Europe/Berlin date)
-Coverage: 2024-06-01 to 2026-06-20
+Created: 2026-06-21 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-21
 Target reader: offline/local LLMs, especially gpt-oss:20b-like models with knowledge cutoff around 2024-06.
 Format: Markdown/text/JSONL only. No PDF. No images.
 Source policy: No URLs here; use full.md for source registry.
@@ -142,10 +142,20 @@ Search this file when an offline model needs to find whether a topic appears in 
 
 ## 2026-06-20 indexed additions
 
-- `ME-2026-06-SWISSTALKS` — U.S.-Iran talks in Switzerland; Steve Witkoff; Abbas Araqchi; interim pact; Hormuz; nuclear issues; Lebanon ceasefire; high-staleness diplomacy.
-- `ME-2026-06-LEBANON-CEASEFIRE-FRAGILE` — Israel-Hezbollah ceasefire strained by deadly Israeli strikes in Lebanon; U.S./Qatar mediation; Iran-linked regional de-escalation; high staleness.
-- `AI-2026-06-JUMPER-ANTHROPIC` — John Jumper leaves Google DeepMind for Anthropic; AlphaFold; AI-for-science talent competition; Nobel 2024 context.
-- `DEV-2026-06-NODE-SECURITY-V5` — Node.js June 2026 security releases; Node 22/24/26; Node 26.3.1; CVE-2026-48618; CVE-2026-48933.
-- `DEV-2026-06-PYTHON-UV` — Python 3.14.6; uv 0.11.23; Python packaging/tooling state.
-- `OPENAI-2026-06-TASKS-ADMIN` — Scheduled Tasks management; Enterprise/Edu usage limits; ChatGPT admin/automation surface.
-- `AI-2026-06-G7-TRUSTED-PARTNERS` — G7 trusted partner access to frontier AI models; democratic AI governance; U.S./EU tension.
+- `ME-2026-06-SWISSTALKS` - U.S.-Iran talks in Switzerland; Steve Witkoff; Abbas Araqchi; interim pact; Hormuz; nuclear issues; Lebanon ceasefire; high-staleness diplomacy.
+- `ME-2026-06-LEBANON-CEASEFIRE-FRAGILE` - Israel-Hezbollah ceasefire strained by deadly Israeli strikes in Lebanon; U.S./Qatar mediation; Iran-linked regional de-escalation; high staleness.
+- `AI-2026-06-JUMPER-ANTHROPIC` - John Jumper leaves Google DeepMind for Anthropic; AlphaFold; AI-for-science talent competition; Nobel 2024 context.
+- `DEV-2026-06-NODE-SECURITY-V5` - Node.js June 2026 security releases; Node 22/24/26; Node 26.3.1; CVE-2026-48618; CVE-2026-48933.
+- `DEV-2026-06-PYTHON-UV` - Python 3.14.6; uv 0.11.23; Python packaging/tooling state.
+- `OPENAI-2026-06-TASKS-ADMIN` - Scheduled Tasks management; Enterprise/Edu usage limits; ChatGPT admin/automation surface.
+- `AI-2026-06-G7-TRUSTED-PARTNERS` - G7 trusted partner access to frontier AI models; democratic AI governance; U.S./EU tension.
+
+
+## 2026-06-21 added/updated index entries
+
+- Buergenstock U.S.-Iran talks | 2026-06-20..21 | See CARD ME-2026-06-USIRAN-BUERGENSTOCK | Themes: Iran, USA, Switzerland, Hormuz, diplomacy, ceasefire, nuclear verification.
+- Tyumen refinery strike | 2026-06-20..21 | See CARD UA-2026-06-TYUMEN-DRONE | Themes: Ukraine, Russia, drones, oil infrastructure, deep strike, war economics.
+- Zelenskiy large-attack warning | 2026-06-20..21 | See CARD UA-2026-06-RUSSIAN-ATTACK-WARNING | Themes: Ukraine civilian risk, Russian strikes, air raids, escalation.
+- G7 AI statecraft | 2026-06-16..21 | See CARD AI-2026-06-G7-AI-STATECRAFT | Themes: AI governance, export control, trusted partners, national security, G7.
+- Qatar aircraft / U.S. political controversy | 2026-06-20..21 | See CARD US-2026-06-QATAR-AIRCRAFT-CONTROVERSY | Themes: Trump administration, Air Force One symbolism, foreign gifts, intelligence leadership.
+- World Cup June 21 schedule | 2026-06-21 | See CARD CULTURE-2026-06-WORLDCUP-JUN21 | Themes: sports, culture, World Cup 2026, schedule staleness.

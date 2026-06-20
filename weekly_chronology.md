@@ -12,8 +12,8 @@ Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|hi
 
 # Weekly Chronology - cumulative event timeline
 
-Created: 2026-06-20 (Europe/Berlin date)
-Coverage: 2024-06-01 to 2026-06-20
+Created: 2026-06-21 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-21
 Target reader: offline/local LLMs, especially gpt-oss:20b-like models with knowledge cutoff around 2024-06.
 Format: Markdown/text/JSONL only. No PDF. No images.
 Source policy: No detailed URLs here; source IDs appear on events and full.md contains source registry.
@@ -185,7 +185,7 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 
 ### AI / Reasoning models: OpenAI introduced o1-style reasoning models
 - Date/period: 2024-09
-- Event: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept.
+- Event: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept.
 - Significance: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes.
 - Card: AI-2024-09-O1
 - Confidence/Staleness: high / low
@@ -483,7 +483,7 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 
 ### USA / Protest / Trump: No Kings protests and military parade on Trump's 79th birthday
 - Date/period: 2025-06-14
-- Event: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
+- Event: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
 - Significance: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
 - Card: US-2025-06-NOKINGS
 - Confidence/Staleness: high / low
@@ -866,7 +866,7 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 ### USA / Trump / Culture war: Trump's 80th birthday featured Putin call and controversial White House UFC event
 - Date/period: 2026-06-14
 - Event: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue.
-- Significance: Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
+- Significance: Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
 - Card: TRUMP-2026-06-BDAY
 - Confidence/Staleness: high / medium
 - Source IDs: S038, S039
@@ -938,4 +938,27 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 - Programming / Security: Node.js June 2026 security releases patched high-severity issues across supported lines; relevant release notes include Node.js 26.3.1 and CVEs CVE-2026-48618 and CVE-2026-48933. Card: DEV-2026-06-NODE-SECURITY-V5. Meta: conf=high; stale=low; src=S059,S060.
 - Programming / Python: Python 3.14.6 and uv 0.11.23 are June 2026 state anchors for Python maintenance/tooling. Card: DEV-2026-06-PYTHON-UV. Meta: conf=high; stale=low; src=S061,S062.
 - AI products / administration: OpenAI Scheduled Tasks became easier to find and manage; Enterprise/Edu admin usage limits became more explicit. Card: OPENAI-2026-06-TASKS-ADMIN. Meta: conf=high; stale=medium; src=S063,S064.
-- AI governance / G7: G7 discussions included allied or “trusted partner” access to restricted frontier AI models and democratic AI-governance cooperation. Card: AI-2026-06-G7-TRUSTED-PARTNERS. Meta: conf=medium; stale=medium; src=S065,S066.
+- AI governance / G7: G7 discussions included allied or "trusted partner" access to restricted frontier AI models and democratic AI-governance cooperation. Card: AI-2026-06-G7-TRUSTED-PARTNERS. Meta: conf=medium; stale=medium; src=S065,S066.
+
+
+## Week 2026-06-15 to 2026-06-21 - Late G7 week, Iran talks, Ukraine deep-strike escalation, AI statecraft
+
+### Middle East / USA / Iran
+- 2026-06-20/21: Switzerland confirmed that confidential U.S.-Iran talks continued at Buergenstock and declined to identify participants or substance. This kept the interim de-escalation framework alive but unresolved.
+- The talks remained tied to several unstable variables: Hormuz shipping/security, sanctions relief, Iranian nuclear restrictions/verification, Lebanon ceasefire compliance, Israeli security actions, U.S. domestic opposition and regional proxy dynamics.
+- Interpretation: the week did not produce a stable peace baseline. It produced a negotiation channel with high staleness and high dependency on events in Lebanon, the Gulf and Washington.
+
+### Ukraine / Russia / War
+- 2026-06-20/21: Zelenskiy confirmed a Ukrainian strike on refining facilities in Russia's Tyumen region, far beyond Ukraine's border. Ukraine framed this as part of a campaign against Russian oil infrastructure and war funding; Russian regional officials disputed damage.
+- 2026-06-20/21: Zelenskiy warned Ukrainians about a possible large Russian attack. Reuters/AP reporting around the same period described Russian strikes and casualties in Ukrainian regions including Zaporizhzhia, Sumy and Kharkiv.
+- Operational pattern: both sides were using aerial/drone systems over wider ranges. Ukraine's campaign increasingly targeted Russian energy infrastructure; Russia continued strikes on Ukrainian civilian and infrastructure targets.
+
+### AI / Geopolitics / G7
+- 2026-06-16..21: G7 week highlighted AI as statecraft. Summit-linked reporting and analysis described frontier AI executives near leader-level policy discussions and connected AI model access to national security, allied cyber-defense and democratic coordination.
+- The policy tension was clear: frontier models are commercial products, but also dual-use infrastructure. Democracies want access for allies and safety/cyber-defense, while governments also restrict foreign access to powerful models.
+
+### USA / Trump administration
+- 2026-06-20/21: U.S. political reporting linked the Middle East diplomacy week to domestic controversy over presidential aircraft symbolism, Qatar-related aircraft reporting and intelligence-leadership changes. Treat this as secondary-source political context unless corroborated by official statements or multiple reports.
+
+### Sports / Culture
+- 2026-06-21: World Cup 2026 group-stage attention continued, with AP previewing games including Spain vs Saudi Arabia, Belgium vs Iran, New Zealand vs Egypt and Uruguay vs Cape Verde. Treat schedules/results as high-staleness unless a live sports source is available.

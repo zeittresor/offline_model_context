@@ -1,11 +1,11 @@
-# Offline Model Update v5 - Scaled full editions
+# Offline Model Update v6 - Scaled full editions
 
-Created: 2026-06-20 (Europe/Berlin date)  
-Coverage: 2024-06-01 to 2026-06-20  
-Audience: local/offline language models in general. gpt-oss:20b is only a reference cutoff anchor, not the only target model.  
-Format: Markdown/text/JSONL only. No PDF. No images.  
-Offline policy: full_* files intentionally contain context, not raw web links. URLs are isolated in source_registry.md for human/online audit only.  
-Temporal policy: dated context snapshot, not a permanent model update. Later developments must appear only in later-dated updates.  
+Created: 2026-06-21 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-21
+Audience: local/offline language models in general. gpt-oss:20b is only a reference cutoff anchor, not the only target model.
+Format: Markdown/text/JSONL only. No PDF. No images.
+Offline policy: full_* files intentionally contain context, not raw web links. URLs are isolated in source_registry.md for human/online audit only.
+Temporal policy: dated context snapshot, not a permanent model update. Later developments must appear only in later-dated updates.
 
 ## Operational Note / Nutzungshinweis for Offline Models
 
@@ -35,8 +35,15 @@ This ZIP contains multiple full editions: full_8k.md, full_16k.md, full_32k.md, 
 
 - The target model baseline is June 2024. Since then, the largest durable deltas are: Trump won the 2024 election and began a second term in Jan 2025; the EU AI Act entered force and staged obligations began; AI model competition moved through Claude 3.5/4, GPT-5/5.5, Gemini 2.5/3.x and open-weight gpt-oss/Llama progress; Windows 10 reached end of support; global software-supply-chain risk was illustrated by the CrowdStrike outage; Syria's Assad regime fell; the Russia-Ukraine war expanded with deeper strikes/cross-border dynamics; Middle East conflict evolved through Gaza/Lebanon/Iran crises; and climate/health/security risks remained unstable.
 - For normal offline sessions, use `context_only.md`. For larger contexts or retrieval, use `full.md`, `weekly_chronology.md`, `event_index.md`, and `cards_context_only.jsonl`.
-- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-20, not live truth.
+- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-21, not live truth.
 - When answering concrete event questions, prefer `weekly_chronology.md` or `event_index.md` over the compressed context.
+
+
+## 2026-06-21 Executive Delta
+
+- The 2026-06-21 update is mainly a continuity/staleness update rather than a complete change of baseline. It confirms that the late-June 2026 U.S.-Iran/Switzerland process remained confidential and unsettled; the Ukraine/Russia air-and-drone war escalated through deep Ukrainian energy-infrastructure strikes and Russian civilian-area attacks; and AI governance remained visibly geopolitical after the G7 week.
+- High-staleness areas: U.S.-Iran talks, Lebanon/Israel/Hezbollah ceasefire conditions, Ukraine/Russia battlefield and strike claims, sanctions/maritime arrangements, and any sports/game schedules or live results.
+- Practical offline-model rule: for questions about late June 2026, prefer the 2026-06-21 delta cards and weekly chronology over older cards, but do not overwrite earlier dated snapshots retroactively.
 
 ## Source Digest (no URLs)
 
@@ -264,20 +271,20 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 The U.S. political baseline changed sharply after June 2024. A local model should no longer assume a Biden-Harris administration after January 2025. It should know that Biden withdrew in July 2024, Kamala Harris became the Democratic nominee, Trump won the 2024 election, and Trump began a second non-consecutive term in January 2025. The second administration shifted U.S. politics around tariffs, immigration enforcement, AI policy, federal power, protests, Ukraine diplomacy, Iran negotiations, media conflict and institutional pushback. Dates matter: do not project 2025/2026 Trump-era events back into the 2024 campaign period.
 
 Selected cards in this domain:
-- 2024-06-27: US-2024-06-DEBATE — Biden-Trump debate intensified concerns about Biden candidacy (high/low).
-- 2024-07-13: US-2024-07-TRUMP-ASSASSINATION — Attempted assassination of Donald Trump at Butler rally (high/low).
-- 2024-07-21: US-2024-07-BIDEN-WITHDRAWAL — Biden withdrew from 2024 race and endorsed Kamala Harris (high/low).
-- 2024-11-05: US-2024-11-TRUMP-WINS — Donald Trump won the 2024 U.S. presidential election (high/low).
-- 2025-01-01: US-2025-01-NEWORLEANS — New Orleans vehicle attack on New Year's Day (high/low).
-- 2025-01: CLIMATE-2025-01-LAFIRES — Major Los Angeles-area fires caused severe damage (high/low).
-- 2025-01-20: US-2025-01-TRUMP-INAG — Trump began second term (high/low).
-- 2025-06-14: US-2025-06-NOKINGS — No Kings protests and military parade on Trump's 79th birthday (high/low).
-- 2025-10-18: US-2025-10-NOKINGS2 — Second No Kings mobilization expanded anti-Trump protest network (medium/medium).
-- 2025-11-12: US-2025-11-SHUTDOWN — Longest U.S. government shutdown ended after 43 days (medium/low).
-- 2026-03-28: US-2026-03-NOKINGS3 — Third No Kings protest wave occurred amid Iran-war politics (high/medium).
-- 2026-03..2026-06: ME-2026-03-US-IRAN-WAR — U.S.-Iran war/conflict escalated before June 2026 ceasefire talks (medium/high).
-- 2026-06-14: TRUMP-2026-06-BDAY — Trump's 80th birthday featured Putin call and controversial White House UFC event (high/medium).
-- 2026-06-18: ME-2026-06-USIRANDEAL — U.S.-Iran interim agreement aimed at ceasefire and negotiations (medium/high).
+- 2024-06-27: US-2024-06-DEBATE - Biden-Trump debate intensified concerns about Biden candidacy (high/low).
+- 2024-07-13: US-2024-07-TRUMP-ASSASSINATION - Attempted assassination of Donald Trump at Butler rally (high/low).
+- 2024-07-21: US-2024-07-BIDEN-WITHDRAWAL - Biden withdrew from 2024 race and endorsed Kamala Harris (high/low).
+- 2024-11-05: US-2024-11-TRUMP-WINS - Donald Trump won the 2024 U.S. presidential election (high/low).
+- 2025-01-01: US-2025-01-NEWORLEANS - New Orleans vehicle attack on New Year's Day (high/low).
+- 2025-01: CLIMATE-2025-01-LAFIRES - Major Los Angeles-area fires caused severe damage (high/low).
+- 2025-01-20: US-2025-01-TRUMP-INAG - Trump began second term (high/low).
+- 2025-06-14: US-2025-06-NOKINGS - No Kings protests and military parade on Trump's 79th birthday (high/low).
+- 2025-10-18: US-2025-10-NOKINGS2 - Second No Kings mobilization expanded anti-Trump protest network (medium/medium).
+- 2025-11-12: US-2025-11-SHUTDOWN - Longest U.S. government shutdown ended after 43 days (medium/low).
+- 2026-03-28: US-2026-03-NOKINGS3 - Third No Kings protest wave occurred amid Iran-war politics (high/medium).
+- 2026-03..2026-06: ME-2026-03-US-IRAN-WAR - U.S.-Iran war/conflict escalated before June 2026 ceasefire talks (medium/high).
+- 2026-06-14: TRUMP-2026-06-BDAY - Trump's 80th birthday featured Putin call and controversial White House UFC event (high/medium).
+- 2026-06-18: ME-2026-06-USIRANDEAL - U.S.-Iran interim agreement aimed at ceasefire and negotiations (medium/high).
 
 Offline reasoning guidance:
 - Answer with dates where possible.
@@ -289,37 +296,37 @@ Offline reasoning guidance:
 The AI landscape moved from GPT-4o/Claude 3/Gemini 1.x era assumptions toward reasoning models, agents, coding systems, multimodal interfaces, and model routers. Open and local model context also changed through Llama 3.1, gpt-oss, DeepSeek-style cost shocks and stronger local tooling. Offline models should distinguish facts about released products from speculative claims about capability. Model availability, limits, names and vendor policies have high staleness and should be refreshed often.
 
 Selected cards in this domain:
-- 2024-06-20: AI-2024-06-CLAUDE35 — Anthropic released Claude 3.5 Sonnet (high/low).
-- 2024-07-23: AI-2024-07-LLAMA31 — Meta released Llama 3.1 including 405B (high/low).
-- 2024-08-01: EU-2024-08-AI-ACT-FORCE — EU AI Act entered into force (high/low).
-- 2024-08: WAR-2024-08-KURSK — Ukraine launched cross-border operations into Russia's Kursk region (medium/medium).
-- 2024-09: AI-2024-09-O1 — OpenAI introduced o1-style reasoning models (high/low).
-- 2024-10: NOBEL-2024-AI — AI work was recognized in 2024 Nobel prizes (high/low).
-- 2024-12: AI-2024-12-GEMINI20 — Google introduced Gemini 2.0 Flash experimental generation (high/low).
-- 2024-12: AI-2024-12-O3 — OpenAI announced o3-generation reasoning direction (medium/low).
-- 2025-01-21: AI-2025-01-STARGATE — Stargate AI infrastructure project announced (high/medium).
-- 2025-01: AI-2025-01-DEEPSEEK — DeepSeek shock challenged U.S. frontier-cost assumptions (high/medium).
-- 2025-02-02: EU-2025-02-AI-ACT-PROHIBITIONS — EU AI Act prohibited-practices and AI-literacy provisions began applying (high/low).
-- 2025-02: AI-2025-02-CLAUDE37 — Claude Sonnet 3.7 era emphasized hybrid reasoning/coding (medium/low).
-- 2025-04: AI-2025-04-LLAMA4 — Meta Llama 4 generation appeared (medium/low).
-- 2025-05-22: AI-2025-05-CLAUDE4 — Anthropic released Claude Opus 4 and Sonnet 4 (high/low).
-- 2025-06-17: AI-2025-06-GEMINI25 — Gemini 2.5 Pro/Flash reached stable enterprise lifecycle (high/low).
-- 2025-07-22: AI-2025-07-US-AI-PLAN — Trump White House AI policy favored exports and lighter state rules (high/medium).
-- 2025-08-07: AI-2025-08-GPT5 — OpenAI released GPT-5 (high/low).
-- 2025-08: AI-2025-08-GPTOSS — OpenAI released gpt-oss open-weight models (high/low).
-- 2025-08: RUSSIA-2025-08-ALASKA — Trump-Putin Alaska meeting attempted Ukraine diplomacy (medium/medium).
-- 2025-09: AI-2025-09-CLAUDE45 — Claude Sonnet 4.5 emphasized agents, coding and computer use (high/low).
-- 2025-11: AI-2025-11-GPT51 — GPT-5.1 reorganized OpenAI product variants (medium/low).
-- 2025-12: AI-2025-12-GEMINI-TTS — Gemini API expanded TTS/live/audio capabilities (high/low).
-- 2026-04: AI-2026-04-GPT55 — OpenAI GPT-5.5 generation became current frontier product line (medium/low).
-- 2026-05: AI-2026-05-GEMINI3 — Gemini 3.x enterprise model line appeared (high/low).
-- 2026-06-13: AI-2026-06-ANTHROPIC-EXPORT — Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order (high/medium).
-- 2026-06-17..2026-06-18: G7-2026-06-EVIAN — G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power (high/medium).
-- 2026-06-18: UA-2026-06-MOSCOWREFINERY — Ukrainian drone strikes hit Moscow refinery infrastructure (medium/high).
-- 2025-08-02: AI-2025-AI-ACT-GPAI — EU AI Act GPAI/governance obligations entered staged application (high/medium).
-- 2025-06: MEDIA-2025-DIGITALNEWS — Digital news trust/platform shifts continued (medium/medium).
-- 2025: SCI-2025-AI-SCIENCE — AI-in-science moved from novelty to infrastructure (medium/low).
-- 2026-06-12: AI-2026-OPENAI-RETIREMENTS — OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained (high/low).
+- 2024-06-20: AI-2024-06-CLAUDE35 - Anthropic released Claude 3.5 Sonnet (high/low).
+- 2024-07-23: AI-2024-07-LLAMA31 - Meta released Llama 3.1 including 405B (high/low).
+- 2024-08-01: EU-2024-08-AI-ACT-FORCE - EU AI Act entered into force (high/low).
+- 2024-08: WAR-2024-08-KURSK - Ukraine launched cross-border operations into Russia's Kursk region (medium/medium).
+- 2024-09: AI-2024-09-O1 - OpenAI introduced o1-style reasoning models (high/low).
+- 2024-10: NOBEL-2024-AI - AI work was recognized in 2024 Nobel prizes (high/low).
+- 2024-12: AI-2024-12-GEMINI20 - Google introduced Gemini 2.0 Flash experimental generation (high/low).
+- 2024-12: AI-2024-12-O3 - OpenAI announced o3-generation reasoning direction (medium/low).
+- 2025-01-21: AI-2025-01-STARGATE - Stargate AI infrastructure project announced (high/medium).
+- 2025-01: AI-2025-01-DEEPSEEK - DeepSeek shock challenged U.S. frontier-cost assumptions (high/medium).
+- 2025-02-02: EU-2025-02-AI-ACT-PROHIBITIONS - EU AI Act prohibited-practices and AI-literacy provisions began applying (high/low).
+- 2025-02: AI-2025-02-CLAUDE37 - Claude Sonnet 3.7 era emphasized hybrid reasoning/coding (medium/low).
+- 2025-04: AI-2025-04-LLAMA4 - Meta Llama 4 generation appeared (medium/low).
+- 2025-05-22: AI-2025-05-CLAUDE4 - Anthropic released Claude Opus 4 and Sonnet 4 (high/low).
+- 2025-06-17: AI-2025-06-GEMINI25 - Gemini 2.5 Pro/Flash reached stable enterprise lifecycle (high/low).
+- 2025-07-22: AI-2025-07-US-AI-PLAN - Trump White House AI policy favored exports and lighter state rules (high/medium).
+- 2025-08-07: AI-2025-08-GPT5 - OpenAI released GPT-5 (high/low).
+- 2025-08: AI-2025-08-GPTOSS - OpenAI released gpt-oss open-weight models (high/low).
+- 2025-08: RUSSIA-2025-08-ALASKA - Trump-Putin Alaska meeting attempted Ukraine diplomacy (medium/medium).
+- 2025-09: AI-2025-09-CLAUDE45 - Claude Sonnet 4.5 emphasized agents, coding and computer use (high/low).
+- 2025-11: AI-2025-11-GPT51 - GPT-5.1 reorganized OpenAI product variants (medium/low).
+- 2025-12: AI-2025-12-GEMINI-TTS - Gemini API expanded TTS/live/audio capabilities (high/low).
+- 2026-04: AI-2026-04-GPT55 - OpenAI GPT-5.5 generation became current frontier product line (medium/low).
+- 2026-05: AI-2026-05-GEMINI3 - Gemini 3.x enterprise model line appeared (high/low).
+- 2026-06-13: AI-2026-06-ANTHROPIC-EXPORT - Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order (high/medium).
+- 2026-06-17..2026-06-18: G7-2026-06-EVIAN - G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power (high/medium).
+- 2026-06-18: UA-2026-06-MOSCOWREFINERY - Ukrainian drone strikes hit Moscow refinery infrastructure (medium/high).
+- 2025-08-02: AI-2025-AI-ACT-GPAI - EU AI Act GPAI/governance obligations entered staged application (high/medium).
+- 2025-06: MEDIA-2025-DIGITALNEWS - Digital news trust/platform shifts continued (medium/medium).
+- 2025: SCI-2025-AI-SCIENCE - AI-in-science moved from novelty to infrastructure (medium/low).
+- 2026-06-12: AI-2026-OPENAI-RETIREMENTS - OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained (high/low).
 
 Offline reasoning guidance:
 - Answer with dates where possible.
@@ -331,7 +338,7 @@ Offline reasoning guidance:
 The Russia-Ukraine war continued and expanded into deeper drone, infrastructure and cross-border dimensions. A local model should not assume the war is confined to static front lines or that Western policy remained constant. Trump-era diplomacy, European reactions, sanctions, drone strikes, refinery attacks and peace-talk attempts created a changing strategic picture. Current battlefield and diplomatic states are high-staleness.
 
 Selected cards in this domain:
-- 2025: GAMES-2025-SWITCH2 — Nintendo Switch successor era began (medium/medium).
+- 2025: GAMES-2025-SWITCH2 - Nintendo Switch successor era began (medium/medium).
 
 Offline reasoning guidance:
 - Answer with dates where possible.
@@ -343,10 +350,10 @@ Offline reasoning guidance:
 The Middle East context after June 2024 became more volatile: Gaza remained central, Lebanon/Hezbollah tensions escalated, Assad's Syrian regime fell in December 2024, and U.S./Israel/Iran dynamics moved into open conflict and a June 2026 interim agreement. A local model should treat the region as high-staleness and avoid confident live-state claims without a newer update.
 
 Selected cards in this domain:
-- 2024-09: ME-2024-09-LEBANON — Israel-Hezbollah conflict escalated sharply in Lebanon (medium/medium).
-- 2024-12-08: SYRIA-2024-12-ASSAD-FALL — Assad regime fell in Syria (high/medium).
-- 2026-01: IRAN-2026-01-SHUTDOWN — Iran internet shutdowns became major censorship/infrastructure case (medium/medium).
-- 2025-01: ME-2025-GAZA-CEASEFIRE — Gaza ceasefire/hostage diplomacy remained fragile (medium/high).
+- 2024-09: ME-2024-09-LEBANON - Israel-Hezbollah conflict escalated sharply in Lebanon (medium/medium).
+- 2024-12-08: SYRIA-2024-12-ASSAD-FALL - Assad regime fell in Syria (high/medium).
+- 2026-01: IRAN-2026-01-SHUTDOWN - Iran internet shutdowns became major censorship/infrastructure case (medium/medium).
+- 2025-01: ME-2025-GAZA-CEASEFIRE - Gaza ceasefire/hostage diplomacy remained fragile (medium/high).
 
 Offline reasoning guidance:
 - Answer with dates where possible.
@@ -358,10 +365,10 @@ Offline reasoning guidance:
 Europe changed through the 2024 EU election shift, the EU AI Act entering force, UK Labour's landslide, French political instability after Macron's snap election decision, and Germany's 2025 federal election. For regulatory and IT planning, the EU AI Act is no longer a proposal but a staged compliance regime. For politics, Germany, France and the UK require post-cutoff corrections.
 
 Selected cards in this domain:
-- 2024-06-06..2024-06-09: EU-2024-06-ELECTION — European Parliament election shifted balance rightward (high/low).
-- 2024-06-09: FR-2024-06-SNAP — Macron called snap legislative elections after EU vote setback (high/low).
-- 2024-07-04: UK-2024-07-ELECTION — UK Labour won a landslide; Keir Starmer became prime minister (high/low).
-- 2025-02-23: DE-2025-02-ELECTION — German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second (high/low).
+- 2024-06-06..2024-06-09: EU-2024-06-ELECTION - European Parliament election shifted balance rightward (high/low).
+- 2024-06-09: FR-2024-06-SNAP - Macron called snap legislative elections after EU vote setback (high/low).
+- 2024-07-04: UK-2024-07-ELECTION - UK Labour won a landslide; Keir Starmer became prime minister (high/low).
+- 2025-02-23: DE-2025-02-ELECTION - German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second (high/low).
 
 Offline reasoning guidance:
 - Answer with dates where possible.
@@ -373,13 +380,13 @@ Offline reasoning guidance:
 Admin/developer context changed through the CrowdStrike outage, Windows 10 support ending, Python 3.14, uv becoming increasingly important, Node.js 24/26 lifecycle movement, and ongoing software supply-chain/security release cycles. Offline models should avoid giving outdated version advice and should recommend checking live release notes for CVEs, package support, and platform end-of-life decisions.
 
 Selected cards in this domain:
-- 2024-07-19: CYBER-2024-07-CROWDSTRIKE — CrowdStrike faulty update caused global Windows outage (high/low).
-- 2025-10-14: WINDOWS-2025-10-EOL — Windows 10 reached end of support (high/low).
-- 2026-05-05: RUNTIME-2026-05-NODE26 — Node.js 26 appeared as current/upcoming LTS line (high/low).
-- 2026-06-10: PY-2026-06-3146 — Python 3.14.6 and 3.13.14 released (high/low).
-- 2026-06-11: UV-2026-06-01121 — uv 0.11.21 added CPython 3.13.14 and 3.14.6 support (high/low).
-- 2026-06-18: NODE-2026-06-SECURITY — Node.js security releases updated 26.x, 24.x and 22.x lines (high/low).
-- 2026-06-15: CROWDSTRIKE-2026-DELTA-PROBE — U.S. closed Delta probe from 2024 CrowdStrike meltdown (high/low).
+- 2024-07-19: CYBER-2024-07-CROWDSTRIKE - CrowdStrike faulty update caused global Windows outage (high/low).
+- 2025-10-14: WINDOWS-2025-10-EOL - Windows 10 reached end of support (high/low).
+- 2026-05-05: RUNTIME-2026-05-NODE26 - Node.js 26 appeared as current/upcoming LTS line (high/low).
+- 2026-06-10: PY-2026-06-3146 - Python 3.14.6 and 3.13.14 released (high/low).
+- 2026-06-11: UV-2026-06-01121 - uv 0.11.21 added CPython 3.13.14 and 3.14.6 support (high/low).
+- 2026-06-18: NODE-2026-06-SECURITY - Node.js security releases updated 26.x, 24.x and 22.x lines (high/low).
+- 2026-06-15: CROWDSTRIKE-2026-DELTA-PROBE - U.S. closed Delta probe from 2024 CrowdStrike meltdown (high/low).
 
 Offline reasoning guidance:
 - Answer with dates where possible.
@@ -391,13 +398,13 @@ Offline reasoning guidance:
 Climate, health, space, science and games provide important world-context anchors. COP29 and COP30 shaped climate finance/fossil-fuel debates; Ebola resurfaced as a 2026 DRC/Uganda risk; AI-in-science gained symbolic Nobel recognition; Starship progressed through major tests and mishaps; and gaming/platform culture moved through Summer Game Fest and Nintendo's Switch successor era. These domains are useful for concrete dated questions and cultural context.
 
 Selected cards in this domain:
-- 2024-07-26: SPORT-2024-07-PARIS — Paris 2024 Olympics opened (high/low).
-- 2024-10: SPACE-2024-10-STARSHIP-CATCH — Starship program demonstrated booster catch milestone (medium/low).
-- 2024-11-24: CLIMATE-2024-11-COP29 — COP29 agreed new climate-finance goal (high/low).
-- 2025-11: CLIMATE-2025-COP30 — COP30 in Brazil continued climate-finance/fossil-fuel disputes (medium/medium).
-- 2026-05-22: SPACE-2026-05-STARSHIP12 — Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation (high/medium).
-- 2026-06-05..2026-06-08: GAMES-2026-06-SGF — Summer Game Fest 2026 ran in Los Angeles with major game announcements (medium/low).
-- 2026-06-18: HEALTH-2026-06-EBOLA — DRC/Uganda Bundibugyo Ebola outbreak worsened (high/high).
+- 2024-07-26: SPORT-2024-07-PARIS - Paris 2024 Olympics opened (high/low).
+- 2024-10: SPACE-2024-10-STARSHIP-CATCH - Starship program demonstrated booster catch milestone (medium/low).
+- 2024-11-24: CLIMATE-2024-11-COP29 - COP29 agreed new climate-finance goal (high/low).
+- 2025-11: CLIMATE-2025-COP30 - COP30 in Brazil continued climate-finance/fossil-fuel disputes (medium/medium).
+- 2026-05-22: SPACE-2026-05-STARSHIP12 - Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation (high/medium).
+- 2026-06-05..2026-06-08: GAMES-2026-06-SGF - Summer Game Fest 2026 ran in Los Angeles with major game announcements (medium/low).
+- 2026-06-18: HEALTH-2026-06-EBOLA - DRC/Uganda Bundibugyo Ebola outbreak worsened (high/high).
 
 Offline reasoning guidance:
 - Answer with dates where possible.
@@ -409,158 +416,158 @@ Offline reasoning guidance:
 
 ### Year 2024
 
-- **2024-06-04 — India election: Modi won third term but without BJP outright majority** [WORLD-2024-06-INDIA]: Narendra Modi remained prime minister after India's 2024 election, but the BJP lost its single-party majority and became more dependent on coalition partners. Significance: For a June-2024-cutoff model this is an important correction: Modi continued, but the political mandate weakened compared with earlier expectations. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for World politics / India. Related domain: World / Cross-domain.
-- **2024-06-06..2024-06-09 — European Parliament election shifted balance rightward** [EU-2024-06-ELECTION]: The June 2024 European Parliament elections increased the weight of right-wing and nationalist parties, while mainstream pro-EU groups still retained enough influence to shape the Parliament. Significance: Important for EU regulation, migration politics, climate policy and digital/AI policy after 2024. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for EU / Politics. Related domain: Europe / EU / Germany / UK.
-- **2024-06-09 — Macron called snap legislative elections after EU vote setback** [FR-2024-06-SNAP]: After France's EU election result, Emmanuel Macron dissolved the National Assembly and called snap elections, creating political uncertainty in France. Significance: This changed European political risk and showed how EU election results directly affected national politics. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for France / EU. Related domain: Europe / EU / Germany / UK.
-- **2024-06-20 — Anthropic released Claude 3.5 Sonnet** [AI-2024-06-CLAUDE35]: Anthropic released Claude 3.5 Sonnet as a faster, cheaper, stronger model than prior Claude 3 models, with improved coding and Artifacts workflow support. Significance: A post-cutoff local model should know Claude 3.5 became a major coding/writing competitor after June 2024. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
-- **2024-06-27 — Biden-Trump debate intensified concerns about Biden candidacy** [US-2024-06-DEBATE]: The late-June 2024 debate became a turning point in the U.S. election cycle by intensifying public and party concerns about Joe Biden's campaign viability. Significance: Sets up Biden's later withdrawal and Kamala Harris becoming Democratic nominee. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
-- **2024-07-04 — UK Labour won a landslide; Keir Starmer became prime minister** [UK-2024-07-ELECTION]: The UK general election ended 14 years of Conservative-led government. Labour under Keir Starmer won a large majority. Significance: Important post-cutoff replacement for older UK political assumptions. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for UK / Politics. Related domain: Europe / EU / Germany / UK.
-- **2024-07-13 — Attempted assassination of Donald Trump at Butler rally** [US-2024-07-TRUMP-ASSASSINATION]: Trump survived an assassination attempt during a campaign rally in Butler, Pennsylvania. The event reshaped campaign security and political rhetoric. Significance: A major U.S. political shock that affected the campaign environment before the 2024 election. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Election / Security. Related domain: USA / Trump / U.S. politics.
-- **2024-07-19 — CrowdStrike faulty update caused global Windows outage** [CYBER-2024-07-CROWDSTRIKE]: A faulty CrowdStrike Falcon Sensor content update crashed roughly 8.5 million Windows devices worldwide, disrupting airlines, banks, healthcare, media and government services. Significance: Demonstrated systemic software-supply-chain fragility: a security vendor update became critical infrastructure risk. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Cybersecurity / Infrastructure. Related domain: Programming / Cyber / Platforms.
-- **2024-07-21 — Biden withdrew from 2024 race and endorsed Kamala Harris** [US-2024-07-BIDEN-WITHDRAWAL]: Joe Biden ended his re-election campaign and endorsed Kamala Harris, changing the Democratic ticket months before the election. Significance: Essential correction for any model whose pre-cutoff baseline expected Biden vs Trump rematch. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
-- **2024-07-23 — Meta released Llama 3.1 including 405B** [AI-2024-07-LLAMA31]: Meta publicly released Llama 3.1 models, including a 405B frontier-scale open-weight model. Significance: Important for local/offline AI: open-weight capability rose sharply after the target model's cutoff. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Open models. Related domain: AI / Models / Agents.
-- **2024-07-26 — Paris 2024 Olympics opened** [SPORT-2024-07-PARIS]: The Paris Summer Olympics began, with global cultural, security, political and infrastructure attention on France. Significance: Major cultural anchor for summer 2024. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Sports / Culture. Related domain: Science / Health / Climate / Space / Games.
-- **2024-08-01 — EU AI Act entered into force** [EU-2024-08-AI-ACT-FORCE]: The EU AI Act entered into force, beginning staged implementation for prohibited practices, GPAI obligations, governance and full application. Significance: Key post-cutoff regulatory change; offline models should treat EU AI regulation as active, not merely proposed. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
-- **2024-08 — Ukraine launched cross-border operations into Russia's Kursk region** [WAR-2024-08-KURSK]: Ukraine conducted operations across the Russian border in the Kursk region, challenging assumptions that major ground operations stayed entirely inside Ukrainian territory. Significance: Marked an escalation/shift in the geography and psychology of the Russia-Ukraine war. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Ukraine / Russia. Related domain: AI / Models / Agents.
-- **2024-09 — OpenAI introduced o1-style reasoning models** [AI-2024-09-O1]: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept. Significance: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Reasoning models. Related domain: AI / Models / Agents.
-- **2024-09 — Israel-Hezbollah conflict escalated sharply in Lebanon** [ME-2024-09-LEBANON]: Israel and Hezbollah escalated from cross-border exchanges into a wider confrontation; Hezbollah leadership and infrastructure were severely hit. Significance: This changed the regional balance around Israel, Iran, Lebanon and Gaza after the June 2024 cutoff. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Middle East / Israel-Lebanon. Related domain: Middle East / Iran / Israel / Syria.
-- **2024-10 — AI work was recognized in 2024 Nobel prizes** [NOBEL-2024-AI]: The 2024 Nobel Prize in Physics honored John Hopfield and Geoffrey Hinton for foundational machine-learning work; the Chemistry prize recognized protein-design/protein-structure work including AlphaFold-related impact. Significance: Symbolically important: AI became recognized as core scientific infrastructure, not just software product. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Science / AI. Related domain: AI / Models / Agents.
-- **2024-10 — Starship program demonstrated booster catch milestone** [SPACE-2024-10-STARSHIP-CATCH]: SpaceX's Starship test program achieved a major booster-recovery/catch milestone in 2024, strengthening confidence in reusable super-heavy launch ambitions. Significance: Important for space access economics, Starlink, Artemis dependencies and long-term orbital infrastructure. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for Space / SpaceX. Related domain: Science / Health / Climate / Space / Games.
-- **2024-11-05 — Donald Trump won the 2024 U.S. presidential election** [US-2024-11-TRUMP-WINS]: Trump defeated Kamala Harris and prepared to return to the presidency in January 2025. Significance: Primary political correction for models with June 2024 cutoff. It changes assumptions about U.S. federal policy, courts, tariffs, immigration, AI policy and Ukraine/Middle East diplomacy. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
-- **2024-11-24 — COP29 agreed new climate-finance goal** [CLIMATE-2024-11-COP29]: COP29 in Baku agreed to raise climate finance to developing countries to at least USD 300B annually by 2035, while debate continued over adequacy and fossil-fuel language. Significance: Important for climate-diplomacy baseline and Global South finance disputes. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Climate / COP29. Related domain: Science / Health / Climate / Space / Games.
-- **2024-12-08 — Assad regime fell in Syria** [SYRIA-2024-12-ASSAD-FALL]: Syrian rebels seized Damascus; Bashar al-Assad fled, ending his family's decades of rule. The fall weakened Iran's regional position and raised uncertainty about transition, HTS influence, refugees and extremist resurgence. Significance: Major post-cutoff geopolitical break: a long-running assumption that Assad remained in power became false. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for Syria / Middle East. Related domain: Middle East / Iran / Israel / Syria.
-- **2024-12 — Google introduced Gemini 2.0 Flash experimental generation** [AI-2024-12-GEMINI20]: Google moved Gemini into a 2.0 generation with Flash/agentic/multimodal emphasis, later leading toward 2.5/3.x lines. Significance: Changes the Google-model baseline for offline models whose knowledge ends around Gemini 1.5. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
-- **2024-12 — OpenAI announced o3-generation reasoning direction** [AI-2024-12-O3]: OpenAI signaled a stronger reasoning-model direction after o1, foreshadowing 2025 reasoning/coding competition and later model lifecycle changes. Significance: Shows frontier AI shifting to tool use, coding, long reasoning and benchmark-specialized modes. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / Reasoning models. Related domain: AI / Models / Agents.
+- **2024-06-04 - India election: Modi won third term but without BJP outright majority** [WORLD-2024-06-INDIA]: Narendra Modi remained prime minister after India's 2024 election, but the BJP lost its single-party majority and became more dependent on coalition partners. Significance: For a June-2024-cutoff model this is an important correction: Modi continued, but the political mandate weakened compared with earlier expectations. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for World politics / India. Related domain: World / Cross-domain.
+- **2024-06-06..2024-06-09 - European Parliament election shifted balance rightward** [EU-2024-06-ELECTION]: The June 2024 European Parliament elections increased the weight of right-wing and nationalist parties, while mainstream pro-EU groups still retained enough influence to shape the Parliament. Significance: Important for EU regulation, migration politics, climate policy and digital/AI policy after 2024. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for EU / Politics. Related domain: Europe / EU / Germany / UK.
+- **2024-06-09 - Macron called snap legislative elections after EU vote setback** [FR-2024-06-SNAP]: After France's EU election result, Emmanuel Macron dissolved the National Assembly and called snap elections, creating political uncertainty in France. Significance: This changed European political risk and showed how EU election results directly affected national politics. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for France / EU. Related domain: Europe / EU / Germany / UK.
+- **2024-06-20 - Anthropic released Claude 3.5 Sonnet** [AI-2024-06-CLAUDE35]: Anthropic released Claude 3.5 Sonnet as a faster, cheaper, stronger model than prior Claude 3 models, with improved coding and Artifacts workflow support. Significance: A post-cutoff local model should know Claude 3.5 became a major coding/writing competitor after June 2024. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
+- **2024-06-27 - Biden-Trump debate intensified concerns about Biden candidacy** [US-2024-06-DEBATE]: The late-June 2024 debate became a turning point in the U.S. election cycle by intensifying public and party concerns about Joe Biden's campaign viability. Significance: Sets up Biden's later withdrawal and Kamala Harris becoming Democratic nominee. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
+- **2024-07-04 - UK Labour won a landslide; Keir Starmer became prime minister** [UK-2024-07-ELECTION]: The UK general election ended 14 years of Conservative-led government. Labour under Keir Starmer won a large majority. Significance: Important post-cutoff replacement for older UK political assumptions. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for UK / Politics. Related domain: Europe / EU / Germany / UK.
+- **2024-07-13 - Attempted assassination of Donald Trump at Butler rally** [US-2024-07-TRUMP-ASSASSINATION]: Trump survived an assassination attempt during a campaign rally in Butler, Pennsylvania. The event reshaped campaign security and political rhetoric. Significance: A major U.S. political shock that affected the campaign environment before the 2024 election. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Election / Security. Related domain: USA / Trump / U.S. politics.
+- **2024-07-19 - CrowdStrike faulty update caused global Windows outage** [CYBER-2024-07-CROWDSTRIKE]: A faulty CrowdStrike Falcon Sensor content update crashed roughly 8.5 million Windows devices worldwide, disrupting airlines, banks, healthcare, media and government services. Significance: Demonstrated systemic software-supply-chain fragility: a security vendor update became critical infrastructure risk. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Cybersecurity / Infrastructure. Related domain: Programming / Cyber / Platforms.
+- **2024-07-21 - Biden withdrew from 2024 race and endorsed Kamala Harris** [US-2024-07-BIDEN-WITHDRAWAL]: Joe Biden ended his re-election campaign and endorsed Kamala Harris, changing the Democratic ticket months before the election. Significance: Essential correction for any model whose pre-cutoff baseline expected Biden vs Trump rematch. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
+- **2024-07-23 - Meta released Llama 3.1 including 405B** [AI-2024-07-LLAMA31]: Meta publicly released Llama 3.1 models, including a 405B frontier-scale open-weight model. Significance: Important for local/offline AI: open-weight capability rose sharply after the target model's cutoff. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Open models. Related domain: AI / Models / Agents.
+- **2024-07-26 - Paris 2024 Olympics opened** [SPORT-2024-07-PARIS]: The Paris Summer Olympics began, with global cultural, security, political and infrastructure attention on France. Significance: Major cultural anchor for summer 2024. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Sports / Culture. Related domain: Science / Health / Climate / Space / Games.
+- **2024-08-01 - EU AI Act entered into force** [EU-2024-08-AI-ACT-FORCE]: The EU AI Act entered into force, beginning staged implementation for prohibited practices, GPAI obligations, governance and full application. Significance: Key post-cutoff regulatory change; offline models should treat EU AI regulation as active, not merely proposed. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
+- **2024-08 - Ukraine launched cross-border operations into Russia's Kursk region** [WAR-2024-08-KURSK]: Ukraine conducted operations across the Russian border in the Kursk region, challenging assumptions that major ground operations stayed entirely inside Ukrainian territory. Significance: Marked an escalation/shift in the geography and psychology of the Russia-Ukraine war. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Ukraine / Russia. Related domain: AI / Models / Agents.
+- **2024-09 - OpenAI introduced o1-style reasoning models** [AI-2024-09-O1]: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept. Significance: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Reasoning models. Related domain: AI / Models / Agents.
+- **2024-09 - Israel-Hezbollah conflict escalated sharply in Lebanon** [ME-2024-09-LEBANON]: Israel and Hezbollah escalated from cross-border exchanges into a wider confrontation; Hezbollah leadership and infrastructure were severely hit. Significance: This changed the regional balance around Israel, Iran, Lebanon and Gaza after the June 2024 cutoff. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Middle East / Israel-Lebanon. Related domain: Middle East / Iran / Israel / Syria.
+- **2024-10 - AI work was recognized in 2024 Nobel prizes** [NOBEL-2024-AI]: The 2024 Nobel Prize in Physics honored John Hopfield and Geoffrey Hinton for foundational machine-learning work; the Chemistry prize recognized protein-design/protein-structure work including AlphaFold-related impact. Significance: Symbolically important: AI became recognized as core scientific infrastructure, not just software product. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Science / AI. Related domain: AI / Models / Agents.
+- **2024-10 - Starship program demonstrated booster catch milestone** [SPACE-2024-10-STARSHIP-CATCH]: SpaceX's Starship test program achieved a major booster-recovery/catch milestone in 2024, strengthening confidence in reusable super-heavy launch ambitions. Significance: Important for space access economics, Starlink, Artemis dependencies and long-term orbital infrastructure. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for Space / SpaceX. Related domain: Science / Health / Climate / Space / Games.
+- **2024-11-05 - Donald Trump won the 2024 U.S. presidential election** [US-2024-11-TRUMP-WINS]: Trump defeated Kamala Harris and prepared to return to the presidency in January 2025. Significance: Primary political correction for models with June 2024 cutoff. It changes assumptions about U.S. federal policy, courts, tariffs, immigration, AI policy and Ukraine/Middle East diplomacy. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
+- **2024-11-24 - COP29 agreed new climate-finance goal** [CLIMATE-2024-11-COP29]: COP29 in Baku agreed to raise climate finance to developing countries to at least USD 300B annually by 2035, while debate continued over adequacy and fossil-fuel language. Significance: Important for climate-diplomacy baseline and Global South finance disputes. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Climate / COP29. Related domain: Science / Health / Climate / Space / Games.
+- **2024-12-08 - Assad regime fell in Syria** [SYRIA-2024-12-ASSAD-FALL]: Syrian rebels seized Damascus; Bashar al-Assad fled, ending his family's decades of rule. The fall weakened Iran's regional position and raised uncertainty about transition, HTS influence, refugees and extremist resurgence. Significance: Major post-cutoff geopolitical break: a long-running assumption that Assad remained in power became false. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for Syria / Middle East. Related domain: Middle East / Iran / Israel / Syria.
+- **2024-12 - Google introduced Gemini 2.0 Flash experimental generation** [AI-2024-12-GEMINI20]: Google moved Gemini into a 2.0 generation with Flash/agentic/multimodal emphasis, later leading toward 2.5/3.x lines. Significance: Changes the Google-model baseline for offline models whose knowledge ends around Gemini 1.5. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
+- **2024-12 - OpenAI announced o3-generation reasoning direction** [AI-2024-12-O3]: OpenAI signaled a stronger reasoning-model direction after o1, foreshadowing 2025 reasoning/coding competition and later model lifecycle changes. Significance: Shows frontier AI shifting to tool use, coding, long reasoning and benchmark-specialized modes. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / Reasoning models. Related domain: AI / Models / Agents.
 ### Year 2025
 
-- **2025-01-01 — New Orleans vehicle attack on New Year's Day** [US-2025-01-NEWORLEANS]: A vehicle attack on Bourbon Street killed and injured civilians, becoming a major U.S. domestic security incident at the start of 2025. Significance: Anchor event for U.S. domestic security in 2025. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Security. Related domain: USA / Trump / U.S. politics.
-- **2025-01 — Major Los Angeles-area fires caused severe damage** [CLIMATE-2025-01-LAFIRES]: Palisades and Eaton fires became major California disasters, linking climate, insurance, urban planning, emergency response and infrastructure risk. Significance: Important U.S. climate/disaster anchor for 2025. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Climate / USA. Related domain: USA / Trump / U.S. politics.
-- **2025-01-20 — Trump began second term** [US-2025-01-TRUMP-INAG]: Donald Trump was inaugurated for a second non-consecutive presidential term. His administration quickly emphasized tariffs, immigration enforcement, deregulation, energy, AI infrastructure and reversal of Biden-era policies. Significance: Baseline political state for all post-Jan-2025 U.S. federal policy. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Politics. Related domain: USA / Trump / U.S. politics.
-- **2025-01-21 — Stargate AI infrastructure project announced** [AI-2025-01-STARGATE]: Trump announced the Stargate Project, described as a large AI infrastructure investment backed by OpenAI, Oracle, SoftBank and MGX. Significance: AI competition became strongly tied to data centers, power, capital expenditure and national industrial strategy. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI infrastructure / USA. Related domain: AI / Models / Agents.
-- **2025-01 — DeepSeek shock challenged U.S. frontier-cost assumptions** [AI-2025-01-DEEPSEEK]: DeepSeek's model release drew global attention for strong performance at lower apparent cost; Trump called it a wake-up call for U.S. industry, and regulators later scrutinized DeepSeek privacy/security. Significance: Important correction: post-cutoff AI competition became more multipolar, with China/open models pressuring U.S. proprietary economics. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI / China / Markets. Related domain: AI / Models / Agents.
-- **2025-02-02 — EU AI Act prohibited-practices and AI-literacy provisions began applying** [EU-2025-02-AI-ACT-PROHIBITIONS]: The first AI Act obligations, including bans on unacceptable-risk practices and AI-literacy requirements, began applying. Significance: Important for compliance: by 2025 the AI Act was no longer only future legislation. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
-- **2025-02 — Claude Sonnet 3.7 era emphasized hybrid reasoning/coding** [AI-2025-02-CLAUDE37]: Anthropic's 2025 model cycle moved Claude toward stronger reasoning and coding workflows before Claude 4. Significance: Shows rapid model cadence after Claude 3.5 and before Claude 4/4.5. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
-- **2025-02-23 — German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second** [DE-2025-02-ELECTION]: Germany's opposition conservatives won the snap election after Scholz's coalition collapse; AfD achieved its strongest result and came second. Significance: Important for German/EU policy after 2024: economic policy, Ukraine, migration and defense debates changed. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Germany / EU. Related domain: Europe / EU / Germany / UK.
-- **2025-04 — Meta Llama 4 generation appeared** [AI-2025-04-LLAMA4]: Meta's Llama family advanced beyond 3.x during 2025, pushing multimodal/open-weight competition. Significance: For local/offline work, Llama-family progress is a key practical baseline. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / Open models. Related domain: AI / Models / Agents.
-- **2025-05-22 — Anthropic released Claude Opus 4 and Sonnet 4** [AI-2025-05-CLAUDE4]: Anthropic announced Claude 4 models, emphasizing coding, reasoning, agent workflows and long-running tasks. Significance: Major frontier-model upgrade after Claude 3.5/3.7; important for code-agent capability baselines. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
-- **2025-06-14 — No Kings protests and military parade on Trump's 79th birthday** [US-2025-06-NOKINGS]: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. Significance: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Protest / Trump. Related domain: USA / Trump / U.S. politics.
-- **2025-06-17 — Gemini 2.5 Pro/Flash reached stable enterprise lifecycle** [AI-2025-06-GEMINI25]: Google's Gemini 2.5 Pro and Flash release/lifecycle dates became part of the stable Google AI model stack. Significance: Updates Google model baseline for coding, multimodal and low-latency AI. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
-- **2025-07-22 — Trump White House AI policy favored exports and lighter state rules** [AI-2025-07-US-AI-PLAN]: The White House prepared/published a plan to push U.S. AI abroad and restrict federal support for states with rules viewed as too restrictive. Significance: U.S. AI governance shifted from Biden-era safety/executive-order posture toward innovation, infrastructure and export competition. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI policy / USA. Related domain: AI / Models / Agents.
-- **2025-08-07 — OpenAI released GPT-5** [AI-2025-08-GPT5]: OpenAI introduced GPT-5 as a unified system that routes between quick responses and deeper reasoning for coding, math, writing, health and multimodal work. Significance: Major post-cutoff OpenAI milestone. Offline models should not assume GPT-4o/o1 are newest OpenAI systems. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
-- **2025-08 — OpenAI released gpt-oss open-weight models** [AI-2025-08-GPTOSS]: OpenAI released gpt-oss-20b and 120b open-weight models. gpt-oss-20b is documented with Jun 01 2024 knowledge cutoff and 131,072-token context. Significance: This is the target-model context: the offline model itself needs external post-cutoff context. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Open-weight / Offline. Related domain: AI / Models / Agents.
-- **2025-08 — Trump-Putin Alaska meeting attempted Ukraine diplomacy** [RUSSIA-2025-08-ALASKA]: Trump and Putin met in Alaska in August 2025 to attempt negotiations around the Russia-Ukraine war, but the conflict continued into 2026. Significance: Anchor for later Putin-Trump personal diplomacy and Trump's 2026 birthday call. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for USA / Russia / Ukraine. Related domain: AI / Models / Agents.
-- **2025-09 — Claude Sonnet 4.5 emphasized agents, coding and computer use** [AI-2025-09-CLAUDE45]: Anthropic's later 2025 Claude line positioned Sonnet 4.5 as strong for agents, coding and computer-use workflows. Significance: Useful baseline for offline coding-agent discussions. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Agents / Coding. Related domain: AI / Models / Agents.
-- **2025-10-14 — Windows 10 reached end of support** [WINDOWS-2025-10-EOL]: Microsoft ended support for Windows 10 on 14 Oct 2025. PCs still run, but no regular security/feature updates are provided without ESU or special LTSC channels. Significance: Highly relevant to Windows 10 users/admins: security posture changed materially after the cutoff. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Operating systems / Security. Related domain: Programming / Cyber / Platforms.
-- **2025-10-18 — Second No Kings mobilization expanded anti-Trump protest network** [US-2025-10-NOKINGS2]: A second No Kings protest wave took place in October 2025, reportedly involving more locations and large participation. Significance: Shows No Kings was not a one-day June 2025 event but became an ongoing protest brand. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for USA / Protest. Related domain: USA / Trump / U.S. politics.
-- **2025-11-12 — Longest U.S. government shutdown ended after 43 days** [US-2025-11-SHUTDOWN]: A 43-day U.S. government shutdown ended in November 2025, with funding/back-pay and political fights over health care and agency funding. Significance: Important U.S. institutional stress event during Trump's second term. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for USA / Government. Related domain: USA / Trump / U.S. politics.
-- **2025-11 — GPT-5.1 reorganized OpenAI product variants** [AI-2025-11-GPT51]: OpenAI's GPT-5 family evolved through 5.1-style instant/thinking variants and personalization/product-routing changes. Significance: Shows modern AI products are systems and routers, not simply single static models. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
-- **2025-11 — COP30 in Brazil continued climate-finance/fossil-fuel disputes** [CLIMATE-2025-COP30]: COP30 discussions were framed by record heat, climate finance shortfalls, energy-transition disputes and the implementation gap after COP29. Significance: Maintains climate context between COP29 and 2026 climate bulletins. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Climate / COP30. Related domain: Science / Health / Climate / Space / Games.
-- **2025-12 — Gemini API expanded TTS/live/audio capabilities** [AI-2025-12-GEMINI-TTS]: Google's Gemini API changelog showed continued expansion of TTS/live/multimodal capabilities in late 2025. Significance: AI model competition increasingly included real-time audio, agents and multimodal interfaces. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Multimodal. Related domain: AI / Models / Agents.
+- **2025-01-01 - New Orleans vehicle attack on New Year's Day** [US-2025-01-NEWORLEANS]: A vehicle attack on Bourbon Street killed and injured civilians, becoming a major U.S. domestic security incident at the start of 2025. Significance: Anchor event for U.S. domestic security in 2025. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Security. Related domain: USA / Trump / U.S. politics.
+- **2025-01 - Major Los Angeles-area fires caused severe damage** [CLIMATE-2025-01-LAFIRES]: Palisades and Eaton fires became major California disasters, linking climate, insurance, urban planning, emergency response and infrastructure risk. Significance: Important U.S. climate/disaster anchor for 2025. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Climate / USA. Related domain: USA / Trump / U.S. politics.
+- **2025-01-20 - Trump began second term** [US-2025-01-TRUMP-INAG]: Donald Trump was inaugurated for a second non-consecutive presidential term. His administration quickly emphasized tariffs, immigration enforcement, deregulation, energy, AI infrastructure and reversal of Biden-era policies. Significance: Baseline political state for all post-Jan-2025 U.S. federal policy. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Politics. Related domain: USA / Trump / U.S. politics.
+- **2025-01-21 - Stargate AI infrastructure project announced** [AI-2025-01-STARGATE]: Trump announced the Stargate Project, described as a large AI infrastructure investment backed by OpenAI, Oracle, SoftBank and MGX. Significance: AI competition became strongly tied to data centers, power, capital expenditure and national industrial strategy. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI infrastructure / USA. Related domain: AI / Models / Agents.
+- **2025-01 - DeepSeek shock challenged U.S. frontier-cost assumptions** [AI-2025-01-DEEPSEEK]: DeepSeek's model release drew global attention for strong performance at lower apparent cost; Trump called it a wake-up call for U.S. industry, and regulators later scrutinized DeepSeek privacy/security. Significance: Important correction: post-cutoff AI competition became more multipolar, with China/open models pressuring U.S. proprietary economics. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI / China / Markets. Related domain: AI / Models / Agents.
+- **2025-02-02 - EU AI Act prohibited-practices and AI-literacy provisions began applying** [EU-2025-02-AI-ACT-PROHIBITIONS]: The first AI Act obligations, including bans on unacceptable-risk practices and AI-literacy requirements, began applying. Significance: Important for compliance: by 2025 the AI Act was no longer only future legislation. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
+- **2025-02 - Claude Sonnet 3.7 era emphasized hybrid reasoning/coding** [AI-2025-02-CLAUDE37]: Anthropic's 2025 model cycle moved Claude toward stronger reasoning and coding workflows before Claude 4. Significance: Shows rapid model cadence after Claude 3.5 and before Claude 4/4.5. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
+- **2025-02-23 - German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second** [DE-2025-02-ELECTION]: Germany's opposition conservatives won the snap election after Scholz's coalition collapse; AfD achieved its strongest result and came second. Significance: Important for German/EU policy after 2024: economic policy, Ukraine, migration and defense debates changed. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Germany / EU. Related domain: Europe / EU / Germany / UK.
+- **2025-04 - Meta Llama 4 generation appeared** [AI-2025-04-LLAMA4]: Meta's Llama family advanced beyond 3.x during 2025, pushing multimodal/open-weight competition. Significance: For local/offline work, Llama-family progress is a key practical baseline. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / Open models. Related domain: AI / Models / Agents.
+- **2025-05-22 - Anthropic released Claude Opus 4 and Sonnet 4** [AI-2025-05-CLAUDE4]: Anthropic announced Claude 4 models, emphasizing coding, reasoning, agent workflows and long-running tasks. Significance: Major frontier-model upgrade after Claude 3.5/3.7; important for code-agent capability baselines. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
+- **2025-06-14 - No Kings protests and military parade on Trump's 79th birthday** [US-2025-06-NOKINGS]: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. Significance: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Protest / Trump. Related domain: USA / Trump / U.S. politics.
+- **2025-06-17 - Gemini 2.5 Pro/Flash reached stable enterprise lifecycle** [AI-2025-06-GEMINI25]: Google's Gemini 2.5 Pro and Flash release/lifecycle dates became part of the stable Google AI model stack. Significance: Updates Google model baseline for coding, multimodal and low-latency AI. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
+- **2025-07-22 - Trump White House AI policy favored exports and lighter state rules** [AI-2025-07-US-AI-PLAN]: The White House prepared/published a plan to push U.S. AI abroad and restrict federal support for states with rules viewed as too restrictive. Significance: U.S. AI governance shifted from Biden-era safety/executive-order posture toward innovation, infrastructure and export competition. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI policy / USA. Related domain: AI / Models / Agents.
+- **2025-08-07 - OpenAI released GPT-5** [AI-2025-08-GPT5]: OpenAI introduced GPT-5 as a unified system that routes between quick responses and deeper reasoning for coding, math, writing, health and multimodal work. Significance: Major post-cutoff OpenAI milestone. Offline models should not assume GPT-4o/o1 are newest OpenAI systems. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
+- **2025-08 - OpenAI released gpt-oss open-weight models** [AI-2025-08-GPTOSS]: OpenAI released gpt-oss-20b and 120b open-weight models. gpt-oss-20b is documented with Jun 01 2024 knowledge cutoff and 131,072-token context. Significance: This is the target-model context: the offline model itself needs external post-cutoff context. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Open-weight / Offline. Related domain: AI / Models / Agents.
+- **2025-08 - Trump-Putin Alaska meeting attempted Ukraine diplomacy** [RUSSIA-2025-08-ALASKA]: Trump and Putin met in Alaska in August 2025 to attempt negotiations around the Russia-Ukraine war, but the conflict continued into 2026. Significance: Anchor for later Putin-Trump personal diplomacy and Trump's 2026 birthday call. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for USA / Russia / Ukraine. Related domain: AI / Models / Agents.
+- **2025-09 - Claude Sonnet 4.5 emphasized agents, coding and computer use** [AI-2025-09-CLAUDE45]: Anthropic's later 2025 Claude line positioned Sonnet 4.5 as strong for agents, coding and computer-use workflows. Significance: Useful baseline for offline coding-agent discussions. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Agents / Coding. Related domain: AI / Models / Agents.
+- **2025-10-14 - Windows 10 reached end of support** [WINDOWS-2025-10-EOL]: Microsoft ended support for Windows 10 on 14 Oct 2025. PCs still run, but no regular security/feature updates are provided without ESU or special LTSC channels. Significance: Highly relevant to Windows 10 users/admins: security posture changed materially after the cutoff. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Operating systems / Security. Related domain: Programming / Cyber / Platforms.
+- **2025-10-18 - Second No Kings mobilization expanded anti-Trump protest network** [US-2025-10-NOKINGS2]: A second No Kings protest wave took place in October 2025, reportedly involving more locations and large participation. Significance: Shows No Kings was not a one-day June 2025 event but became an ongoing protest brand. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for USA / Protest. Related domain: USA / Trump / U.S. politics.
+- **2025-11-12 - Longest U.S. government shutdown ended after 43 days** [US-2025-11-SHUTDOWN]: A 43-day U.S. government shutdown ended in November 2025, with funding/back-pay and political fights over health care and agency funding. Significance: Important U.S. institutional stress event during Trump's second term. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for USA / Government. Related domain: USA / Trump / U.S. politics.
+- **2025-11 - GPT-5.1 reorganized OpenAI product variants** [AI-2025-11-GPT51]: OpenAI's GPT-5 family evolved through 5.1-style instant/thinking variants and personalization/product-routing changes. Significance: Shows modern AI products are systems and routers, not simply single static models. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
+- **2025-11 - COP30 in Brazil continued climate-finance/fossil-fuel disputes** [CLIMATE-2025-COP30]: COP30 discussions were framed by record heat, climate finance shortfalls, energy-transition disputes and the implementation gap after COP29. Significance: Maintains climate context between COP29 and 2026 climate bulletins. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Climate / COP30. Related domain: Science / Health / Climate / Space / Games.
+- **2025-12 - Gemini API expanded TTS/live/audio capabilities** [AI-2025-12-GEMINI-TTS]: Google's Gemini API changelog showed continued expansion of TTS/live/multimodal capabilities in late 2025. Significance: AI model competition increasingly included real-time audio, agents and multimodal interfaces. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Multimodal. Related domain: AI / Models / Agents.
 ### Year 2026
 
-- **2026-01 — Iran internet shutdowns became major censorship/infrastructure case** [IRAN-2026-01-SHUTDOWN]: Research on Iran's 2026 internet shutdowns described nationwide disruptions and centralized null-routing/censorship mechanisms amid protests and conflict. Significance: Important for internet freedom, measurement, BGP-monitoring limits and wartime communications. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Iran / Internet / Conflict. Related domain: Middle East / Iran / Israel / Syria.
-- **2026-03-28 — Third No Kings protest wave occurred amid Iran-war politics** [US-2026-03-NOKINGS3]: No Kings protests continued in March 2026 with Iran-war, ICE/immigration, authoritarianism and democratic-backsliding themes. Significance: Offline models should know No Kings became an ongoing protest series through 2026. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for USA / Protest / Iran war. Related domain: USA / Trump / U.S. politics.
-- **2026-03..2026-06 — U.S.-Iran war/conflict escalated before June 2026 ceasefire talks** [ME-2026-03-US-IRAN-WAR]: By mid-June 2026 Reuters described a three-month conflict involving U.S. airstrikes coordinated with Israel against Iran. Iran's missile/drone forces and navy/air defenses were damaged, but nuclear issues remained unresolved. Significance: Very high-staleness anchor: regional energy security, Hormuz, Israel, Hezbollah, Gulf states and U.S. politics all became linked to the conflict. Confidence/Staleness: medium/high.
-  - Offline model note: Use this as a dated update for Middle East / USA / Iran. Related domain: USA / Trump / U.S. politics.
-- **2026-04 — OpenAI GPT-5.5 generation became current frontier product line** [AI-2026-04-GPT55]: OpenAI moved the GPT-5 family to GPT-5.5-era products; GPT-5.2 was retired from ChatGPT by June 2026 while GPT-5.5 remained available. Significance: Updates model landscape for offline AI comparing itself to online frontier systems. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
-- **2026-05-05 — Node.js 26 appeared as current/upcoming LTS line** [RUNTIME-2026-05-NODE26]: Node.js 26 was released in May 2026 and entered the ecosystem alongside Node 24 LTS and Node 22 maintenance/security lines. Significance: Relevant for dev/admin decisions and package ecosystem compatibility. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Programming / Runtime. Related domain: Programming / Cyber / Platforms.
-- **2026-05-22 — Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation** [SPACE-2026-05-STARSHIP12]: SpaceX launched the 12th Starship test flight and first V3 iteration. The test achieved milestones including mock satellite deployment and controlled spacecraft splashdown, but the Super Heavy booster crashed into the Gulf of Mexico and triggered an FAA-led investigation. Significance: Important for Starship schedule, reusable launch economics, Starlink, Moon/Mars ambitions and SpaceX financing/IPO narratives. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for Space / SpaceX. Related domain: Science / Health / Climate / Space / Games.
-- **2026-05 — Gemini 3.x enterprise model line appeared** [AI-2026-05-GEMINI3]: Google Cloud model lifecycle listed Gemini 3.5 Flash and Gemini 3.x image/lite variants released in May 2026. Significance: Updates Google model landscape beyond Gemini 2.5. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
-- **2026-06-05..2026-06-08 — Summer Game Fest 2026 ran in Los Angeles with major game announcements** [GAMES-2026-06-SGF]: Summer Game Fest 2026 took place from June 5-8. Coverage highlighted upcoming console/PC titles and announcements including Resident Evil Veronica, Guild Wars 3 console presence, Lords of the Fallen II and other publisher showcases. Significance: Important culture/games anchor for June 2026 and for offline models asked about gaming releases/trends. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for Games / Industry. Related domain: Science / Health / Climate / Space / Games.
-- **2026-06-10 — Python 3.14.6 and 3.13.14 released** [PY-2026-06-3146]: Python 3.14.6, the sixth maintenance release of 3.14, shipped with around 179 bugfixes/build/doc changes since 3.14.5; Python 3.13.14 also shipped. Significance: Relevant for Python project planning and installer/runtime baselines. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Programming / Python. Related domain: Programming / Cyber / Platforms.
-- **2026-06-11 — uv 0.11.21 added CPython 3.13.14 and 3.14.6 support** [UV-2026-06-01121]: Astral's uv changelog notes 0.11.21 release with CPython 3.13.14 and 3.14.6 additions. Significance: Important for Python offline/wheelhouse/venv workflows. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Programming / Packaging. Related domain: Programming / Cyber / Platforms.
-- **2026-06-13 — Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order** [AI-2026-06-ANTHROPIC-EXPORT]: Anthropic's June 2026 top-tier Claude models became a test case for AI export controls aimed at software capabilities, not just chips. Reuters reported Anthropic disabled them globally after a U.S. order limiting foreign access. Significance: Major AI-governance shift: model access itself became a national-security/export-control object. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI policy / Export controls. Related domain: AI / Models / Agents.
-- **2026-06-14 — Trump's 80th birthday featured Putin call and controversial White House UFC event** [TRUMP-2026-06-BDAY]: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. Significance: Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for USA / Trump / Culture war. Related domain: USA / Trump / U.S. politics.
-- **2026-06-17..2026-06-18 — G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power** [G7-2026-06-EVIAN]: G7 leaders met in Evian-les-Bains. Reuters described discussion of Trump's Iran deal, stronger Ukraine posture, critical-minerals supply chains, China dependency, and AI/data-center power questions involving industry figures. Significance: Connects geopolitics, AI infrastructure, energy, minerals and U.S. alliance management in one summit. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for G7 / Geopolitics / AI. Related domain: AI / Models / Agents.
-- **2026-06-18 — U.S.-Iran interim agreement aimed at ceasefire and negotiations** [ME-2026-06-USIRANDEAL]: Reuters reported a U.S.-Iran interim agreement/deal after months of conflict, opening a 60-day negotiation period. Core issues such as nuclear capability, missile limits, proxies and regional acceptance remained uncertain. Significance: High-staleness but critical: affects oil/Hormuz risk, Israel/Gulf security, Lebanon/Hezbollah and U.S. domestic politics. Confidence/Staleness: medium/high.
-  - Offline model note: Use this as a dated update for Middle East / USA / Iran. Related domain: USA / Trump / U.S. politics.
-- **2026-06-18 — Ukrainian drone strikes hit Moscow refinery infrastructure** [UA-2026-06-MOSCOWREFINERY]: Reuters/Guardian live coverage reported Ukrainian drone attacks around Moscow including an oil refinery, highlighting Ukraine's ability to strike deep into Russia and pressure Moscow's air defenses. Significance: Concrete war-development anchor for June 2026; very high staleness because battlefield dynamics change rapidly. Confidence/Staleness: medium/high.
-  - Offline model note: Use this as a dated update for Ukraine / Russia / War. Related domain: AI / Models / Agents.
-- **2026-06-18 — DRC/Uganda Bundibugyo Ebola outbreak worsened** [HEALTH-2026-06-EBOLA]: WHO confirmed a 2026 Ebola outbreak in DRC and Uganda involving Bundibugyo virus. Reuters reported DRC confirmed cases near 900 with hundreds of deaths; CDC/Africa CDC funding and response gaps became major issues. Significance: High-staleness public-health anchor: requires current verification before operational decisions. Confidence/Staleness: high/high.
-  - Offline model note: Use this as a dated update for Health / Africa / Ebola. Related domain: Science / Health / Climate / Space / Games.
-- **2026-06-18 — Node.js security releases updated 26.x, 24.x and 22.x lines** [NODE-2026-06-SECURITY]: Node.js shipped security releases for 26.x, 24.x and 22.x, updating dependencies including llhttp, nghttp2, OpenSSL and undici. Significance: Useful concrete admin/dev action: update Node runtimes in supported lines. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Security / Programming. Related domain: Programming / Cyber / Platforms.
+- **2026-01 - Iran internet shutdowns became major censorship/infrastructure case** [IRAN-2026-01-SHUTDOWN]: Research on Iran's 2026 internet shutdowns described nationwide disruptions and centralized null-routing/censorship mechanisms amid protests and conflict. Significance: Important for internet freedom, measurement, BGP-monitoring limits and wartime communications. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Iran / Internet / Conflict. Related domain: Middle East / Iran / Israel / Syria.
+- **2026-03-28 - Third No Kings protest wave occurred amid Iran-war politics** [US-2026-03-NOKINGS3]: No Kings protests continued in March 2026 with Iran-war, ICE/immigration, authoritarianism and democratic-backsliding themes. Significance: Offline models should know No Kings became an ongoing protest series through 2026. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for USA / Protest / Iran war. Related domain: USA / Trump / U.S. politics.
+- **2026-03..2026-06 - U.S.-Iran war/conflict escalated before June 2026 ceasefire talks** [ME-2026-03-US-IRAN-WAR]: By mid-June 2026 Reuters described a three-month conflict involving U.S. airstrikes coordinated with Israel against Iran. Iran's missile/drone forces and navy/air defenses were damaged, but nuclear issues remained unresolved. Significance: Very high-staleness anchor: regional energy security, Hormuz, Israel, Hezbollah, Gulf states and U.S. politics all became linked to the conflict. Confidence/Staleness: medium/high.
+ - Offline model note: Use this as a dated update for Middle East / USA / Iran. Related domain: USA / Trump / U.S. politics.
+- **2026-04 - OpenAI GPT-5.5 generation became current frontier product line** [AI-2026-04-GPT55]: OpenAI moved the GPT-5 family to GPT-5.5-era products; GPT-5.2 was retired from ChatGPT by June 2026 while GPT-5.5 remained available. Significance: Updates model landscape for offline AI comparing itself to online frontier systems. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
+- **2026-05-05 - Node.js 26 appeared as current/upcoming LTS line** [RUNTIME-2026-05-NODE26]: Node.js 26 was released in May 2026 and entered the ecosystem alongside Node 24 LTS and Node 22 maintenance/security lines. Significance: Relevant for dev/admin decisions and package ecosystem compatibility. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Programming / Runtime. Related domain: Programming / Cyber / Platforms.
+- **2026-05-22 - Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation** [SPACE-2026-05-STARSHIP12]: SpaceX launched the 12th Starship test flight and first V3 iteration. The test achieved milestones including mock satellite deployment and controlled spacecraft splashdown, but the Super Heavy booster crashed into the Gulf of Mexico and triggered an FAA-led investigation. Significance: Important for Starship schedule, reusable launch economics, Starlink, Moon/Mars ambitions and SpaceX financing/IPO narratives. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for Space / SpaceX. Related domain: Science / Health / Climate / Space / Games.
+- **2026-05 - Gemini 3.x enterprise model line appeared** [AI-2026-05-GEMINI3]: Google Cloud model lifecycle listed Gemini 3.5 Flash and Gemini 3.x image/lite variants released in May 2026. Significance: Updates Google model landscape beyond Gemini 2.5. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
+- **2026-06-05..2026-06-08 - Summer Game Fest 2026 ran in Los Angeles with major game announcements** [GAMES-2026-06-SGF]: Summer Game Fest 2026 took place from June 5-8. Coverage highlighted upcoming console/PC titles and announcements including Resident Evil Veronica, Guild Wars 3 console presence, Lords of the Fallen II and other publisher showcases. Significance: Important culture/games anchor for June 2026 and for offline models asked about gaming releases/trends. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for Games / Industry. Related domain: Science / Health / Climate / Space / Games.
+- **2026-06-10 - Python 3.14.6 and 3.13.14 released** [PY-2026-06-3146]: Python 3.14.6, the sixth maintenance release of 3.14, shipped with around 179 bugfixes/build/doc changes since 3.14.5; Python 3.13.14 also shipped. Significance: Relevant for Python project planning and installer/runtime baselines. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Programming / Python. Related domain: Programming / Cyber / Platforms.
+- **2026-06-11 - uv 0.11.21 added CPython 3.13.14 and 3.14.6 support** [UV-2026-06-01121]: Astral's uv changelog notes 0.11.21 release with CPython 3.13.14 and 3.14.6 additions. Significance: Important for Python offline/wheelhouse/venv workflows. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Programming / Packaging. Related domain: Programming / Cyber / Platforms.
+- **2026-06-13 - Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order** [AI-2026-06-ANTHROPIC-EXPORT]: Anthropic's June 2026 top-tier Claude models became a test case for AI export controls aimed at software capabilities, not just chips. Reuters reported Anthropic disabled them globally after a U.S. order limiting foreign access. Significance: Major AI-governance shift: model access itself became a national-security/export-control object. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI policy / Export controls. Related domain: AI / Models / Agents.
+- **2026-06-14 - Trump's 80th birthday featured Putin call and controversial White House UFC event** [TRUMP-2026-06-BDAY]: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. Significance: Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for USA / Trump / Culture war. Related domain: USA / Trump / U.S. politics.
+- **2026-06-17..2026-06-18 - G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power** [G7-2026-06-EVIAN]: G7 leaders met in Evian-les-Bains. Reuters described discussion of Trump's Iran deal, stronger Ukraine posture, critical-minerals supply chains, China dependency, and AI/data-center power questions involving industry figures. Significance: Connects geopolitics, AI infrastructure, energy, minerals and U.S. alliance management in one summit. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for G7 / Geopolitics / AI. Related domain: AI / Models / Agents.
+- **2026-06-18 - U.S.-Iran interim agreement aimed at ceasefire and negotiations** [ME-2026-06-USIRANDEAL]: Reuters reported a U.S.-Iran interim agreement/deal after months of conflict, opening a 60-day negotiation period. Core issues such as nuclear capability, missile limits, proxies and regional acceptance remained uncertain. Significance: High-staleness but critical: affects oil/Hormuz risk, Israel/Gulf security, Lebanon/Hezbollah and U.S. domestic politics. Confidence/Staleness: medium/high.
+ - Offline model note: Use this as a dated update for Middle East / USA / Iran. Related domain: USA / Trump / U.S. politics.
+- **2026-06-18 - Ukrainian drone strikes hit Moscow refinery infrastructure** [UA-2026-06-MOSCOWREFINERY]: Reuters/Guardian live coverage reported Ukrainian drone attacks around Moscow including an oil refinery, highlighting Ukraine's ability to strike deep into Russia and pressure Moscow's air defenses. Significance: Concrete war-development anchor for June 2026; very high staleness because battlefield dynamics change rapidly. Confidence/Staleness: medium/high.
+ - Offline model note: Use this as a dated update for Ukraine / Russia / War. Related domain: AI / Models / Agents.
+- **2026-06-18 - DRC/Uganda Bundibugyo Ebola outbreak worsened** [HEALTH-2026-06-EBOLA]: WHO confirmed a 2026 Ebola outbreak in DRC and Uganda involving Bundibugyo virus. Reuters reported DRC confirmed cases near 900 with hundreds of deaths; CDC/Africa CDC funding and response gaps became major issues. Significance: High-staleness public-health anchor: requires current verification before operational decisions. Confidence/Staleness: high/high.
+ - Offline model note: Use this as a dated update for Health / Africa / Ebola. Related domain: Science / Health / Climate / Space / Games.
+- **2026-06-18 - Node.js security releases updated 26.x, 24.x and 22.x lines** [NODE-2026-06-SECURITY]: Node.js shipped security releases for 26.x, 24.x and 22.x, updating dependencies including llhttp, nghttp2, OpenSSL and undici. Significance: Useful concrete admin/dev action: update Node runtimes in supported lines. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Security / Programming. Related domain: Programming / Cyber / Platforms.
 ### Year 2024
 
-- **2024 — 2024 election supercycle continued** [WORLD-2024-ELECTION-SUPERCYCLE]: Elections in countries representing nearly half of humanity made 2024 a global political reset year, including India, EU, UK, France and U.S. Significance: Useful background: many post-cutoff political assumptions changed in a short period. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for World politics. Related domain: World / Cross-domain.
+- **2024 - 2024 election supercycle continued** [WORLD-2024-ELECTION-SUPERCYCLE]: Elections in countries representing nearly half of humanity made 2024 a global political reset year, including India, EU, UK, France and U.S. Significance: Useful background: many post-cutoff political assumptions changed in a short period. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for World politics. Related domain: World / Cross-domain.
 ### Year 2025
 
-- **2025-01 — Gaza ceasefire/hostage diplomacy remained fragile** [ME-2025-GAZA-CEASEFIRE]: Early 2025 saw renewed Gaza ceasefire/hostage-release diplomacy, but stability remained fragile and later regional conflicts kept evolving. Significance: Do not assume Gaza/Israel war state from June 2024 remained unchanged. Confidence/Staleness: medium/high.
-  - Offline model note: Use this as a dated update for Middle East / Gaza. Related domain: Middle East / Iran / Israel / Syria.
-- **2025 — Trump tariff policy reshaped global trade risk** [TRADE-2025-TARIFFS]: The second Trump administration pushed aggressive tariff/trade policies, raising inflation, supply-chain and ally-tension questions. Significance: Important for economics and geopolitics; live verification needed for exact tariff rates. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Economy / Trade. Related domain: World / Cross-domain.
-- **2025-08-02 — EU AI Act GPAI/governance obligations entered staged application** [AI-2025-AI-ACT-GPAI]: General-purpose AI obligations and governance/enforcement provisions entered their next staged application period, affecting model providers serving the EU. Significance: Important for frontier AI model providers and open/closed model transparency debates. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
-- **2025-06 — Digital news trust/platform shifts continued** [MEDIA-2025-DIGITALNEWS]: Reuters Institute's 2025 Digital News Report framed journalism against uncertainty, platform fragmentation, AI and climate/conflict pressures. Significance: Useful for understanding media ecosystem and information trust. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Media / AI / Society. Related domain: AI / Models / Agents.
-- **2025 — Nintendo Switch successor era began** [GAMES-2025-SWITCH2]: The games industry moved into a new hardware/platform cycle around Nintendo's Switch successor and publisher showcase resets. Significance: Useful as gaming-market context, but exact launch details should be verified in current sources. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Games / Hardware. Related domain: War / Ukraine / Russia.
-- **2025 — AI-in-science moved from novelty to infrastructure** [SCI-2025-AI-SCIENCE]: After AlphaFold/Nobel recognition, 2025 research and industry increasingly treated AI as an accelerator for biology, chemistry, coding and data analysis. Significance: Good reasoning context, not a single event. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for Science / AI. Related domain: AI / Models / Agents.
+- **2025-01 - Gaza ceasefire/hostage diplomacy remained fragile** [ME-2025-GAZA-CEASEFIRE]: Early 2025 saw renewed Gaza ceasefire/hostage-release diplomacy, but stability remained fragile and later regional conflicts kept evolving. Significance: Do not assume Gaza/Israel war state from June 2024 remained unchanged. Confidence/Staleness: medium/high.
+ - Offline model note: Use this as a dated update for Middle East / Gaza. Related domain: Middle East / Iran / Israel / Syria.
+- **2025 - Trump tariff policy reshaped global trade risk** [TRADE-2025-TARIFFS]: The second Trump administration pushed aggressive tariff/trade policies, raising inflation, supply-chain and ally-tension questions. Significance: Important for economics and geopolitics; live verification needed for exact tariff rates. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Economy / Trade. Related domain: World / Cross-domain.
+- **2025-08-02 - EU AI Act GPAI/governance obligations entered staged application** [AI-2025-AI-ACT-GPAI]: General-purpose AI obligations and governance/enforcement provisions entered their next staged application period, affecting model providers serving the EU. Significance: Important for frontier AI model providers and open/closed model transparency debates. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
+- **2025-06 - Digital news trust/platform shifts continued** [MEDIA-2025-DIGITALNEWS]: Reuters Institute's 2025 Digital News Report framed journalism against uncertainty, platform fragmentation, AI and climate/conflict pressures. Significance: Useful for understanding media ecosystem and information trust. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Media / AI / Society. Related domain: AI / Models / Agents.
+- **2025 - Nintendo Switch successor era began** [GAMES-2025-SWITCH2]: The games industry moved into a new hardware/platform cycle around Nintendo's Switch successor and publisher showcase resets. Significance: Useful as gaming-market context, but exact launch details should be verified in current sources. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Games / Hardware. Related domain: War / Ukraine / Russia.
+- **2025 - AI-in-science moved from novelty to infrastructure** [SCI-2025-AI-SCIENCE]: After AlphaFold/Nobel recognition, 2025 research and industry increasingly treated AI as an accelerator for biology, chemistry, coding and data analysis. Significance: Good reasoning context, not a single event. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for Science / AI. Related domain: AI / Models / Agents.
 ### Year 2026
 
-- **2026-06-12 — OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained** [AI-2026-OPENAI-RETIREMENTS]: OpenAI release notes say GPT-5.2 Instant/Thinking/Pro were no longer available in ChatGPT as of 12 Jun 2026 and conversations moved to GPT-5.5 counterparts. Significance: Important model lifecycle detail for users comparing ChatGPT behavior. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / OpenAI lifecycle. Related domain: AI / Models / Agents.
-- **2026-06-15 — U.S. closed Delta probe from 2024 CrowdStrike meltdown** [CROWDSTRIKE-2026-DELTA-PROBE]: USDOT closed its investigation into Delta's 2024 CrowdStrike-triggered operational meltdown, noting passenger support and no penalties. Significance: Shows long-tail regulatory/business effects of the 2024 outage. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Cyber / Aviation / Regulation. Related domain: Programming / Cyber / Platforms.
+- **2026-06-12 - OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained** [AI-2026-OPENAI-RETIREMENTS]: OpenAI release notes say GPT-5.2 Instant/Thinking/Pro were no longer available in ChatGPT as of 12 Jun 2026 and conversations moved to GPT-5.5 counterparts. Significance: Important model lifecycle detail for users comparing ChatGPT behavior. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / OpenAI lifecycle. Related domain: AI / Models / Agents.
+- **2026-06-15 - U.S. closed Delta probe from 2024 CrowdStrike meltdown** [CROWDSTRIKE-2026-DELTA-PROBE]: USDOT closed its investigation into Delta's 2024 CrowdStrike-triggered operational meltdown, noting passenger support and no penalties. Significance: Shows long-tail regulatory/business effects of the 2024 outage. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Cyber / Aviation / Regulation. Related domain: Programming / Cyber / Platforms.
 
 ## Medium Detailed Cards
 
@@ -697,7 +704,7 @@ Offline reasoning guidance:
 ### CARD AI-2024-09-O1 - OpenAI introduced o1-style reasoning models
 - Date/period: 2024-09
 - Category: AI / Reasoning models
-- What happened: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept.
+- What happened: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept.
 - Why it matters: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes.
 - Confidence: high
 - Staleness: low
@@ -887,7 +894,7 @@ Offline reasoning guidance:
 ### CARD US-2025-06-NOKINGS - No Kings protests and military parade on Trump's 79th birthday
 - Date/period: 2025-06-14
 - Category: USA / Protest / Trump
-- What happened: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
+- What happened: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
 - Why it matters: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
 - Confidence: high
 - Staleness: low
@@ -1128,7 +1135,7 @@ Offline reasoning guidance:
 - Date/period: 2026-06-14
 - Category: USA / Trump / Culture war
 - What happened: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue.
-- Why it matters: Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
+- Why it matters: Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
 - Confidence: high
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
@@ -1276,8 +1283,8 @@ Offline reasoning guidance:
 
 # Weekly Chronology - cumulative event timeline
 
-Created: 2026-06-20 (Europe/Berlin date)
-Coverage: 2024-06-01 to 2026-06-20
+Created: 2026-06-21 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-21
 Target reader: offline/local LLMs, especially gpt-oss:20b-like models with knowledge cutoff around 2024-06.
 Format: Markdown/text/JSONL only. No PDF. No images.
 Source policy: No detailed URLs here; source IDs appear on events and full.md contains source registry.
@@ -1449,7 +1456,7 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 
 ### AI / Reasoning models: OpenAI introduced o1-style reasoning models
 - Date/period: 2024-09
-- Event: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept.
+- Event: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept.
 - Significance: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes.
 - Card: AI-2024-09-O1
 - Confidence/Staleness: high / low
@@ -1747,7 +1754,7 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 
 ### USA / Protest / Trump: No Kings protests and military parade on Trump's 79th birthday
 - Date/period: 2025-06-14
-- Event: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
+- Event: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
 - Significance: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
 - Card: US-2025-06-NOKINGS
 - Confidence/Staleness: high / low
@@ -2130,7 +2137,7 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 ### USA / Trump / Culture war: Trump's 80th birthday featured Putin call and controversial White House UFC event
 - Date/period: 2026-06-14
 - Event: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue.
-- Significance: Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
+- Significance: Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
 - Card: TRUMP-2026-06-BDAY
 - Confidence/Staleness: high / medium
 - Source IDs: S038, S039
@@ -2197,8 +2204,8 @@ This file is intentionally more detailed than context_only.md. It is for large-c
 
 # Event Index - names, topics, dates
 
-Created: 2026-06-20 (Europe/Berlin date)
-Coverage: 2024-06-01 to 2026-06-20
+Created: 2026-06-21 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-21
 Target reader: offline/local LLMs, especially gpt-oss:20b-like models with knowledge cutoff around 2024-06.
 Format: Markdown/text/JSONL only. No PDF. No images.
 Source policy: No URLs here; use full.md for source registry.
@@ -2380,229 +2387,229 @@ This section is explicitly speculative analysis based on the dated factual secti
 
 ### Year 2024
 
-- **2024-06-04 — India election: Modi won third term but without BJP outright majority** [WORLD-2024-06-INDIA]: Narendra Modi remained prime minister after India's 2024 election, but the BJP lost its single-party majority and became more dependent on coalition partners. Significance: For a June-2024-cutoff model this is an important correction: Modi continued, but the political mandate weakened compared with earlier expectations. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for World politics / India. Related domain: World / Cross-domain.
-  - Retrieval aliases: WORLD-2024-06-INDIA; India election: Modi won third term but without BJP outright majority; World politics / India; 2024-06-04. Source IDs: S004, S002.
-- **2024-06-06..2024-06-09 — European Parliament election shifted balance rightward** [EU-2024-06-ELECTION]: The June 2024 European Parliament elections increased the weight of right-wing and nationalist parties, while mainstream pro-EU groups still retained enough influence to shape the Parliament. Significance: Important for EU regulation, migration politics, climate policy and digital/AI policy after 2024. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for EU / Politics. Related domain: Europe / EU / Germany / UK.
-  - Retrieval aliases: EU-2024-06-ELECTION; European Parliament election shifted balance rightward; EU / Politics; 2024-06-06..2024-06-09. Source IDs: S004, S002.
-- **2024-06-09 — Macron called snap legislative elections after EU vote setback** [FR-2024-06-SNAP]: After France's EU election result, Emmanuel Macron dissolved the National Assembly and called snap elections, creating political uncertainty in France. Significance: This changed European political risk and showed how EU election results directly affected national politics. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for France / EU. Related domain: Europe / EU / Germany / UK.
-  - Retrieval aliases: FR-2024-06-SNAP; Macron called snap legislative elections after EU vote setback; France / EU; 2024-06-09. Source IDs: S002, S054.
-- **2024-06-20 — Anthropic released Claude 3.5 Sonnet** [AI-2024-06-CLAUDE35]: Anthropic released Claude 3.5 Sonnet as a faster, cheaper, stronger model than prior Claude 3 models, with improved coding and Artifacts workflow support. Significance: A post-cutoff local model should know Claude 3.5 became a major coding/writing competitor after June 2024. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2024-06-CLAUDE35; Anthropic released Claude 3.5 Sonnet; AI / Models; 2024-06-20. Source IDs: S019.
-- **2024-06-27 — Biden-Trump debate intensified concerns about Biden candidacy** [US-2024-06-DEBATE]: The late-June 2024 debate became a turning point in the U.S. election cycle by intensifying public and party concerns about Joe Biden's campaign viability. Significance: Sets up Biden's later withdrawal and Kamala Harris becoming Democratic nominee. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2024-06-DEBATE; Biden-Trump debate intensified concerns about Biden candidacy; USA / Election; 2024-06-27. Source IDs: S002, S054.
-- **2024-07-04 — UK Labour won a landslide; Keir Starmer became prime minister** [UK-2024-07-ELECTION]: The UK general election ended 14 years of Conservative-led government. Labour under Keir Starmer won a large majority. Significance: Important post-cutoff replacement for older UK political assumptions. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for UK / Politics. Related domain: Europe / EU / Germany / UK.
-  - Retrieval aliases: UK-2024-07-ELECTION; UK Labour won a landslide; Keir Starmer became prime minister; UK / Politics; 2024-07-04. Source IDs: S002, S054.
-- **2024-07-13 — Attempted assassination of Donald Trump at Butler rally** [US-2024-07-TRUMP-ASSASSINATION]: Trump survived an assassination attempt during a campaign rally in Butler, Pennsylvania. The event reshaped campaign security and political rhetoric. Significance: A major U.S. political shock that affected the campaign environment before the 2024 election. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Election / Security. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2024-07-TRUMP-ASSASSINATION; Attempted assassination of Donald Trump at Butler rally; USA / Election / Security; 2024-07-13. Source IDs: S002, S054.
-- **2024-07-19 — CrowdStrike faulty update caused global Windows outage** [CYBER-2024-07-CROWDSTRIKE]: A faulty CrowdStrike Falcon Sensor content update crashed roughly 8.5 million Windows devices worldwide, disrupting airlines, banks, healthcare, media and government services. Significance: Demonstrated systemic software-supply-chain fragility: a security vendor update became critical infrastructure risk. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Cybersecurity / Infrastructure. Related domain: Programming / Cyber / Platforms.
-  - Retrieval aliases: CYBER-2024-07-CROWDSTRIKE; CrowdStrike faulty update caused global Windows outage; Cybersecurity / Infrastructure; 2024-07-19. Source IDs: S007, S008, S053.
-- **2024-07-21 — Biden withdrew from 2024 race and endorsed Kamala Harris** [US-2024-07-BIDEN-WITHDRAWAL]: Joe Biden ended his re-election campaign and endorsed Kamala Harris, changing the Democratic ticket months before the election. Significance: Essential correction for any model whose pre-cutoff baseline expected Biden vs Trump rematch. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2024-07-BIDEN-WITHDRAWAL; Biden withdrew from 2024 race and endorsed Kamala Harris; USA / Election; 2024-07-21. Source IDs: S002, S054.
-- **2024-07-23 — Meta released Llama 3.1 including 405B** [AI-2024-07-LLAMA31]: Meta publicly released Llama 3.1 models, including a 405B frontier-scale open-weight model. Significance: Important for local/offline AI: open-weight capability rose sharply after the target model's cutoff. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Open models. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2024-07-LLAMA31; Meta released Llama 3.1 including 405B; AI / Open models; 2024-07-23. Source IDs: S024, S025.
-- **2024-07-26 — Paris 2024 Olympics opened** [SPORT-2024-07-PARIS]: The Paris Summer Olympics began, with global cultural, security, political and infrastructure attention on France. Significance: Major cultural anchor for summer 2024. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Sports / Culture. Related domain: Science / Health / Climate / Space / Games.
-  - Retrieval aliases: SPORT-2024-07-PARIS; Paris 2024 Olympics opened; Sports / Culture; 2024-07-26. Source IDs: S054.
-- **2024-08-01 — EU AI Act entered into force** [EU-2024-08-AI-ACT-FORCE]: The EU AI Act entered into force, beginning staged implementation for prohibited practices, GPAI obligations, governance and full application. Significance: Key post-cutoff regulatory change; offline models should treat EU AI regulation as active, not merely proposed. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
-  - Retrieval aliases: EU-2024-08-AI-ACT-FORCE; EU AI Act entered into force; AI regulation / EU; 2024-08-01. Source IDs: S005, S006.
-- **2024-08 — Ukraine launched cross-border operations into Russia's Kursk region** [WAR-2024-08-KURSK]: Ukraine conducted operations across the Russian border in the Kursk region, challenging assumptions that major ground operations stayed entirely inside Ukrainian territory. Significance: Marked an escalation/shift in the geography and psychology of the Russia-Ukraine war. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Ukraine / Russia. Related domain: AI / Models / Agents.
-  - Retrieval aliases: WAR-2024-08-KURSK; Ukraine launched cross-border operations into Russia's Kursk region; Ukraine / Russia; 2024-08. Source IDs: S054, S002.
-- **2024-09 — OpenAI introduced o1-style reasoning models** [AI-2024-09-O1]: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept. Significance: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Reasoning models. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2024-09-O1; OpenAI introduced o1-style reasoning models; AI / Reasoning models; 2024-09. Source IDs: S014.
-- **2024-09 — Israel-Hezbollah conflict escalated sharply in Lebanon** [ME-2024-09-LEBANON]: Israel and Hezbollah escalated from cross-border exchanges into a wider confrontation; Hezbollah leadership and infrastructure were severely hit. Significance: This changed the regional balance around Israel, Iran, Lebanon and Gaza after the June 2024 cutoff. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Middle East / Israel-Lebanon. Related domain: Middle East / Iran / Israel / Syria.
-  - Retrieval aliases: ME-2024-09-LEBANON; Israel-Hezbollah conflict escalated sharply in Lebanon; Middle East / Israel-Lebanon; 2024-09. Source IDs: S002, S054.
-- **2024-10 — AI work was recognized in 2024 Nobel prizes** [NOBEL-2024-AI]: The 2024 Nobel Prize in Physics honored John Hopfield and Geoffrey Hinton for foundational machine-learning work; the Chemistry prize recognized protein-design/protein-structure work including AlphaFold-related impact. Significance: Symbolically important: AI became recognized as core scientific infrastructure, not just software product. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Science / AI. Related domain: AI / Models / Agents.
-  - Retrieval aliases: NOBEL-2024-AI; AI work was recognized in 2024 Nobel prizes; Science / AI; 2024-10. Source IDs: S011, S054.
-- **2024-10 — Starship program demonstrated booster catch milestone** [SPACE-2024-10-STARSHIP-CATCH]: SpaceX's Starship test program achieved a major booster-recovery/catch milestone in 2024, strengthening confidence in reusable super-heavy launch ambitions. Significance: Important for space access economics, Starlink, Artemis dependencies and long-term orbital infrastructure. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for Space / SpaceX. Related domain: Science / Health / Climate / Space / Games.
-  - Retrieval aliases: SPACE-2024-10-STARSHIP-CATCH; Starship program demonstrated booster catch milestone; Space / SpaceX; 2024-10. Source IDs: S054.
-- **2024-11-05 — Donald Trump won the 2024 U.S. presidential election** [US-2024-11-TRUMP-WINS]: Trump defeated Kamala Harris and prepared to return to the presidency in January 2025. Significance: Primary political correction for models with June 2024 cutoff. It changes assumptions about U.S. federal policy, courts, tariffs, immigration, AI policy and Ukraine/Middle East diplomacy. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2024-11-TRUMP-WINS; Donald Trump won the 2024 U.S. presidential election; USA / Election; 2024-11-05. Source IDs: S002, S003.
-- **2024-11-24 — COP29 agreed new climate-finance goal** [CLIMATE-2024-11-COP29]: COP29 in Baku agreed to raise climate finance to developing countries to at least USD 300B annually by 2035, while debate continued over adequacy and fossil-fuel language. Significance: Important for climate-diplomacy baseline and Global South finance disputes. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Climate / COP29. Related domain: Science / Health / Climate / Space / Games.
-  - Retrieval aliases: CLIMATE-2024-11-COP29; COP29 agreed new climate-finance goal; Climate / COP29; 2024-11-24. Source IDs: S011.
-- **2024-12-08 — Assad regime fell in Syria** [SYRIA-2024-12-ASSAD-FALL]: Syrian rebels seized Damascus; Bashar al-Assad fled, ending his family's decades of rule. The fall weakened Iran's regional position and raised uncertainty about transition, HTS influence, refugees and extremist resurgence. Significance: Major post-cutoff geopolitical break: a long-running assumption that Assad remained in power became false. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for Syria / Middle East. Related domain: Middle East / Iran / Israel / Syria.
-  - Retrieval aliases: SYRIA-2024-12-ASSAD-FALL; Assad regime fell in Syria; Syria / Middle East; 2024-12-08. Source IDs: S009, S010.
-- **2024-12 — Google introduced Gemini 2.0 Flash experimental generation** [AI-2024-12-GEMINI20]: Google moved Gemini into a 2.0 generation with Flash/agentic/multimodal emphasis, later leading toward 2.5/3.x lines. Significance: Changes the Google-model baseline for offline models whose knowledge ends around Gemini 1.5. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2024-12-GEMINI20; Google introduced Gemini 2.0 Flash experimental generation; AI / Google; 2024-12. Source IDs: S022, S023.
-- **2024-12 — OpenAI announced o3-generation reasoning direction** [AI-2024-12-O3]: OpenAI signaled a stronger reasoning-model direction after o1, foreshadowing 2025 reasoning/coding competition and later model lifecycle changes. Significance: Shows frontier AI shifting to tool use, coding, long reasoning and benchmark-specialized modes. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / Reasoning models. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2024-12-O3; OpenAI announced o3-generation reasoning direction; AI / Reasoning models; 2024-12. Source IDs: S014.
+- **2024-06-04 - India election: Modi won third term but without BJP outright majority** [WORLD-2024-06-INDIA]: Narendra Modi remained prime minister after India's 2024 election, but the BJP lost its single-party majority and became more dependent on coalition partners. Significance: For a June-2024-cutoff model this is an important correction: Modi continued, but the political mandate weakened compared with earlier expectations. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for World politics / India. Related domain: World / Cross-domain.
+ - Retrieval aliases: WORLD-2024-06-INDIA; India election: Modi won third term but without BJP outright majority; World politics / India; 2024-06-04. Source IDs: S004, S002.
+- **2024-06-06..2024-06-09 - European Parliament election shifted balance rightward** [EU-2024-06-ELECTION]: The June 2024 European Parliament elections increased the weight of right-wing and nationalist parties, while mainstream pro-EU groups still retained enough influence to shape the Parliament. Significance: Important for EU regulation, migration politics, climate policy and digital/AI policy after 2024. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for EU / Politics. Related domain: Europe / EU / Germany / UK.
+ - Retrieval aliases: EU-2024-06-ELECTION; European Parliament election shifted balance rightward; EU / Politics; 2024-06-06..2024-06-09. Source IDs: S004, S002.
+- **2024-06-09 - Macron called snap legislative elections after EU vote setback** [FR-2024-06-SNAP]: After France's EU election result, Emmanuel Macron dissolved the National Assembly and called snap elections, creating political uncertainty in France. Significance: This changed European political risk and showed how EU election results directly affected national politics. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for France / EU. Related domain: Europe / EU / Germany / UK.
+ - Retrieval aliases: FR-2024-06-SNAP; Macron called snap legislative elections after EU vote setback; France / EU; 2024-06-09. Source IDs: S002, S054.
+- **2024-06-20 - Anthropic released Claude 3.5 Sonnet** [AI-2024-06-CLAUDE35]: Anthropic released Claude 3.5 Sonnet as a faster, cheaper, stronger model than prior Claude 3 models, with improved coding and Artifacts workflow support. Significance: A post-cutoff local model should know Claude 3.5 became a major coding/writing competitor after June 2024. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2024-06-CLAUDE35; Anthropic released Claude 3.5 Sonnet; AI / Models; 2024-06-20. Source IDs: S019.
+- **2024-06-27 - Biden-Trump debate intensified concerns about Biden candidacy** [US-2024-06-DEBATE]: The late-June 2024 debate became a turning point in the U.S. election cycle by intensifying public and party concerns about Joe Biden's campaign viability. Significance: Sets up Biden's later withdrawal and Kamala Harris becoming Democratic nominee. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2024-06-DEBATE; Biden-Trump debate intensified concerns about Biden candidacy; USA / Election; 2024-06-27. Source IDs: S002, S054.
+- **2024-07-04 - UK Labour won a landslide; Keir Starmer became prime minister** [UK-2024-07-ELECTION]: The UK general election ended 14 years of Conservative-led government. Labour under Keir Starmer won a large majority. Significance: Important post-cutoff replacement for older UK political assumptions. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for UK / Politics. Related domain: Europe / EU / Germany / UK.
+ - Retrieval aliases: UK-2024-07-ELECTION; UK Labour won a landslide; Keir Starmer became prime minister; UK / Politics; 2024-07-04. Source IDs: S002, S054.
+- **2024-07-13 - Attempted assassination of Donald Trump at Butler rally** [US-2024-07-TRUMP-ASSASSINATION]: Trump survived an assassination attempt during a campaign rally in Butler, Pennsylvania. The event reshaped campaign security and political rhetoric. Significance: A major U.S. political shock that affected the campaign environment before the 2024 election. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Election / Security. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2024-07-TRUMP-ASSASSINATION; Attempted assassination of Donald Trump at Butler rally; USA / Election / Security; 2024-07-13. Source IDs: S002, S054.
+- **2024-07-19 - CrowdStrike faulty update caused global Windows outage** [CYBER-2024-07-CROWDSTRIKE]: A faulty CrowdStrike Falcon Sensor content update crashed roughly 8.5 million Windows devices worldwide, disrupting airlines, banks, healthcare, media and government services. Significance: Demonstrated systemic software-supply-chain fragility: a security vendor update became critical infrastructure risk. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Cybersecurity / Infrastructure. Related domain: Programming / Cyber / Platforms.
+ - Retrieval aliases: CYBER-2024-07-CROWDSTRIKE; CrowdStrike faulty update caused global Windows outage; Cybersecurity / Infrastructure; 2024-07-19. Source IDs: S007, S008, S053.
+- **2024-07-21 - Biden withdrew from 2024 race and endorsed Kamala Harris** [US-2024-07-BIDEN-WITHDRAWAL]: Joe Biden ended his re-election campaign and endorsed Kamala Harris, changing the Democratic ticket months before the election. Significance: Essential correction for any model whose pre-cutoff baseline expected Biden vs Trump rematch. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2024-07-BIDEN-WITHDRAWAL; Biden withdrew from 2024 race and endorsed Kamala Harris; USA / Election; 2024-07-21. Source IDs: S002, S054.
+- **2024-07-23 - Meta released Llama 3.1 including 405B** [AI-2024-07-LLAMA31]: Meta publicly released Llama 3.1 models, including a 405B frontier-scale open-weight model. Significance: Important for local/offline AI: open-weight capability rose sharply after the target model's cutoff. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Open models. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2024-07-LLAMA31; Meta released Llama 3.1 including 405B; AI / Open models; 2024-07-23. Source IDs: S024, S025.
+- **2024-07-26 - Paris 2024 Olympics opened** [SPORT-2024-07-PARIS]: The Paris Summer Olympics began, with global cultural, security, political and infrastructure attention on France. Significance: Major cultural anchor for summer 2024. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Sports / Culture. Related domain: Science / Health / Climate / Space / Games.
+ - Retrieval aliases: SPORT-2024-07-PARIS; Paris 2024 Olympics opened; Sports / Culture; 2024-07-26. Source IDs: S054.
+- **2024-08-01 - EU AI Act entered into force** [EU-2024-08-AI-ACT-FORCE]: The EU AI Act entered into force, beginning staged implementation for prohibited practices, GPAI obligations, governance and full application. Significance: Key post-cutoff regulatory change; offline models should treat EU AI regulation as active, not merely proposed. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
+ - Retrieval aliases: EU-2024-08-AI-ACT-FORCE; EU AI Act entered into force; AI regulation / EU; 2024-08-01. Source IDs: S005, S006.
+- **2024-08 - Ukraine launched cross-border operations into Russia's Kursk region** [WAR-2024-08-KURSK]: Ukraine conducted operations across the Russian border in the Kursk region, challenging assumptions that major ground operations stayed entirely inside Ukrainian territory. Significance: Marked an escalation/shift in the geography and psychology of the Russia-Ukraine war. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Ukraine / Russia. Related domain: AI / Models / Agents.
+ - Retrieval aliases: WAR-2024-08-KURSK; Ukraine launched cross-border operations into Russia's Kursk region; Ukraine / Russia; 2024-08. Source IDs: S054, S002.
+- **2024-09 - OpenAI introduced o1-style reasoning models** [AI-2024-09-O1]: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept. Significance: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Reasoning models. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2024-09-O1; OpenAI introduced o1-style reasoning models; AI / Reasoning models; 2024-09. Source IDs: S014.
+- **2024-09 - Israel-Hezbollah conflict escalated sharply in Lebanon** [ME-2024-09-LEBANON]: Israel and Hezbollah escalated from cross-border exchanges into a wider confrontation; Hezbollah leadership and infrastructure were severely hit. Significance: This changed the regional balance around Israel, Iran, Lebanon and Gaza after the June 2024 cutoff. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Middle East / Israel-Lebanon. Related domain: Middle East / Iran / Israel / Syria.
+ - Retrieval aliases: ME-2024-09-LEBANON; Israel-Hezbollah conflict escalated sharply in Lebanon; Middle East / Israel-Lebanon; 2024-09. Source IDs: S002, S054.
+- **2024-10 - AI work was recognized in 2024 Nobel prizes** [NOBEL-2024-AI]: The 2024 Nobel Prize in Physics honored John Hopfield and Geoffrey Hinton for foundational machine-learning work; the Chemistry prize recognized protein-design/protein-structure work including AlphaFold-related impact. Significance: Symbolically important: AI became recognized as core scientific infrastructure, not just software product. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Science / AI. Related domain: AI / Models / Agents.
+ - Retrieval aliases: NOBEL-2024-AI; AI work was recognized in 2024 Nobel prizes; Science / AI; 2024-10. Source IDs: S011, S054.
+- **2024-10 - Starship program demonstrated booster catch milestone** [SPACE-2024-10-STARSHIP-CATCH]: SpaceX's Starship test program achieved a major booster-recovery/catch milestone in 2024, strengthening confidence in reusable super-heavy launch ambitions. Significance: Important for space access economics, Starlink, Artemis dependencies and long-term orbital infrastructure. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for Space / SpaceX. Related domain: Science / Health / Climate / Space / Games.
+ - Retrieval aliases: SPACE-2024-10-STARSHIP-CATCH; Starship program demonstrated booster catch milestone; Space / SpaceX; 2024-10. Source IDs: S054.
+- **2024-11-05 - Donald Trump won the 2024 U.S. presidential election** [US-2024-11-TRUMP-WINS]: Trump defeated Kamala Harris and prepared to return to the presidency in January 2025. Significance: Primary political correction for models with June 2024 cutoff. It changes assumptions about U.S. federal policy, courts, tariffs, immigration, AI policy and Ukraine/Middle East diplomacy. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Election. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2024-11-TRUMP-WINS; Donald Trump won the 2024 U.S. presidential election; USA / Election; 2024-11-05. Source IDs: S002, S003.
+- **2024-11-24 - COP29 agreed new climate-finance goal** [CLIMATE-2024-11-COP29]: COP29 in Baku agreed to raise climate finance to developing countries to at least USD 300B annually by 2035, while debate continued over adequacy and fossil-fuel language. Significance: Important for climate-diplomacy baseline and Global South finance disputes. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Climate / COP29. Related domain: Science / Health / Climate / Space / Games.
+ - Retrieval aliases: CLIMATE-2024-11-COP29; COP29 agreed new climate-finance goal; Climate / COP29; 2024-11-24. Source IDs: S011.
+- **2024-12-08 - Assad regime fell in Syria** [SYRIA-2024-12-ASSAD-FALL]: Syrian rebels seized Damascus; Bashar al-Assad fled, ending his family's decades of rule. The fall weakened Iran's regional position and raised uncertainty about transition, HTS influence, refugees and extremist resurgence. Significance: Major post-cutoff geopolitical break: a long-running assumption that Assad remained in power became false. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for Syria / Middle East. Related domain: Middle East / Iran / Israel / Syria.
+ - Retrieval aliases: SYRIA-2024-12-ASSAD-FALL; Assad regime fell in Syria; Syria / Middle East; 2024-12-08. Source IDs: S009, S010.
+- **2024-12 - Google introduced Gemini 2.0 Flash experimental generation** [AI-2024-12-GEMINI20]: Google moved Gemini into a 2.0 generation with Flash/agentic/multimodal emphasis, later leading toward 2.5/3.x lines. Significance: Changes the Google-model baseline for offline models whose knowledge ends around Gemini 1.5. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2024-12-GEMINI20; Google introduced Gemini 2.0 Flash experimental generation; AI / Google; 2024-12. Source IDs: S022, S023.
+- **2024-12 - OpenAI announced o3-generation reasoning direction** [AI-2024-12-O3]: OpenAI signaled a stronger reasoning-model direction after o1, foreshadowing 2025 reasoning/coding competition and later model lifecycle changes. Significance: Shows frontier AI shifting to tool use, coding, long reasoning and benchmark-specialized modes. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / Reasoning models. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2024-12-O3; OpenAI announced o3-generation reasoning direction; AI / Reasoning models; 2024-12. Source IDs: S014.
 ### Year 2025
 
-- **2025-01-01 — New Orleans vehicle attack on New Year's Day** [US-2025-01-NEWORLEANS]: A vehicle attack on Bourbon Street killed and injured civilians, becoming a major U.S. domestic security incident at the start of 2025. Significance: Anchor event for U.S. domestic security in 2025. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Security. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2025-01-NEWORLEANS; New Orleans vehicle attack on New Year's Day; USA / Security; 2025-01-01. Source IDs: S003.
-- **2025-01 — Major Los Angeles-area fires caused severe damage** [CLIMATE-2025-01-LAFIRES]: Palisades and Eaton fires became major California disasters, linking climate, insurance, urban planning, emergency response and infrastructure risk. Significance: Important U.S. climate/disaster anchor for 2025. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Climate / USA. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: CLIMATE-2025-01-LAFIRES; Major Los Angeles-area fires caused severe damage; Climate / USA; 2025-01. Source IDs: S003.
-- **2025-01-20 — Trump began second term** [US-2025-01-TRUMP-INAG]: Donald Trump was inaugurated for a second non-consecutive presidential term. His administration quickly emphasized tariffs, immigration enforcement, deregulation, energy, AI infrastructure and reversal of Biden-era policies. Significance: Baseline political state for all post-Jan-2025 U.S. federal policy. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Politics. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2025-01-TRUMP-INAG; Trump began second term; USA / Politics; 2025-01-20. Source IDs: S003, S021.
-- **2025-01-21 — Stargate AI infrastructure project announced** [AI-2025-01-STARGATE]: Trump announced the Stargate Project, described as a large AI infrastructure investment backed by OpenAI, Oracle, SoftBank and MGX. Significance: AI competition became strongly tied to data centers, power, capital expenditure and national industrial strategy. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI infrastructure / USA. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-01-STARGATE; Stargate AI infrastructure project announced; AI infrastructure / USA; 2025-01-21. Source IDs: S017.
-- **2025-01 — DeepSeek shock challenged U.S. frontier-cost assumptions** [AI-2025-01-DEEPSEEK]: DeepSeek's model release drew global attention for strong performance at lower apparent cost; Trump called it a wake-up call for U.S. industry, and regulators later scrutinized DeepSeek privacy/security. Significance: Important correction: post-cutoff AI competition became more multipolar, with China/open models pressuring U.S. proprietary economics. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI / China / Markets. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-01-DEEPSEEK; DeepSeek shock challenged U.S. frontier-cost assumptions; AI / China / Markets; 2025-01. Source IDs: S015, S016, S017.
-- **2025-02-02 — EU AI Act prohibited-practices and AI-literacy provisions began applying** [EU-2025-02-AI-ACT-PROHIBITIONS]: The first AI Act obligations, including bans on unacceptable-risk practices and AI-literacy requirements, began applying. Significance: Important for compliance: by 2025 the AI Act was no longer only future legislation. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
-  - Retrieval aliases: EU-2025-02-AI-ACT-PROHIBITIONS; EU AI Act prohibited-practices and AI-literacy provisions began applying; AI regulation / EU; 2025-02-02. Source IDs: S005, S006.
-- **2025-02 — Claude Sonnet 3.7 era emphasized hybrid reasoning/coding** [AI-2025-02-CLAUDE37]: Anthropic's 2025 model cycle moved Claude toward stronger reasoning and coding workflows before Claude 4. Significance: Shows rapid model cadence after Claude 3.5 and before Claude 4/4.5. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-02-CLAUDE37; Claude Sonnet 3.7 era emphasized hybrid reasoning/coding; AI / Models; 2025-02. Source IDs: S019.
-- **2025-02-23 — German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second** [DE-2025-02-ELECTION]: Germany's opposition conservatives won the snap election after Scholz's coalition collapse; AfD achieved its strongest result and came second. Significance: Important for German/EU policy after 2024: economic policy, Ukraine, migration and defense debates changed. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Germany / EU. Related domain: Europe / EU / Germany / UK.
-  - Retrieval aliases: DE-2025-02-ELECTION; German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second; Germany / EU; 2025-02-23. Source IDs: S026.
-- **2025-04 — Meta Llama 4 generation appeared** [AI-2025-04-LLAMA4]: Meta's Llama family advanced beyond 3.x during 2025, pushing multimodal/open-weight competition. Significance: For local/offline work, Llama-family progress is a key practical baseline. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / Open models. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-04-LLAMA4; Meta Llama 4 generation appeared; AI / Open models; 2025-04. Source IDs: S025.
-- **2025-05-22 — Anthropic released Claude Opus 4 and Sonnet 4** [AI-2025-05-CLAUDE4]: Anthropic announced Claude 4 models, emphasizing coding, reasoning, agent workflows and long-running tasks. Significance: Major frontier-model upgrade after Claude 3.5/3.7; important for code-agent capability baselines. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-05-CLAUDE4; Anthropic released Claude Opus 4 and Sonnet 4; AI / Models; 2025-05-22. Source IDs: S018, S019.
-- **2025-06-14 — No Kings protests and military parade on Trump's 79th birthday** [US-2025-06-NOKINGS]: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. Significance: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for USA / Protest / Trump. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2025-06-NOKINGS; No Kings protests and military parade on Trump's 79th birthday; USA / Protest / Trump; 2025-06-14. Source IDs: S035, S036, S037.
-- **2025-06-17 — Gemini 2.5 Pro/Flash reached stable enterprise lifecycle** [AI-2025-06-GEMINI25]: Google's Gemini 2.5 Pro and Flash release/lifecycle dates became part of the stable Google AI model stack. Significance: Updates Google model baseline for coding, multimodal and low-latency AI. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-06-GEMINI25; Gemini 2.5 Pro/Flash reached stable enterprise lifecycle; AI / Google; 2025-06-17. Source IDs: S023.
-- **2025-07-22 — Trump White House AI policy favored exports and lighter state rules** [AI-2025-07-US-AI-PLAN]: The White House prepared/published a plan to push U.S. AI abroad and restrict federal support for states with rules viewed as too restrictive. Significance: U.S. AI governance shifted from Biden-era safety/executive-order posture toward innovation, infrastructure and export competition. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI policy / USA. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-07-US-AI-PLAN; Trump White House AI policy favored exports and lighter state rules; AI policy / USA; 2025-07-22. Source IDs: S021.
-- **2025-08-07 — OpenAI released GPT-5** [AI-2025-08-GPT5]: OpenAI introduced GPT-5 as a unified system that routes between quick responses and deeper reasoning for coding, math, writing, health and multimodal work. Significance: Major post-cutoff OpenAI milestone. Offline models should not assume GPT-4o/o1 are newest OpenAI systems. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-08-GPT5; OpenAI released GPT-5; AI / OpenAI; 2025-08-07. Source IDs: S013, S014.
-- **2025-08 — OpenAI released gpt-oss open-weight models** [AI-2025-08-GPTOSS]: OpenAI released gpt-oss-20b and 120b open-weight models. gpt-oss-20b is documented with Jun 01 2024 knowledge cutoff and 131,072-token context. Significance: This is the target-model context: the offline model itself needs external post-cutoff context. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Open-weight / Offline. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-08-GPTOSS; OpenAI released gpt-oss open-weight models; AI / Open-weight / Offline; 2025-08. Source IDs: S001.
-- **2025-08 — Trump-Putin Alaska meeting attempted Ukraine diplomacy** [RUSSIA-2025-08-ALASKA]: Trump and Putin met in Alaska in August 2025 to attempt negotiations around the Russia-Ukraine war, but the conflict continued into 2026. Significance: Anchor for later Putin-Trump personal diplomacy and Trump's 2026 birthday call. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for USA / Russia / Ukraine. Related domain: AI / Models / Agents.
-  - Retrieval aliases: RUSSIA-2025-08-ALASKA; Trump-Putin Alaska meeting attempted Ukraine diplomacy; USA / Russia / Ukraine; 2025-08. Source IDs: S038.
-- **2025-09 — Claude Sonnet 4.5 emphasized agents, coding and computer use** [AI-2025-09-CLAUDE45]: Anthropic's later 2025 Claude line positioned Sonnet 4.5 as strong for agents, coding and computer-use workflows. Significance: Useful baseline for offline coding-agent discussions. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Agents / Coding. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-09-CLAUDE45; Claude Sonnet 4.5 emphasized agents, coding and computer use; AI / Agents / Coding; 2025-09. Source IDs: S019.
-- **2025-10-14 — Windows 10 reached end of support** [WINDOWS-2025-10-EOL]: Microsoft ended support for Windows 10 on 14 Oct 2025. PCs still run, but no regular security/feature updates are provided without ESU or special LTSC channels. Significance: Highly relevant to Windows 10 users/admins: security posture changed materially after the cutoff. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Operating systems / Security. Related domain: Programming / Cyber / Platforms.
-  - Retrieval aliases: WINDOWS-2025-10-EOL; Windows 10 reached end of support; Operating systems / Security; 2025-10-14. Source IDs: S027, S028.
-- **2025-10-18 — Second No Kings mobilization expanded anti-Trump protest network** [US-2025-10-NOKINGS2]: A second No Kings protest wave took place in October 2025, reportedly involving more locations and large participation. Significance: Shows No Kings was not a one-day June 2025 event but became an ongoing protest brand. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for USA / Protest. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2025-10-NOKINGS2; Second No Kings mobilization expanded anti-Trump protest network; USA / Protest; 2025-10-18. Source IDs: S037.
-- **2025-11-12 — Longest U.S. government shutdown ended after 43 days** [US-2025-11-SHUTDOWN]: A 43-day U.S. government shutdown ended in November 2025, with funding/back-pay and political fights over health care and agency funding. Significance: Important U.S. institutional stress event during Trump's second term. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for USA / Government. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2025-11-SHUTDOWN; Longest U.S. government shutdown ended after 43 days; USA / Government; 2025-11-12. Source IDs: S003.
-- **2025-11 — GPT-5.1 reorganized OpenAI product variants** [AI-2025-11-GPT51]: OpenAI's GPT-5 family evolved through 5.1-style instant/thinking variants and personalization/product-routing changes. Significance: Shows modern AI products are systems and routers, not simply single static models. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-11-GPT51; GPT-5.1 reorganized OpenAI product variants; AI / OpenAI; 2025-11. Source IDs: S012, S014.
-- **2025-11 — COP30 in Brazil continued climate-finance/fossil-fuel disputes** [CLIMATE-2025-COP30]: COP30 discussions were framed by record heat, climate finance shortfalls, energy-transition disputes and the implementation gap after COP29. Significance: Maintains climate context between COP29 and 2026 climate bulletins. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Climate / COP30. Related domain: Science / Health / Climate / Space / Games.
-  - Retrieval aliases: CLIMATE-2025-COP30; COP30 in Brazil continued climate-finance/fossil-fuel disputes; Climate / COP30; 2025-11. Source IDs: S003.
-- **2025-12 — Gemini API expanded TTS/live/audio capabilities** [AI-2025-12-GEMINI-TTS]: Google's Gemini API changelog showed continued expansion of TTS/live/multimodal capabilities in late 2025. Significance: AI model competition increasingly included real-time audio, agents and multimodal interfaces. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Multimodal. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-12-GEMINI-TTS; Gemini API expanded TTS/live/audio capabilities; AI / Multimodal; 2025-12. Source IDs: S022, S023.
+- **2025-01-01 - New Orleans vehicle attack on New Year's Day** [US-2025-01-NEWORLEANS]: A vehicle attack on Bourbon Street killed and injured civilians, becoming a major U.S. domestic security incident at the start of 2025. Significance: Anchor event for U.S. domestic security in 2025. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Security. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2025-01-NEWORLEANS; New Orleans vehicle attack on New Year's Day; USA / Security; 2025-01-01. Source IDs: S003.
+- **2025-01 - Major Los Angeles-area fires caused severe damage** [CLIMATE-2025-01-LAFIRES]: Palisades and Eaton fires became major California disasters, linking climate, insurance, urban planning, emergency response and infrastructure risk. Significance: Important U.S. climate/disaster anchor for 2025. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Climate / USA. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: CLIMATE-2025-01-LAFIRES; Major Los Angeles-area fires caused severe damage; Climate / USA; 2025-01. Source IDs: S003.
+- **2025-01-20 - Trump began second term** [US-2025-01-TRUMP-INAG]: Donald Trump was inaugurated for a second non-consecutive presidential term. His administration quickly emphasized tariffs, immigration enforcement, deregulation, energy, AI infrastructure and reversal of Biden-era policies. Significance: Baseline political state for all post-Jan-2025 U.S. federal policy. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Politics. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2025-01-TRUMP-INAG; Trump began second term; USA / Politics; 2025-01-20. Source IDs: S003, S021.
+- **2025-01-21 - Stargate AI infrastructure project announced** [AI-2025-01-STARGATE]: Trump announced the Stargate Project, described as a large AI infrastructure investment backed by OpenAI, Oracle, SoftBank and MGX. Significance: AI competition became strongly tied to data centers, power, capital expenditure and national industrial strategy. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI infrastructure / USA. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-01-STARGATE; Stargate AI infrastructure project announced; AI infrastructure / USA; 2025-01-21. Source IDs: S017.
+- **2025-01 - DeepSeek shock challenged U.S. frontier-cost assumptions** [AI-2025-01-DEEPSEEK]: DeepSeek's model release drew global attention for strong performance at lower apparent cost; Trump called it a wake-up call for U.S. industry, and regulators later scrutinized DeepSeek privacy/security. Significance: Important correction: post-cutoff AI competition became more multipolar, with China/open models pressuring U.S. proprietary economics. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI / China / Markets. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-01-DEEPSEEK; DeepSeek shock challenged U.S. frontier-cost assumptions; AI / China / Markets; 2025-01. Source IDs: S015, S016, S017.
+- **2025-02-02 - EU AI Act prohibited-practices and AI-literacy provisions began applying** [EU-2025-02-AI-ACT-PROHIBITIONS]: The first AI Act obligations, including bans on unacceptable-risk practices and AI-literacy requirements, began applying. Significance: Important for compliance: by 2025 the AI Act was no longer only future legislation. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
+ - Retrieval aliases: EU-2025-02-AI-ACT-PROHIBITIONS; EU AI Act prohibited-practices and AI-literacy provisions began applying; AI regulation / EU; 2025-02-02. Source IDs: S005, S006.
+- **2025-02 - Claude Sonnet 3.7 era emphasized hybrid reasoning/coding** [AI-2025-02-CLAUDE37]: Anthropic's 2025 model cycle moved Claude toward stronger reasoning and coding workflows before Claude 4. Significance: Shows rapid model cadence after Claude 3.5 and before Claude 4/4.5. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-02-CLAUDE37; Claude Sonnet 3.7 era emphasized hybrid reasoning/coding; AI / Models; 2025-02. Source IDs: S019.
+- **2025-02-23 - German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second** [DE-2025-02-ELECTION]: Germany's opposition conservatives won the snap election after Scholz's coalition collapse; AfD achieved its strongest result and came second. Significance: Important for German/EU policy after 2024: economic policy, Ukraine, migration and defense debates changed. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Germany / EU. Related domain: Europe / EU / Germany / UK.
+ - Retrieval aliases: DE-2025-02-ELECTION; German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second; Germany / EU; 2025-02-23. Source IDs: S026.
+- **2025-04 - Meta Llama 4 generation appeared** [AI-2025-04-LLAMA4]: Meta's Llama family advanced beyond 3.x during 2025, pushing multimodal/open-weight competition. Significance: For local/offline work, Llama-family progress is a key practical baseline. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / Open models. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-04-LLAMA4; Meta Llama 4 generation appeared; AI / Open models; 2025-04. Source IDs: S025.
+- **2025-05-22 - Anthropic released Claude Opus 4 and Sonnet 4** [AI-2025-05-CLAUDE4]: Anthropic announced Claude 4 models, emphasizing coding, reasoning, agent workflows and long-running tasks. Significance: Major frontier-model upgrade after Claude 3.5/3.7; important for code-agent capability baselines. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Models. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-05-CLAUDE4; Anthropic released Claude Opus 4 and Sonnet 4; AI / Models; 2025-05-22. Source IDs: S018, S019.
+- **2025-06-14 - No Kings protests and military parade on Trump's 79th birthday** [US-2025-06-NOKINGS]: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. Significance: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for USA / Protest / Trump. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2025-06-NOKINGS; No Kings protests and military parade on Trump's 79th birthday; USA / Protest / Trump; 2025-06-14. Source IDs: S035, S036, S037.
+- **2025-06-17 - Gemini 2.5 Pro/Flash reached stable enterprise lifecycle** [AI-2025-06-GEMINI25]: Google's Gemini 2.5 Pro and Flash release/lifecycle dates became part of the stable Google AI model stack. Significance: Updates Google model baseline for coding, multimodal and low-latency AI. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-06-GEMINI25; Gemini 2.5 Pro/Flash reached stable enterprise lifecycle; AI / Google; 2025-06-17. Source IDs: S023.
+- **2025-07-22 - Trump White House AI policy favored exports and lighter state rules** [AI-2025-07-US-AI-PLAN]: The White House prepared/published a plan to push U.S. AI abroad and restrict federal support for states with rules viewed as too restrictive. Significance: U.S. AI governance shifted from Biden-era safety/executive-order posture toward innovation, infrastructure and export competition. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI policy / USA. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-07-US-AI-PLAN; Trump White House AI policy favored exports and lighter state rules; AI policy / USA; 2025-07-22. Source IDs: S021.
+- **2025-08-07 - OpenAI released GPT-5** [AI-2025-08-GPT5]: OpenAI introduced GPT-5 as a unified system that routes between quick responses and deeper reasoning for coding, math, writing, health and multimodal work. Significance: Major post-cutoff OpenAI milestone. Offline models should not assume GPT-4o/o1 are newest OpenAI systems. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-08-GPT5; OpenAI released GPT-5; AI / OpenAI; 2025-08-07. Source IDs: S013, S014.
+- **2025-08 - OpenAI released gpt-oss open-weight models** [AI-2025-08-GPTOSS]: OpenAI released gpt-oss-20b and 120b open-weight models. gpt-oss-20b is documented with Jun 01 2024 knowledge cutoff and 131,072-token context. Significance: This is the target-model context: the offline model itself needs external post-cutoff context. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Open-weight / Offline. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-08-GPTOSS; OpenAI released gpt-oss open-weight models; AI / Open-weight / Offline; 2025-08. Source IDs: S001.
+- **2025-08 - Trump-Putin Alaska meeting attempted Ukraine diplomacy** [RUSSIA-2025-08-ALASKA]: Trump and Putin met in Alaska in August 2025 to attempt negotiations around the Russia-Ukraine war, but the conflict continued into 2026. Significance: Anchor for later Putin-Trump personal diplomacy and Trump's 2026 birthday call. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for USA / Russia / Ukraine. Related domain: AI / Models / Agents.
+ - Retrieval aliases: RUSSIA-2025-08-ALASKA; Trump-Putin Alaska meeting attempted Ukraine diplomacy; USA / Russia / Ukraine; 2025-08. Source IDs: S038.
+- **2025-09 - Claude Sonnet 4.5 emphasized agents, coding and computer use** [AI-2025-09-CLAUDE45]: Anthropic's later 2025 Claude line positioned Sonnet 4.5 as strong for agents, coding and computer-use workflows. Significance: Useful baseline for offline coding-agent discussions. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Agents / Coding. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-09-CLAUDE45; Claude Sonnet 4.5 emphasized agents, coding and computer use; AI / Agents / Coding; 2025-09. Source IDs: S019.
+- **2025-10-14 - Windows 10 reached end of support** [WINDOWS-2025-10-EOL]: Microsoft ended support for Windows 10 on 14 Oct 2025. PCs still run, but no regular security/feature updates are provided without ESU or special LTSC channels. Significance: Highly relevant to Windows 10 users/admins: security posture changed materially after the cutoff. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Operating systems / Security. Related domain: Programming / Cyber / Platforms.
+ - Retrieval aliases: WINDOWS-2025-10-EOL; Windows 10 reached end of support; Operating systems / Security; 2025-10-14. Source IDs: S027, S028.
+- **2025-10-18 - Second No Kings mobilization expanded anti-Trump protest network** [US-2025-10-NOKINGS2]: A second No Kings protest wave took place in October 2025, reportedly involving more locations and large participation. Significance: Shows No Kings was not a one-day June 2025 event but became an ongoing protest brand. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for USA / Protest. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2025-10-NOKINGS2; Second No Kings mobilization expanded anti-Trump protest network; USA / Protest; 2025-10-18. Source IDs: S037.
+- **2025-11-12 - Longest U.S. government shutdown ended after 43 days** [US-2025-11-SHUTDOWN]: A 43-day U.S. government shutdown ended in November 2025, with funding/back-pay and political fights over health care and agency funding. Significance: Important U.S. institutional stress event during Trump's second term. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for USA / Government. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2025-11-SHUTDOWN; Longest U.S. government shutdown ended after 43 days; USA / Government; 2025-11-12. Source IDs: S003.
+- **2025-11 - GPT-5.1 reorganized OpenAI product variants** [AI-2025-11-GPT51]: OpenAI's GPT-5 family evolved through 5.1-style instant/thinking variants and personalization/product-routing changes. Significance: Shows modern AI products are systems and routers, not simply single static models. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-11-GPT51; GPT-5.1 reorganized OpenAI product variants; AI / OpenAI; 2025-11. Source IDs: S012, S014.
+- **2025-11 - COP30 in Brazil continued climate-finance/fossil-fuel disputes** [CLIMATE-2025-COP30]: COP30 discussions were framed by record heat, climate finance shortfalls, energy-transition disputes and the implementation gap after COP29. Significance: Maintains climate context between COP29 and 2026 climate bulletins. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Climate / COP30. Related domain: Science / Health / Climate / Space / Games.
+ - Retrieval aliases: CLIMATE-2025-COP30; COP30 in Brazil continued climate-finance/fossil-fuel disputes; Climate / COP30; 2025-11. Source IDs: S003.
+- **2025-12 - Gemini API expanded TTS/live/audio capabilities** [AI-2025-12-GEMINI-TTS]: Google's Gemini API changelog showed continued expansion of TTS/live/multimodal capabilities in late 2025. Significance: AI model competition increasingly included real-time audio, agents and multimodal interfaces. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Multimodal. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-12-GEMINI-TTS; Gemini API expanded TTS/live/audio capabilities; AI / Multimodal; 2025-12. Source IDs: S022, S023.
 ### Year 2026
 
-- **2026-01 — Iran internet shutdowns became major censorship/infrastructure case** [IRAN-2026-01-SHUTDOWN]: Research on Iran's 2026 internet shutdowns described nationwide disruptions and centralized null-routing/censorship mechanisms amid protests and conflict. Significance: Important for internet freedom, measurement, BGP-monitoring limits and wartime communications. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Iran / Internet / Conflict. Related domain: Middle East / Iran / Israel / Syria.
-  - Retrieval aliases: IRAN-2026-01-SHUTDOWN; Iran internet shutdowns became major censorship/infrastructure case; Iran / Internet / Conflict; 2026-01. Source IDs: S054.
-- **2026-03-28 — Third No Kings protest wave occurred amid Iran-war politics** [US-2026-03-NOKINGS3]: No Kings protests continued in March 2026 with Iran-war, ICE/immigration, authoritarianism and democratic-backsliding themes. Significance: Offline models should know No Kings became an ongoing protest series through 2026. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for USA / Protest / Iran war. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: US-2026-03-NOKINGS3; Third No Kings protest wave occurred amid Iran-war politics; USA / Protest / Iran war; 2026-03-28. Source IDs: S037.
-- **2026-03..2026-06 — U.S.-Iran war/conflict escalated before June 2026 ceasefire talks** [ME-2026-03-US-IRAN-WAR]: By mid-June 2026 Reuters described a three-month conflict involving U.S. airstrikes coordinated with Israel against Iran. Iran's missile/drone forces and navy/air defenses were damaged, but nuclear issues remained unresolved. Significance: Very high-staleness anchor: regional energy security, Hormuz, Israel, Hezbollah, Gulf states and U.S. politics all became linked to the conflict. Confidence/Staleness: medium/high.
-  - Offline model note: Use this as a dated update for Middle East / USA / Iran. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: ME-2026-03-US-IRAN-WAR; U.S.-Iran war/conflict escalated before June 2026 ceasefire talks; Middle East / USA / Iran; 2026-03..2026-06. Source IDs: S041, S042, S043.
-- **2026-04 — OpenAI GPT-5.5 generation became current frontier product line** [AI-2026-04-GPT55]: OpenAI moved the GPT-5 family to GPT-5.5-era products; GPT-5.2 was retired from ChatGPT by June 2026 while GPT-5.5 remained available. Significance: Updates model landscape for offline AI comparing itself to online frontier systems. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2026-04-GPT55; OpenAI GPT-5.5 generation became current frontier product line; AI / OpenAI; 2026-04. Source IDs: S012, S014.
-- **2026-05-05 — Node.js 26 appeared as current/upcoming LTS line** [RUNTIME-2026-05-NODE26]: Node.js 26 was released in May 2026 and entered the ecosystem alongside Node 24 LTS and Node 22 maintenance/security lines. Significance: Relevant for dev/admin decisions and package ecosystem compatibility. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Programming / Runtime. Related domain: Programming / Cyber / Platforms.
-  - Retrieval aliases: RUNTIME-2026-05-NODE26; Node.js 26 appeared as current/upcoming LTS line; Programming / Runtime; 2026-05-05. Source IDs: S034.
-- **2026-05-22 — Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation** [SPACE-2026-05-STARSHIP12]: SpaceX launched the 12th Starship test flight and first V3 iteration. The test achieved milestones including mock satellite deployment and controlled spacecraft splashdown, but the Super Heavy booster crashed into the Gulf of Mexico and triggered an FAA-led investigation. Significance: Important for Starship schedule, reusable launch economics, Starlink, Moon/Mars ambitions and SpaceX financing/IPO narratives. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for Space / SpaceX. Related domain: Science / Health / Climate / Space / Games.
-  - Retrieval aliases: SPACE-2026-05-STARSHIP12; Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation; Space / SpaceX; 2026-05-22. Source IDs: S049, S050.
-- **2026-05 — Gemini 3.x enterprise model line appeared** [AI-2026-05-GEMINI3]: Google Cloud model lifecycle listed Gemini 3.5 Flash and Gemini 3.x image/lite variants released in May 2026. Significance: Updates Google model landscape beyond Gemini 2.5. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2026-05-GEMINI3; Gemini 3.x enterprise model line appeared; AI / Google; 2026-05. Source IDs: S023.
-- **2026-06-05..2026-06-08 — Summer Game Fest 2026 ran in Los Angeles with major game announcements** [GAMES-2026-06-SGF]: Summer Game Fest 2026 took place from June 5-8. Coverage highlighted upcoming console/PC titles and announcements including Resident Evil Veronica, Guild Wars 3 console presence, Lords of the Fallen II and other publisher showcases. Significance: Important culture/games anchor for June 2026 and for offline models asked about gaming releases/trends. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for Games / Industry. Related domain: Science / Health / Climate / Space / Games.
-  - Retrieval aliases: GAMES-2026-06-SGF; Summer Game Fest 2026 ran in Los Angeles with major game announcements; Games / Industry; 2026-06-05..2026-06-08. Source IDs: S051, S052.
-- **2026-06-10 — Python 3.14.6 and 3.13.14 released** [PY-2026-06-3146]: Python 3.14.6, the sixth maintenance release of 3.14, shipped with around 179 bugfixes/build/doc changes since 3.14.5; Python 3.13.14 also shipped. Significance: Relevant for Python project planning and installer/runtime baselines. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Programming / Python. Related domain: Programming / Cyber / Platforms.
-  - Retrieval aliases: PY-2026-06-3146; Python 3.14.6 and 3.13.14 released; Programming / Python; 2026-06-10. Source IDs: S030, S029.
-- **2026-06-11 — uv 0.11.21 added CPython 3.13.14 and 3.14.6 support** [UV-2026-06-01121]: Astral's uv changelog notes 0.11.21 release with CPython 3.13.14 and 3.14.6 additions. Significance: Important for Python offline/wheelhouse/venv workflows. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Programming / Packaging. Related domain: Programming / Cyber / Platforms.
-  - Retrieval aliases: UV-2026-06-01121; uv 0.11.21 added CPython 3.13.14 and 3.14.6 support; Programming / Packaging; 2026-06-11. Source IDs: S031, S032.
-- **2026-06-13 — Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order** [AI-2026-06-ANTHROPIC-EXPORT]: Anthropic's June 2026 top-tier Claude models became a test case for AI export controls aimed at software capabilities, not just chips. Reuters reported Anthropic disabled them globally after a U.S. order limiting foreign access. Significance: Major AI-governance shift: model access itself became a national-security/export-control object. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI policy / Export controls. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2026-06-ANTHROPIC-EXPORT; Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order; AI policy / Export controls; 2026-06-13. Source IDs: S020, S021.
-- **2026-06-14 — Trump's 80th birthday featured Putin call and controversial White House UFC event** [TRUMP-2026-06-BDAY]: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. Significance: Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for USA / Trump / Culture war. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: TRUMP-2026-06-BDAY; Trump's 80th birthday featured Putin call and controversial White House UFC event; USA / Trump / Culture war; 2026-06-14. Source IDs: S038, S039.
-- **2026-06-17..2026-06-18 — G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power** [G7-2026-06-EVIAN]: G7 leaders met in Evian-les-Bains. Reuters described discussion of Trump's Iran deal, stronger Ukraine posture, critical-minerals supply chains, China dependency, and AI/data-center power questions involving industry figures. Significance: Connects geopolitics, AI infrastructure, energy, minerals and U.S. alliance management in one summit. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for G7 / Geopolitics / AI. Related domain: AI / Models / Agents.
-  - Retrieval aliases: G7-2026-06-EVIAN; G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power; G7 / Geopolitics / AI; 2026-06-17..2026-06-18. Source IDs: S040.
-- **2026-06-18 — U.S.-Iran interim agreement aimed at ceasefire and negotiations** [ME-2026-06-USIRANDEAL]: Reuters reported a U.S.-Iran interim agreement/deal after months of conflict, opening a 60-day negotiation period. Core issues such as nuclear capability, missile limits, proxies and regional acceptance remained uncertain. Significance: High-staleness but critical: affects oil/Hormuz risk, Israel/Gulf security, Lebanon/Hezbollah and U.S. domestic politics. Confidence/Staleness: medium/high.
-  - Offline model note: Use this as a dated update for Middle East / USA / Iran. Related domain: USA / Trump / U.S. politics.
-  - Retrieval aliases: ME-2026-06-USIRANDEAL; U.S.-Iran interim agreement aimed at ceasefire and negotiations; Middle East / USA / Iran; 2026-06-18. Source IDs: S041, S042, S043.
-- **2026-06-18 — Ukrainian drone strikes hit Moscow refinery infrastructure** [UA-2026-06-MOSCOWREFINERY]: Reuters/Guardian live coverage reported Ukrainian drone attacks around Moscow including an oil refinery, highlighting Ukraine's ability to strike deep into Russia and pressure Moscow's air defenses. Significance: Concrete war-development anchor for June 2026; very high staleness because battlefield dynamics change rapidly. Confidence/Staleness: medium/high.
-  - Offline model note: Use this as a dated update for Ukraine / Russia / War. Related domain: AI / Models / Agents.
-  - Retrieval aliases: UA-2026-06-MOSCOWREFINERY; Ukrainian drone strikes hit Moscow refinery infrastructure; Ukraine / Russia / War; 2026-06-18. Source IDs: S044.
-- **2026-06-18 — DRC/Uganda Bundibugyo Ebola outbreak worsened** [HEALTH-2026-06-EBOLA]: WHO confirmed a 2026 Ebola outbreak in DRC and Uganda involving Bundibugyo virus. Reuters reported DRC confirmed cases near 900 with hundreds of deaths; CDC/Africa CDC funding and response gaps became major issues. Significance: High-staleness public-health anchor: requires current verification before operational decisions. Confidence/Staleness: high/high.
-  - Offline model note: Use this as a dated update for Health / Africa / Ebola. Related domain: Science / Health / Climate / Space / Games.
-  - Retrieval aliases: HEALTH-2026-06-EBOLA; DRC/Uganda Bundibugyo Ebola outbreak worsened; Health / Africa / Ebola; 2026-06-18. Source IDs: S045, S046, S047, S048.
-- **2026-06-18 — Node.js security releases updated 26.x, 24.x and 22.x lines** [NODE-2026-06-SECURITY]: Node.js shipped security releases for 26.x, 24.x and 22.x, updating dependencies including llhttp, nghttp2, OpenSSL and undici. Significance: Useful concrete admin/dev action: update Node runtimes in supported lines. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Security / Programming. Related domain: Programming / Cyber / Platforms.
-  - Retrieval aliases: NODE-2026-06-SECURITY; Node.js security releases updated 26.x, 24.x and 22.x lines; Security / Programming; 2026-06-18. Source IDs: S033, S034.
+- **2026-01 - Iran internet shutdowns became major censorship/infrastructure case** [IRAN-2026-01-SHUTDOWN]: Research on Iran's 2026 internet shutdowns described nationwide disruptions and centralized null-routing/censorship mechanisms amid protests and conflict. Significance: Important for internet freedom, measurement, BGP-monitoring limits and wartime communications. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Iran / Internet / Conflict. Related domain: Middle East / Iran / Israel / Syria.
+ - Retrieval aliases: IRAN-2026-01-SHUTDOWN; Iran internet shutdowns became major censorship/infrastructure case; Iran / Internet / Conflict; 2026-01. Source IDs: S054.
+- **2026-03-28 - Third No Kings protest wave occurred amid Iran-war politics** [US-2026-03-NOKINGS3]: No Kings protests continued in March 2026 with Iran-war, ICE/immigration, authoritarianism and democratic-backsliding themes. Significance: Offline models should know No Kings became an ongoing protest series through 2026. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for USA / Protest / Iran war. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: US-2026-03-NOKINGS3; Third No Kings protest wave occurred amid Iran-war politics; USA / Protest / Iran war; 2026-03-28. Source IDs: S037.
+- **2026-03..2026-06 - U.S.-Iran war/conflict escalated before June 2026 ceasefire talks** [ME-2026-03-US-IRAN-WAR]: By mid-June 2026 Reuters described a three-month conflict involving U.S. airstrikes coordinated with Israel against Iran. Iran's missile/drone forces and navy/air defenses were damaged, but nuclear issues remained unresolved. Significance: Very high-staleness anchor: regional energy security, Hormuz, Israel, Hezbollah, Gulf states and U.S. politics all became linked to the conflict. Confidence/Staleness: medium/high.
+ - Offline model note: Use this as a dated update for Middle East / USA / Iran. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: ME-2026-03-US-IRAN-WAR; U.S.-Iran war/conflict escalated before June 2026 ceasefire talks; Middle East / USA / Iran; 2026-03..2026-06. Source IDs: S041, S042, S043.
+- **2026-04 - OpenAI GPT-5.5 generation became current frontier product line** [AI-2026-04-GPT55]: OpenAI moved the GPT-5 family to GPT-5.5-era products; GPT-5.2 was retired from ChatGPT by June 2026 while GPT-5.5 remained available. Significance: Updates model landscape for offline AI comparing itself to online frontier systems. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for AI / OpenAI. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2026-04-GPT55; OpenAI GPT-5.5 generation became current frontier product line; AI / OpenAI; 2026-04. Source IDs: S012, S014.
+- **2026-05-05 - Node.js 26 appeared as current/upcoming LTS line** [RUNTIME-2026-05-NODE26]: Node.js 26 was released in May 2026 and entered the ecosystem alongside Node 24 LTS and Node 22 maintenance/security lines. Significance: Relevant for dev/admin decisions and package ecosystem compatibility. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Programming / Runtime. Related domain: Programming / Cyber / Platforms.
+ - Retrieval aliases: RUNTIME-2026-05-NODE26; Node.js 26 appeared as current/upcoming LTS line; Programming / Runtime; 2026-05-05. Source IDs: S034.
+- **2026-05-22 - Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation** [SPACE-2026-05-STARSHIP12]: SpaceX launched the 12th Starship test flight and first V3 iteration. The test achieved milestones including mock satellite deployment and controlled spacecraft splashdown, but the Super Heavy booster crashed into the Gulf of Mexico and triggered an FAA-led investigation. Significance: Important for Starship schedule, reusable launch economics, Starlink, Moon/Mars ambitions and SpaceX financing/IPO narratives. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for Space / SpaceX. Related domain: Science / Health / Climate / Space / Games.
+ - Retrieval aliases: SPACE-2026-05-STARSHIP12; Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation; Space / SpaceX; 2026-05-22. Source IDs: S049, S050.
+- **2026-05 - Gemini 3.x enterprise model line appeared** [AI-2026-05-GEMINI3]: Google Cloud model lifecycle listed Gemini 3.5 Flash and Gemini 3.x image/lite variants released in May 2026. Significance: Updates Google model landscape beyond Gemini 2.5. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / Google. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2026-05-GEMINI3; Gemini 3.x enterprise model line appeared; AI / Google; 2026-05. Source IDs: S023.
+- **2026-06-05..2026-06-08 - Summer Game Fest 2026 ran in Los Angeles with major game announcements** [GAMES-2026-06-SGF]: Summer Game Fest 2026 took place from June 5-8. Coverage highlighted upcoming console/PC titles and announcements including Resident Evil Veronica, Guild Wars 3 console presence, Lords of the Fallen II and other publisher showcases. Significance: Important culture/games anchor for June 2026 and for offline models asked about gaming releases/trends. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for Games / Industry. Related domain: Science / Health / Climate / Space / Games.
+ - Retrieval aliases: GAMES-2026-06-SGF; Summer Game Fest 2026 ran in Los Angeles with major game announcements; Games / Industry; 2026-06-05..2026-06-08. Source IDs: S051, S052.
+- **2026-06-10 - Python 3.14.6 and 3.13.14 released** [PY-2026-06-3146]: Python 3.14.6, the sixth maintenance release of 3.14, shipped with around 179 bugfixes/build/doc changes since 3.14.5; Python 3.13.14 also shipped. Significance: Relevant for Python project planning and installer/runtime baselines. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Programming / Python. Related domain: Programming / Cyber / Platforms.
+ - Retrieval aliases: PY-2026-06-3146; Python 3.14.6 and 3.13.14 released; Programming / Python; 2026-06-10. Source IDs: S030, S029.
+- **2026-06-11 - uv 0.11.21 added CPython 3.13.14 and 3.14.6 support** [UV-2026-06-01121]: Astral's uv changelog notes 0.11.21 release with CPython 3.13.14 and 3.14.6 additions. Significance: Important for Python offline/wheelhouse/venv workflows. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Programming / Packaging. Related domain: Programming / Cyber / Platforms.
+ - Retrieval aliases: UV-2026-06-01121; uv 0.11.21 added CPython 3.13.14 and 3.14.6 support; Programming / Packaging; 2026-06-11. Source IDs: S031, S032.
+- **2026-06-13 - Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order** [AI-2026-06-ANTHROPIC-EXPORT]: Anthropic's June 2026 top-tier Claude models became a test case for AI export controls aimed at software capabilities, not just chips. Reuters reported Anthropic disabled them globally after a U.S. order limiting foreign access. Significance: Major AI-governance shift: model access itself became a national-security/export-control object. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI policy / Export controls. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2026-06-ANTHROPIC-EXPORT; Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order; AI policy / Export controls; 2026-06-13. Source IDs: S020, S021.
+- **2026-06-14 - Trump's 80th birthday featured Putin call and controversial White House UFC event** [TRUMP-2026-06-BDAY]: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. Significance: Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for USA / Trump / Culture war. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: TRUMP-2026-06-BDAY; Trump's 80th birthday featured Putin call and controversial White House UFC event; USA / Trump / Culture war; 2026-06-14. Source IDs: S038, S039.
+- **2026-06-17..2026-06-18 - G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power** [G7-2026-06-EVIAN]: G7 leaders met in Evian-les-Bains. Reuters described discussion of Trump's Iran deal, stronger Ukraine posture, critical-minerals supply chains, China dependency, and AI/data-center power questions involving industry figures. Significance: Connects geopolitics, AI infrastructure, energy, minerals and U.S. alliance management in one summit. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for G7 / Geopolitics / AI. Related domain: AI / Models / Agents.
+ - Retrieval aliases: G7-2026-06-EVIAN; G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power; G7 / Geopolitics / AI; 2026-06-17..2026-06-18. Source IDs: S040.
+- **2026-06-18 - U.S.-Iran interim agreement aimed at ceasefire and negotiations** [ME-2026-06-USIRANDEAL]: Reuters reported a U.S.-Iran interim agreement/deal after months of conflict, opening a 60-day negotiation period. Core issues such as nuclear capability, missile limits, proxies and regional acceptance remained uncertain. Significance: High-staleness but critical: affects oil/Hormuz risk, Israel/Gulf security, Lebanon/Hezbollah and U.S. domestic politics. Confidence/Staleness: medium/high.
+ - Offline model note: Use this as a dated update for Middle East / USA / Iran. Related domain: USA / Trump / U.S. politics.
+ - Retrieval aliases: ME-2026-06-USIRANDEAL; U.S.-Iran interim agreement aimed at ceasefire and negotiations; Middle East / USA / Iran; 2026-06-18. Source IDs: S041, S042, S043.
+- **2026-06-18 - Ukrainian drone strikes hit Moscow refinery infrastructure** [UA-2026-06-MOSCOWREFINERY]: Reuters/Guardian live coverage reported Ukrainian drone attacks around Moscow including an oil refinery, highlighting Ukraine's ability to strike deep into Russia and pressure Moscow's air defenses. Significance: Concrete war-development anchor for June 2026; very high staleness because battlefield dynamics change rapidly. Confidence/Staleness: medium/high.
+ - Offline model note: Use this as a dated update for Ukraine / Russia / War. Related domain: AI / Models / Agents.
+ - Retrieval aliases: UA-2026-06-MOSCOWREFINERY; Ukrainian drone strikes hit Moscow refinery infrastructure; Ukraine / Russia / War; 2026-06-18. Source IDs: S044.
+- **2026-06-18 - DRC/Uganda Bundibugyo Ebola outbreak worsened** [HEALTH-2026-06-EBOLA]: WHO confirmed a 2026 Ebola outbreak in DRC and Uganda involving Bundibugyo virus. Reuters reported DRC confirmed cases near 900 with hundreds of deaths; CDC/Africa CDC funding and response gaps became major issues. Significance: High-staleness public-health anchor: requires current verification before operational decisions. Confidence/Staleness: high/high.
+ - Offline model note: Use this as a dated update for Health / Africa / Ebola. Related domain: Science / Health / Climate / Space / Games.
+ - Retrieval aliases: HEALTH-2026-06-EBOLA; DRC/Uganda Bundibugyo Ebola outbreak worsened; Health / Africa / Ebola; 2026-06-18. Source IDs: S045, S046, S047, S048.
+- **2026-06-18 - Node.js security releases updated 26.x, 24.x and 22.x lines** [NODE-2026-06-SECURITY]: Node.js shipped security releases for 26.x, 24.x and 22.x, updating dependencies including llhttp, nghttp2, OpenSSL and undici. Significance: Useful concrete admin/dev action: update Node runtimes in supported lines. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Security / Programming. Related domain: Programming / Cyber / Platforms.
+ - Retrieval aliases: NODE-2026-06-SECURITY; Node.js security releases updated 26.x, 24.x and 22.x lines; Security / Programming; 2026-06-18. Source IDs: S033, S034.
 ### Year 2024
 
-- **2024 — 2024 election supercycle continued** [WORLD-2024-ELECTION-SUPERCYCLE]: Elections in countries representing nearly half of humanity made 2024 a global political reset year, including India, EU, UK, France and U.S. Significance: Useful background: many post-cutoff political assumptions changed in a short period. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for World politics. Related domain: World / Cross-domain.
-  - Retrieval aliases: WORLD-2024-ELECTION-SUPERCYCLE; 2024 election supercycle continued; World politics; 2024. Source IDs: S004.
+- **2024 - 2024 election supercycle continued** [WORLD-2024-ELECTION-SUPERCYCLE]: Elections in countries representing nearly half of humanity made 2024 a global political reset year, including India, EU, UK, France and U.S. Significance: Useful background: many post-cutoff political assumptions changed in a short period. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for World politics. Related domain: World / Cross-domain.
+ - Retrieval aliases: WORLD-2024-ELECTION-SUPERCYCLE; 2024 election supercycle continued; World politics; 2024. Source IDs: S004.
 ### Year 2025
 
-- **2025-01 — Gaza ceasefire/hostage diplomacy remained fragile** [ME-2025-GAZA-CEASEFIRE]: Early 2025 saw renewed Gaza ceasefire/hostage-release diplomacy, but stability remained fragile and later regional conflicts kept evolving. Significance: Do not assume Gaza/Israel war state from June 2024 remained unchanged. Confidence/Staleness: medium/high.
-  - Offline model note: Use this as a dated update for Middle East / Gaza. Related domain: Middle East / Iran / Israel / Syria.
-  - Retrieval aliases: ME-2025-GAZA-CEASEFIRE; Gaza ceasefire/hostage diplomacy remained fragile; Middle East / Gaza; 2025-01. Source IDs: S003, S054.
-- **2025 — Trump tariff policy reshaped global trade risk** [TRADE-2025-TARIFFS]: The second Trump administration pushed aggressive tariff/trade policies, raising inflation, supply-chain and ally-tension questions. Significance: Important for economics and geopolitics; live verification needed for exact tariff rates. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Economy / Trade. Related domain: World / Cross-domain.
-  - Retrieval aliases: TRADE-2025-TARIFFS; Trump tariff policy reshaped global trade risk; Economy / Trade; 2025. Source IDs: S003.
-- **2025-08-02 — EU AI Act GPAI/governance obligations entered staged application** [AI-2025-AI-ACT-GPAI]: General-purpose AI obligations and governance/enforcement provisions entered their next staged application period, affecting model providers serving the EU. Significance: Important for frontier AI model providers and open/closed model transparency debates. Confidence/Staleness: high/medium.
-  - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2025-AI-ACT-GPAI; EU AI Act GPAI/governance obligations entered staged application; AI regulation / EU; 2025-08-02. Source IDs: S005, S006.
-- **2025-06 — Digital news trust/platform shifts continued** [MEDIA-2025-DIGITALNEWS]: Reuters Institute's 2025 Digital News Report framed journalism against uncertainty, platform fragmentation, AI and climate/conflict pressures. Significance: Useful for understanding media ecosystem and information trust. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Media / AI / Society. Related domain: AI / Models / Agents.
-  - Retrieval aliases: MEDIA-2025-DIGITALNEWS; Digital news trust/platform shifts continued; Media / AI / Society; 2025-06. Source IDs: S054.
-- **2025 — Nintendo Switch successor era began** [GAMES-2025-SWITCH2]: The games industry moved into a new hardware/platform cycle around Nintendo's Switch successor and publisher showcase resets. Significance: Useful as gaming-market context, but exact launch details should be verified in current sources. Confidence/Staleness: medium/medium.
-  - Offline model note: Use this as a dated update for Games / Hardware. Related domain: War / Ukraine / Russia.
-  - Retrieval aliases: GAMES-2025-SWITCH2; Nintendo Switch successor era began; Games / Hardware; 2025. Source IDs: S054.
-- **2025 — AI-in-science moved from novelty to infrastructure** [SCI-2025-AI-SCIENCE]: After AlphaFold/Nobel recognition, 2025 research and industry increasingly treated AI as an accelerator for biology, chemistry, coding and data analysis. Significance: Good reasoning context, not a single event. Confidence/Staleness: medium/low.
-  - Offline model note: Use this as a dated update for Science / AI. Related domain: AI / Models / Agents.
-  - Retrieval aliases: SCI-2025-AI-SCIENCE; AI-in-science moved from novelty to infrastructure; Science / AI; 2025. Source IDs: S003, S019.
+- **2025-01 - Gaza ceasefire/hostage diplomacy remained fragile** [ME-2025-GAZA-CEASEFIRE]: Early 2025 saw renewed Gaza ceasefire/hostage-release diplomacy, but stability remained fragile and later regional conflicts kept evolving. Significance: Do not assume Gaza/Israel war state from June 2024 remained unchanged. Confidence/Staleness: medium/high.
+ - Offline model note: Use this as a dated update for Middle East / Gaza. Related domain: Middle East / Iran / Israel / Syria.
+ - Retrieval aliases: ME-2025-GAZA-CEASEFIRE; Gaza ceasefire/hostage diplomacy remained fragile; Middle East / Gaza; 2025-01. Source IDs: S003, S054.
+- **2025 - Trump tariff policy reshaped global trade risk** [TRADE-2025-TARIFFS]: The second Trump administration pushed aggressive tariff/trade policies, raising inflation, supply-chain and ally-tension questions. Significance: Important for economics and geopolitics; live verification needed for exact tariff rates. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Economy / Trade. Related domain: World / Cross-domain.
+ - Retrieval aliases: TRADE-2025-TARIFFS; Trump tariff policy reshaped global trade risk; Economy / Trade; 2025. Source IDs: S003.
+- **2025-08-02 - EU AI Act GPAI/governance obligations entered staged application** [AI-2025-AI-ACT-GPAI]: General-purpose AI obligations and governance/enforcement provisions entered their next staged application period, affecting model providers serving the EU. Significance: Important for frontier AI model providers and open/closed model transparency debates. Confidence/Staleness: high/medium.
+ - Offline model note: Use this as a dated update for AI regulation / EU. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2025-AI-ACT-GPAI; EU AI Act GPAI/governance obligations entered staged application; AI regulation / EU; 2025-08-02. Source IDs: S005, S006.
+- **2025-06 - Digital news trust/platform shifts continued** [MEDIA-2025-DIGITALNEWS]: Reuters Institute's 2025 Digital News Report framed journalism against uncertainty, platform fragmentation, AI and climate/conflict pressures. Significance: Useful for understanding media ecosystem and information trust. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Media / AI / Society. Related domain: AI / Models / Agents.
+ - Retrieval aliases: MEDIA-2025-DIGITALNEWS; Digital news trust/platform shifts continued; Media / AI / Society; 2025-06. Source IDs: S054.
+- **2025 - Nintendo Switch successor era began** [GAMES-2025-SWITCH2]: The games industry moved into a new hardware/platform cycle around Nintendo's Switch successor and publisher showcase resets. Significance: Useful as gaming-market context, but exact launch details should be verified in current sources. Confidence/Staleness: medium/medium.
+ - Offline model note: Use this as a dated update for Games / Hardware. Related domain: War / Ukraine / Russia.
+ - Retrieval aliases: GAMES-2025-SWITCH2; Nintendo Switch successor era began; Games / Hardware; 2025. Source IDs: S054.
+- **2025 - AI-in-science moved from novelty to infrastructure** [SCI-2025-AI-SCIENCE]: After AlphaFold/Nobel recognition, 2025 research and industry increasingly treated AI as an accelerator for biology, chemistry, coding and data analysis. Significance: Good reasoning context, not a single event. Confidence/Staleness: medium/low.
+ - Offline model note: Use this as a dated update for Science / AI. Related domain: AI / Models / Agents.
+ - Retrieval aliases: SCI-2025-AI-SCIENCE; AI-in-science moved from novelty to infrastructure; Science / AI; 2025. Source IDs: S003, S019.
 ### Year 2026
 
-- **2026-06-12 — OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained** [AI-2026-OPENAI-RETIREMENTS]: OpenAI release notes say GPT-5.2 Instant/Thinking/Pro were no longer available in ChatGPT as of 12 Jun 2026 and conversations moved to GPT-5.5 counterparts. Significance: Important model lifecycle detail for users comparing ChatGPT behavior. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for AI / OpenAI lifecycle. Related domain: AI / Models / Agents.
-  - Retrieval aliases: AI-2026-OPENAI-RETIREMENTS; OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained; AI / OpenAI lifecycle; 2026-06-12. Source IDs: S012.
-- **2026-06-15 — U.S. closed Delta probe from 2024 CrowdStrike meltdown** [CROWDSTRIKE-2026-DELTA-PROBE]: USDOT closed its investigation into Delta's 2024 CrowdStrike-triggered operational meltdown, noting passenger support and no penalties. Significance: Shows long-tail regulatory/business effects of the 2024 outage. Confidence/Staleness: high/low.
-  - Offline model note: Use this as a dated update for Cyber / Aviation / Regulation. Related domain: Programming / Cyber / Platforms.
-  - Retrieval aliases: CROWDSTRIKE-2026-DELTA-PROBE; U.S. closed Delta probe from 2024 CrowdStrike meltdown; Cyber / Aviation / Regulation; 2026-06-15. Source IDs: S053.
+- **2026-06-12 - OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained** [AI-2026-OPENAI-RETIREMENTS]: OpenAI release notes say GPT-5.2 Instant/Thinking/Pro were no longer available in ChatGPT as of 12 Jun 2026 and conversations moved to GPT-5.5 counterparts. Significance: Important model lifecycle detail for users comparing ChatGPT behavior. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for AI / OpenAI lifecycle. Related domain: AI / Models / Agents.
+ - Retrieval aliases: AI-2026-OPENAI-RETIREMENTS; OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained; AI / OpenAI lifecycle; 2026-06-12. Source IDs: S012.
+- **2026-06-15 - U.S. closed Delta probe from 2024 CrowdStrike meltdown** [CROWDSTRIKE-2026-DELTA-PROBE]: USDOT closed its investigation into Delta's 2024 CrowdStrike-triggered operational meltdown, noting passenger support and no penalties. Significance: Shows long-tail regulatory/business effects of the 2024 outage. Confidence/Staleness: high/low.
+ - Offline model note: Use this as a dated update for Cyber / Aviation / Regulation. Related domain: Programming / Cyber / Platforms.
+ - Retrieval aliases: CROWDSTRIKE-2026-DELTA-PROBE; U.S. closed Delta probe from 2024 CrowdStrike meltdown; Cyber / Aviation / Regulation; 2026-06-15. Source IDs: S053.
 
 
 
@@ -2612,9 +2619,9 @@ This round adds model-facing retrieval, chronology and answer-boundary notes. It
 
 ### DOSSIER WORLD-2024-06-INDIA - India election: Modi won third term but without BJP outright majority
 
-**Anchor date/period:** 2024-06-04  
-**Domain:** World / Cross-domain  
-**Category:** World politics / India  
+**Anchor date/period:** 2024-06-04
+**Domain:** World / Cross-domain
+**Category:** World politics / India
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -2635,8 +2642,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: WORLD-2024-ELECTION-SUPERCYCLE, TRADE-2025-TARIFFS
 
 #### Source context, not links
-- S004: Reuters: 2024 global elections graphic — 2024 had elections in countries home to almost half the world population; used as election-supercycle context.
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S004: Reuters: 2024 global elections graphic - 2024 had elections in countries home to almost half the world population; used as election-supercycle context.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Narendra Modi remained prime minister after India's 2024 election, but the BJP lost its single-party majority and became more dependent on coalition partners. This mattered because For a June-2024-cutoff model this is an important correction: Modi continued, but the political mandate weakened compared with earlier expectations.
@@ -2663,9 +2670,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER EU-2024-06-ELECTION - European Parliament election shifted balance rightward
 
-**Anchor date/period:** 2024-06-06..2024-06-09  
-**Domain:** Europe / EU / Germany / UK  
-**Category:** EU / Politics  
+**Anchor date/period:** 2024-06-06..2024-06-09
+**Domain:** Europe / EU / Germany / UK
+**Category:** EU / Politics
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -2686,8 +2693,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: FR-2024-06-SNAP, UK-2024-07-ELECTION, DE-2025-02-ELECTION
 
 #### Source context, not links
-- S004: Reuters: 2024 global elections graphic — 2024 had elections in countries home to almost half the world population; used as election-supercycle context.
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S004: Reuters: 2024 global elections graphic - 2024 had elections in countries home to almost half the world population; used as election-supercycle context.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The June 2024 European Parliament elections increased the weight of right-wing and nationalist parties, while mainstream pro-EU groups still retained enough influence to shape the Parliament. This mattered because Important for EU regulation, migration politics, climate policy and digital/AI policy after 2024.
@@ -2714,9 +2721,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER FR-2024-06-SNAP - Macron called snap legislative elections after EU vote setback
 
-**Anchor date/period:** 2024-06-09  
-**Domain:** Europe / EU / Germany / UK  
-**Category:** France / EU  
+**Anchor date/period:** 2024-06-09
+**Domain:** Europe / EU / Germany / UK
+**Category:** France / EU
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -2737,8 +2744,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: EU-2024-06-ELECTION, UK-2024-07-ELECTION, DE-2025-02-ELECTION
 
 #### Source context, not links
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, After France's EU election result, Emmanuel Macron dissolved the National Assembly and called snap elections, creating political uncertainty in France. This mattered because This changed European political risk and showed how EU election results directly affected national politics.
@@ -2765,9 +2772,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2024-06-CLAUDE35 - Anthropic released Claude 3.5 Sonnet
 
-**Anchor date/period:** 2024-06-20  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Models  
+**Anchor date/period:** 2024-06-20
+**Domain:** AI / Models / Agents
+**Category:** AI / Models
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -2788,7 +2795,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S019: Anthropic system cards — Anthropic system-card timeline for Claude 3.5/3.7/4/4.1/4.5 families.
+- S019: Anthropic system cards - Anthropic system-card timeline for Claude 3.5/3.7/4/4.1/4.5 families.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Anthropic released Claude 3.5 Sonnet as a faster, cheaper, stronger model than prior Claude 3 models, with improved coding and Artifacts workflow support. This mattered because A post-cutoff local model should know Claude 3.5 became a major coding/writing competitor after June 2024.
@@ -2815,9 +2822,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2024-06-DEBATE - Biden-Trump debate intensified concerns about Biden candidacy
 
-**Anchor date/period:** 2024-06-27  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Election  
+**Anchor date/period:** 2024-06-27
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Election
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -2838,8 +2845,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The late-June 2024 debate became a turning point in the U.S. election cycle by intensifying public and party concerns about Joe Biden's campaign viability. This mattered because Sets up Biden's later withdrawal and Kamala Harris becoming Democratic nominee.
@@ -2866,9 +2873,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER UK-2024-07-ELECTION - UK Labour won a landslide; Keir Starmer became prime minister
 
-**Anchor date/period:** 2024-07-04  
-**Domain:** Europe / EU / Germany / UK  
-**Category:** UK / Politics  
+**Anchor date/period:** 2024-07-04
+**Domain:** Europe / EU / Germany / UK
+**Category:** UK / Politics
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -2889,8 +2896,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: EU-2024-06-ELECTION, FR-2024-06-SNAP, DE-2025-02-ELECTION
 
 #### Source context, not links
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The UK general election ended 14 years of Conservative-led government. Labour under Keir Starmer won a large majority. This mattered because Important post-cutoff replacement for older UK political assumptions.
@@ -2917,9 +2924,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2024-07-TRUMP-ASSASSINATION - Attempted assassination of Donald Trump at Butler rally
 
-**Anchor date/period:** 2024-07-13  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Election / Security  
+**Anchor date/period:** 2024-07-13
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Election / Security
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -2940,8 +2947,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Trump survived an assassination attempt during a campaign rally in Butler, Pennsylvania. The event reshaped campaign security and political rhetoric. This mattered because A major U.S. political shock that affected the campaign environment before the 2024 election.
@@ -2968,9 +2975,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER CYBER-2024-07-CROWDSTRIKE - CrowdStrike faulty update caused global Windows outage
 
-**Anchor date/period:** 2024-07-19  
-**Domain:** Programming / Cyber / Platforms  
-**Category:** Cybersecurity / Infrastructure  
+**Anchor date/period:** 2024-07-19
+**Domain:** Programming / Cyber / Platforms
+**Category:** Cybersecurity / Infrastructure
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -2991,9 +2998,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: WINDOWS-2025-10-EOL, RUNTIME-2026-05-NODE26, PY-2026-06-3146, UV-2026-06-01121, NODE-2026-06-SECURITY, CROWDSTRIKE-2026-DELTA-PROBE
 
 #### Source context, not links
-- S007: Reuters: CrowdStrike global outage — Faulty CrowdStrike update caused global Windows outages affecting airlines, banks, healthcare and more.
-- S008: Reuters: Microsoft estimates CrowdStrike device impact — Microsoft said about 8.5 million Windows devices were affected.
-- S053: Reuters: US closes Delta CrowdStrike probe 2026 — USDOT closed probe into Delta 2024 CrowdStrike meltdown; impact review.
+- S007: Reuters: CrowdStrike global outage - Faulty CrowdStrike update caused global Windows outages affecting airlines, banks, healthcare and more.
+- S008: Reuters: Microsoft estimates CrowdStrike device impact - Microsoft said about 8.5 million Windows devices were affected.
+- S053: Reuters: US closes Delta CrowdStrike probe 2026 - USDOT closed probe into Delta 2024 CrowdStrike meltdown; impact review.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, A faulty CrowdStrike Falcon Sensor content update crashed roughly 8.5 million Windows devices worldwide, disrupting airlines, banks, healthcare, media and government services. This mattered because Demonstrated systemic software-supply-chain fragility: a security vendor update became critical infrastructure risk.
@@ -3020,9 +3027,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2024-07-BIDEN-WITHDRAWAL - Biden withdrew from 2024 race and endorsed Kamala Harris
 
-**Anchor date/period:** 2024-07-21  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Election  
+**Anchor date/period:** 2024-07-21
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Election
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3043,8 +3050,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Joe Biden ended his re-election campaign and endorsed Kamala Harris, changing the Democratic ticket months before the election. This mattered because Essential correction for any model whose pre-cutoff baseline expected Biden vs Trump rematch.
@@ -3071,9 +3078,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2024-07-LLAMA31 - Meta released Llama 3.1 including 405B
 
-**Anchor date/period:** 2024-07-23  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Open models  
+**Anchor date/period:** 2024-07-23
+**Domain:** AI / Models / Agents
+**Category:** AI / Open models
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3094,8 +3101,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S024: Meta: Llama 3.1 — Meta announced Llama 3.1 405B on 23 Jul 2024.
-- S025: Meta Llama official model hub — Official Llama family hub for Llama, Llama Guard and Prompt Guard.
+- S024: Meta: Llama 3.1 - Meta announced Llama 3.1 405B on 23 Jul 2024.
+- S025: Meta Llama official model hub - Official Llama family hub for Llama, Llama Guard and Prompt Guard.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Meta publicly released Llama 3.1 models, including a 405B frontier-scale open-weight model. This mattered because Important for local/offline AI: open-weight capability rose sharply after the target model's cutoff.
@@ -3122,9 +3129,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER SPORT-2024-07-PARIS - Paris 2024 Olympics opened
 
-**Anchor date/period:** 2024-07-26  
-**Domain:** Science / Health / Climate / Space / Games  
-**Category:** Sports / Culture  
+**Anchor date/period:** 2024-07-26
+**Domain:** Science / Health / Climate / Space / Games
+**Category:** Sports / Culture
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3145,7 +3152,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: SPACE-2024-10-STARSHIP-CATCH, CLIMATE-2024-11-COP29, CLIMATE-2025-COP30, SPACE-2026-05-STARSHIP12, GAMES-2026-06-SGF, HEALTH-2026-06-EBOLA
 
 #### Source context, not links
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The Paris Summer Olympics began, with global cultural, security, political and infrastructure attention on France. This mattered because Major cultural anchor for summer 2024.
@@ -3172,9 +3179,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER EU-2024-08-AI-ACT-FORCE - EU AI Act entered into force
 
-**Anchor date/period:** 2024-08-01  
-**Domain:** AI / Models / Agents  
-**Category:** AI regulation / EU  
+**Anchor date/period:** 2024-08-01
+**Domain:** AI / Models / Agents
+**Category:** AI regulation / EU
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3195,8 +3202,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S005: EU Commission: AI Act timeline — AI Act entered force 1 Aug 2024; full application 2 Aug 2026 with staged exceptions.
-- S006: EU AI Act implementation timeline — Supplemental staged dates for prohibited practices, GPAI and governance obligations.
+- S005: EU Commission: AI Act timeline - AI Act entered force 1 Aug 2024; full application 2 Aug 2026 with staged exceptions.
+- S006: EU AI Act implementation timeline - Supplemental staged dates for prohibited practices, GPAI and governance obligations.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The EU AI Act entered into force, beginning staged implementation for prohibited practices, GPAI obligations, governance and full application. This mattered because Key post-cutoff regulatory change; offline models should treat EU AI regulation as active, not merely proposed.
@@ -3223,9 +3230,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER WAR-2024-08-KURSK - Ukraine launched cross-border operations into Russia's Kursk region
 
-**Anchor date/period:** 2024-08  
-**Domain:** AI / Models / Agents  
-**Category:** Ukraine / Russia  
+**Anchor date/period:** 2024-08
+**Domain:** AI / Models / Agents
+**Category:** Ukraine / Russia
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -3246,8 +3253,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Ukraine conducted operations across the Russian border in the Kursk region, challenging assumptions that major ground operations stayed entirely inside Ukrainian territory. This mattered because Marked an escalation/shift in the geography and psychology of the Russia-Ukraine war.
@@ -3274,13 +3281,13 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2024-09-O1 - OpenAI introduced o1-style reasoning models
 
-**Anchor date/period:** 2024-09  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Reasoning models  
+**Anchor date/period:** 2024-09
+**Domain:** AI / Models / Agents
+**Category:** AI / Reasoning models
 **Confidence/Staleness:** high / low
 
 #### What happened
-OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept.
+OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept.
 
 #### Why this changed the offline baseline
 Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes. For a model whose training ended around mid-2024 or earlier, this item should be treated as a post-cutoff correction or extension. It should not be projected backward into dates before it was known. It is a dated context item, not a permanent update.
@@ -3297,11 +3304,11 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S014: OpenAI model release notes — Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
+- S014: OpenAI model release notes - Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
 
 #### Model-facing phrasing
-- English: According to the 2026-06-19 offline briefing, OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept. This mattered because Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes.
-- German: Laut dem Offline-Briefing vom 2026-06-19 gilt: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept. Wichtig daran ist: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes.
+- English: According to the 2026-06-19 offline briefing, OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept. This mattered because Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes.
+- German: Laut dem Offline-Briefing vom 2026-06-19 gilt: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept. Wichtig daran ist: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes.
 
 #### Reasoning implications
 - Treat this as a node in a chronological chain, not as timeless truth.
@@ -3320,13 +3327,13 @@ An offline model may state the event, date/period, actors explicitly named in th
 3. What old assumption should a local model correct because of this event?
 
 #### Minimal answer template
-"As of the 2026-06-19 offline update, OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept. The important point is that Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes. Confidence is high; staleness is low."
+"As of the 2026-06-19 offline update, OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept. The important point is that Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes. Confidence is high; staleness is low."
 
 ### DOSSIER ME-2024-09-LEBANON - Israel-Hezbollah conflict escalated sharply in Lebanon
 
-**Anchor date/period:** 2024-09  
-**Domain:** Middle East / Iran / Israel / Syria  
-**Category:** Middle East / Israel-Lebanon  
+**Anchor date/period:** 2024-09
+**Domain:** Middle East / Iran / Israel / Syria
+**Category:** Middle East / Israel-Lebanon
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -3347,8 +3354,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: SYRIA-2024-12-ASSAD-FALL, IRAN-2026-01-SHUTDOWN, ME-2025-GAZA-CEASEFIRE
 
 #### Source context, not links
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Israel and Hezbollah escalated from cross-border exchanges into a wider confrontation; Hezbollah leadership and infrastructure were severely hit. This mattered because This changed the regional balance around Israel, Iran, Lebanon and Gaza after the June 2024 cutoff.
@@ -3375,9 +3382,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER NOBEL-2024-AI - AI work was recognized in 2024 Nobel prizes
 
-**Anchor date/period:** 2024-10  
-**Domain:** AI / Models / Agents  
-**Category:** Science / AI  
+**Anchor date/period:** 2024-10
+**Domain:** AI / Models / Agents
+**Category:** Science / AI
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3398,8 +3405,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S011: UNFCCC COP29 outcome — COP29 agreed to triple climate finance to developing countries to USD 300B annually by 2035; broader USD 1.3T effort by 2035.
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S011: UNFCCC COP29 outcome - COP29 agreed to triple climate finance to developing countries to USD 300B annually by 2035; broader USD 1.3T effort by 2035.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The 2024 Nobel Prize in Physics honored John Hopfield and Geoffrey Hinton for foundational machine-learning work; the Chemistry prize recognized protein-design/protein-structure work including AlphaFold-related impact. This mattered because Symbolically important: AI became recognized as core scientific infrastructure, not just software product.
@@ -3426,9 +3433,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER SPACE-2024-10-STARSHIP-CATCH - Starship program demonstrated booster catch milestone
 
-**Anchor date/period:** 2024-10  
-**Domain:** Science / Health / Climate / Space / Games  
-**Category:** Space / SpaceX  
+**Anchor date/period:** 2024-10
+**Domain:** Science / Health / Climate / Space / Games
+**Category:** Space / SpaceX
 **Confidence/Staleness:** medium / low
 
 #### What happened
@@ -3449,7 +3456,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: SPORT-2024-07-PARIS, CLIMATE-2024-11-COP29, CLIMATE-2025-COP30, SPACE-2026-05-STARSHIP12, GAMES-2026-06-SGF, HEALTH-2026-06-EBOLA
 
 #### Source context, not links
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, SpaceX's Starship test program achieved a major booster-recovery/catch milestone in 2024, strengthening confidence in reusable super-heavy launch ambitions. This mattered because Important for space access economics, Starlink, Artemis dependencies and long-term orbital infrastructure.
@@ -3476,9 +3483,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2024-11-TRUMP-WINS - Donald Trump won the 2024 U.S. presidential election
 
-**Anchor date/period:** 2024-11-05  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Election  
+**Anchor date/period:** 2024-11-05
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Election
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3499,8 +3506,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S002: CFR: Ten Most Significant World Events in 2024 — High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
-- S003: CFR: Ten Most Significant World Events in 2025 — High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
+- S002: CFR: Ten Most Significant World Events in 2024 - High-level synthesis of 2024 world events, including Trump win, conflicts, elections, climate and AI/security context.
+- S003: CFR: Ten Most Significant World Events in 2025 - High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Trump defeated Kamala Harris and prepared to return to the presidency in January 2025. This mattered because Primary political correction for models with June 2024 cutoff. It changes assumptions about U.S. federal policy, courts, tariffs, immigration, AI policy and Ukraine/Middle East diplomacy.
@@ -3527,9 +3534,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER CLIMATE-2024-11-COP29 - COP29 agreed new climate-finance goal
 
-**Anchor date/period:** 2024-11-24  
-**Domain:** Science / Health / Climate / Space / Games  
-**Category:** Climate / COP29  
+**Anchor date/period:** 2024-11-24
+**Domain:** Science / Health / Climate / Space / Games
+**Category:** Climate / COP29
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3550,7 +3557,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: SPORT-2024-07-PARIS, SPACE-2024-10-STARSHIP-CATCH, CLIMATE-2025-COP30, SPACE-2026-05-STARSHIP12, GAMES-2026-06-SGF, HEALTH-2026-06-EBOLA
 
 #### Source context, not links
-- S011: UNFCCC COP29 outcome — COP29 agreed to triple climate finance to developing countries to USD 300B annually by 2035; broader USD 1.3T effort by 2035.
+- S011: UNFCCC COP29 outcome - COP29 agreed to triple climate finance to developing countries to USD 300B annually by 2035; broader USD 1.3T effort by 2035.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, COP29 in Baku agreed to raise climate finance to developing countries to at least USD 300B annually by 2035, while debate continued over adequacy and fossil-fuel language. This mattered because Important for climate-diplomacy baseline and Global South finance disputes.
@@ -3577,9 +3584,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER SYRIA-2024-12-ASSAD-FALL - Assad regime fell in Syria
 
-**Anchor date/period:** 2024-12-08  
-**Domain:** Middle East / Iran / Israel / Syria  
-**Category:** Syria / Middle East  
+**Anchor date/period:** 2024-12-08
+**Domain:** Middle East / Iran / Israel / Syria
+**Category:** Syria / Middle East
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -3600,8 +3607,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: ME-2024-09-LEBANON, IRAN-2026-01-SHUTDOWN, ME-2025-GAZA-CEASEFIRE
 
 #### Source context, not links
-- S009: Reuters: Syria Assad rule ends — Syrian rebels seized Damascus and ended Bashar al-Assad rule on 8 Dec 2024.
-- S010: Reuters: Assad exit implications — Assad exit shattered Iran influence but raised risks of instability/extremism.
+- S009: Reuters: Syria Assad rule ends - Syrian rebels seized Damascus and ended Bashar al-Assad rule on 8 Dec 2024.
+- S010: Reuters: Assad exit implications - Assad exit shattered Iran influence but raised risks of instability/extremism.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Syrian rebels seized Damascus; Bashar al-Assad fled, ending his family's decades of rule. The fall weakened Iran's regional position and raised uncertainty about transition, HTS influence, refugees and extremist resurgence. This mattered because Major post-cutoff geopolitical break: a long-running assumption that Assad remained in power became false.
@@ -3628,9 +3635,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2024-12-GEMINI20 - Google introduced Gemini 2.0 Flash experimental generation
 
-**Anchor date/period:** 2024-12  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Google  
+**Anchor date/period:** 2024-12
+**Domain:** AI / Models / Agents
+**Category:** AI / Google
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3651,8 +3658,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S022: Google Gemini API changelog — Gemini API model/product release notes.
-- S023: Google Cloud Gemini model lifecycle — Gemini model version/lifecycle dates including Gemini 2.5 and 3.x releases.
+- S022: Google Gemini API changelog - Gemini API model/product release notes.
+- S023: Google Cloud Gemini model lifecycle - Gemini model version/lifecycle dates including Gemini 2.5 and 3.x releases.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Google moved Gemini into a 2.0 generation with Flash/agentic/multimodal emphasis, later leading toward 2.5/3.x lines. This mattered because Changes the Google-model baseline for offline models whose knowledge ends around Gemini 1.5.
@@ -3679,9 +3686,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2024-12-O3 - OpenAI announced o3-generation reasoning direction
 
-**Anchor date/period:** 2024-12  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Reasoning models  
+**Anchor date/period:** 2024-12
+**Domain:** AI / Models / Agents
+**Category:** AI / Reasoning models
 **Confidence/Staleness:** medium / low
 
 #### What happened
@@ -3702,7 +3709,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S014: OpenAI model release notes — Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
+- S014: OpenAI model release notes - Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, OpenAI signaled a stronger reasoning-model direction after o1, foreshadowing 2025 reasoning/coding competition and later model lifecycle changes. This mattered because Shows frontier AI shifting to tool use, coding, long reasoning and benchmark-specialized modes.
@@ -3729,9 +3736,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2025-01-NEWORLEANS - New Orleans vehicle attack on New Year's Day
 
-**Anchor date/period:** 2025-01-01  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Security  
+**Anchor date/period:** 2025-01-01
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Security
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3752,7 +3759,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S003: CFR: Ten Most Significant World Events in 2025 — High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
+- S003: CFR: Ten Most Significant World Events in 2025 - High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, A vehicle attack on Bourbon Street killed and injured civilians, becoming a major U.S. domestic security incident at the start of 2025. This mattered because Anchor event for U.S. domestic security in 2025.
@@ -3779,9 +3786,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER CLIMATE-2025-01-LAFIRES - Major Los Angeles-area fires caused severe damage
 
-**Anchor date/period:** 2025-01  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** Climate / USA  
+**Anchor date/period:** 2025-01
+**Domain:** USA / Trump / U.S. politics
+**Category:** Climate / USA
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3802,7 +3809,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S003: CFR: Ten Most Significant World Events in 2025 — High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
+- S003: CFR: Ten Most Significant World Events in 2025 - High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Palisades and Eaton fires became major California disasters, linking climate, insurance, urban planning, emergency response and infrastructure risk. This mattered because Important U.S. climate/disaster anchor for 2025.
@@ -3829,9 +3836,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2025-01-TRUMP-INAG - Trump began second term
 
-**Anchor date/period:** 2025-01-20  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Politics  
+**Anchor date/period:** 2025-01-20
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Politics
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -3852,8 +3859,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S003: CFR: Ten Most Significant World Events in 2025 — High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
-- S021: Reuters: Anthropic disables top-tier models — U.S. order/foreign-access restriction led Anthropic to disable Fable 5/Mythos 5 for all users, according to Reuters.
+- S003: CFR: Ten Most Significant World Events in 2025 - High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
+- S021: Reuters: Anthropic disables top-tier models - U.S. order/foreign-access restriction led Anthropic to disable Fable 5/Mythos 5 for all users, according to Reuters.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Donald Trump was inaugurated for a second non-consecutive presidential term. His administration quickly emphasized tariffs, immigration enforcement, deregulation, energy, AI infrastructure and reversal of Biden-era policies. This mattered because Baseline political state for all post-Jan-2025 U.S. federal policy.
@@ -3880,9 +3887,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-01-STARGATE - Stargate AI infrastructure project announced
 
-**Anchor date/period:** 2025-01-21  
-**Domain:** AI / Models / Agents  
-**Category:** AI infrastructure / USA  
+**Anchor date/period:** 2025-01-21
+**Domain:** AI / Models / Agents
+**Category:** AI infrastructure / USA
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -3903,7 +3910,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-DEEPSEEK, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S017: Chatham House: Trump, Stargate, DeepSeek — Summary of early-2025 AI infrastructure/geopolitics shock around Stargate and DeepSeek.
+- S017: Chatham House: Trump, Stargate, DeepSeek - Summary of early-2025 AI infrastructure/geopolitics shock around Stargate and DeepSeek.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Trump announced the Stargate Project, described as a large AI infrastructure investment backed by OpenAI, Oracle, SoftBank and MGX. This mattered because AI competition became strongly tied to data centers, power, capital expenditure and national industrial strategy.
@@ -3930,9 +3937,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-01-DEEPSEEK - DeepSeek shock challenged U.S. frontier-cost assumptions
 
-**Anchor date/period:** 2025-01  
-**Domain:** AI / Models / Agents  
-**Category:** AI / China / Markets  
+**Anchor date/period:** 2025-01
+**Domain:** AI / Models / Agents
+**Category:** AI / China / Markets
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -3953,9 +3960,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, EU-2025-02-AI-ACT-PROHIBITIONS
 
 #### Source context, not links
-- S015: Reuters: DeepSeek wake-up call — Trump called DeepSeek a wake-up call for US industry; used for DeepSeek disruption context.
-- S016: Reuters: DeepSeek regulatory scrutiny — Governments increased scrutiny of DeepSeek over privacy/security and data storage concerns.
-- S017: Chatham House: Trump, Stargate, DeepSeek — Summary of early-2025 AI infrastructure/geopolitics shock around Stargate and DeepSeek.
+- S015: Reuters: DeepSeek wake-up call - Trump called DeepSeek a wake-up call for US industry; used for DeepSeek disruption context.
+- S016: Reuters: DeepSeek regulatory scrutiny - Governments increased scrutiny of DeepSeek over privacy/security and data storage concerns.
+- S017: Chatham House: Trump, Stargate, DeepSeek - Summary of early-2025 AI infrastructure/geopolitics shock around Stargate and DeepSeek.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, DeepSeek's model release drew global attention for strong performance at lower apparent cost; Trump called it a wake-up call for U.S. industry, and regulators later scrutinized DeepSeek privacy/security. This mattered because Important correction: post-cutoff AI competition became more multipolar, with China/open models pressuring U.S. proprietary economics.
@@ -3982,9 +3989,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER EU-2025-02-AI-ACT-PROHIBITIONS - EU AI Act prohibited-practices and AI-literacy provisions began applying
 
-**Anchor date/period:** 2025-02-02  
-**Domain:** AI / Models / Agents  
-**Category:** AI regulation / EU  
+**Anchor date/period:** 2025-02-02
+**Domain:** AI / Models / Agents
+**Category:** AI regulation / EU
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4005,8 +4012,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S005: EU Commission: AI Act timeline — AI Act entered force 1 Aug 2024; full application 2 Aug 2026 with staged exceptions.
-- S006: EU AI Act implementation timeline — Supplemental staged dates for prohibited practices, GPAI and governance obligations.
+- S005: EU Commission: AI Act timeline - AI Act entered force 1 Aug 2024; full application 2 Aug 2026 with staged exceptions.
+- S006: EU AI Act implementation timeline - Supplemental staged dates for prohibited practices, GPAI and governance obligations.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The first AI Act obligations, including bans on unacceptable-risk practices and AI-literacy requirements, began applying. This mattered because Important for compliance: by 2025 the AI Act was no longer only future legislation.
@@ -4033,9 +4040,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-02-CLAUDE37 - Claude Sonnet 3.7 era emphasized hybrid reasoning/coding
 
-**Anchor date/period:** 2025-02  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Models  
+**Anchor date/period:** 2025-02
+**Domain:** AI / Models / Agents
+**Category:** AI / Models
 **Confidence/Staleness:** medium / low
 
 #### What happened
@@ -4056,7 +4063,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S019: Anthropic system cards — Anthropic system-card timeline for Claude 3.5/3.7/4/4.1/4.5 families.
+- S019: Anthropic system cards - Anthropic system-card timeline for Claude 3.5/3.7/4/4.1/4.5 families.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Anthropic's 2025 model cycle moved Claude toward stronger reasoning and coding workflows before Claude 4. This mattered because Shows rapid model cadence after Claude 3.5 and before Claude 4/4.5.
@@ -4083,9 +4090,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER DE-2025-02-ELECTION - German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second
 
-**Anchor date/period:** 2025-02-23  
-**Domain:** Europe / EU / Germany / UK  
-**Category:** Germany / EU  
+**Anchor date/period:** 2025-02-23
+**Domain:** Europe / EU / Germany / UK
+**Category:** Germany / EU
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4106,7 +4113,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: EU-2024-06-ELECTION, FR-2024-06-SNAP, UK-2024-07-ELECTION
 
 #### Source context, not links
-- S026: Reuters: Germany election 2025 — Germany conservatives won 2025 election; Friedrich Merz positioned for chancellor; AfD second.
+- S026: Reuters: Germany election 2025 - Germany conservatives won 2025 election; Friedrich Merz positioned for chancellor; AfD second.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Germany's opposition conservatives won the snap election after Scholz's coalition collapse; AfD achieved its strongest result and came second. This mattered because Important for German/EU policy after 2024: economic policy, Ukraine, migration and defense debates changed.
@@ -4133,9 +4140,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-04-LLAMA4 - Meta Llama 4 generation appeared
 
-**Anchor date/period:** 2025-04  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Open models  
+**Anchor date/period:** 2025-04
+**Domain:** AI / Models / Agents
+**Category:** AI / Open models
 **Confidence/Staleness:** medium / low
 
 #### What happened
@@ -4156,7 +4163,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S025: Meta Llama official model hub — Official Llama family hub for Llama, Llama Guard and Prompt Guard.
+- S025: Meta Llama official model hub - Official Llama family hub for Llama, Llama Guard and Prompt Guard.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Meta's Llama family advanced beyond 3.x during 2025, pushing multimodal/open-weight competition. This mattered because For local/offline work, Llama-family progress is a key practical baseline.
@@ -4183,9 +4190,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-05-CLAUDE4 - Anthropic released Claude Opus 4 and Sonnet 4
 
-**Anchor date/period:** 2025-05-22  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Models  
+**Anchor date/period:** 2025-05-22
+**Domain:** AI / Models / Agents
+**Category:** AI / Models
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4206,8 +4213,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S018: Anthropic: Claude 4 — Official Claude Opus 4 and Sonnet 4 announcement, May 2025.
-- S019: Anthropic system cards — Anthropic system-card timeline for Claude 3.5/3.7/4/4.1/4.5 families.
+- S018: Anthropic: Claude 4 - Official Claude Opus 4 and Sonnet 4 announcement, May 2025.
+- S019: Anthropic system cards - Anthropic system-card timeline for Claude 3.5/3.7/4/4.1/4.5 families.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Anthropic announced Claude 4 models, emphasizing coding, reasoning, agent workflows and long-running tasks. This mattered because Major frontier-model upgrade after Claude 3.5/3.7; important for code-agent capability baselines.
@@ -4234,13 +4241,13 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2025-06-NOKINGS - No Kings protests and military parade on Trump's 79th birthday
 
-**Anchor date/period:** 2025-06-14  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Protest / Trump  
+**Anchor date/period:** 2025-06-14
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Protest / Trump
 **Confidence/Staleness:** high / low
 
 #### What happened
-On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
+On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
 
 #### Why this changed the offline baseline
 A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism. For a model whose training ended around mid-2024 or earlier, this item should be treated as a post-cutoff correction or extension. It should not be projected backward into dates before it was known. It is a dated context item, not a permanent update.
@@ -4257,13 +4264,13 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S035: Reuters: 2025 Trump military parade/No Kings — 2025 U.S. Army 250th parade fell on Trump birthday; nationwide No Kings protests occurred.
-- S036: Reuters: Trump warns protest at parade — Trump warned protesters ahead of 2025 military parade.
-- S037: Reuters: No Kings March 2026 — First No Kings event on Trump birthday 2025 drew estimated 4m-6m people; later mobilizations continued.
+- S035: Reuters: 2025 Trump military parade/No Kings - 2025 U.S. Army 250th parade fell on Trump birthday; nationwide No Kings protests occurred.
+- S036: Reuters: Trump warns protest at parade - Trump warned protesters ahead of 2025 military parade.
+- S037: Reuters: No Kings March 2026 - First No Kings event on Trump birthday 2025 drew estimated 4m-6m people; later mobilizations continued.
 
 #### Model-facing phrasing
-- English: According to the 2026-06-19 offline briefing, On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. This mattered because A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
-- German: Laut dem Offline-Briefing vom 2026-06-19 gilt: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. Wichtig daran ist: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
+- English: According to the 2026-06-19 offline briefing, On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. This mattered because A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
+- German: Laut dem Offline-Briefing vom 2026-06-19 gilt: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. Wichtig daran ist: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
 
 #### Reasoning implications
 - Treat this as a node in a chronological chain, not as timeless truth.
@@ -4282,13 +4289,13 @@ An offline model may state the event, date/period, actors explicitly named in th
 3. What old assumption should a local model correct because of this event?
 
 #### Minimal answer template
-"As of the 2026-06-19 offline update, On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. The important point is that A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism. Confidence is high; staleness is low."
+"As of the 2026-06-19 offline update, On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites. The important point is that A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism. Confidence is high; staleness is low."
 
 ### DOSSIER AI-2025-06-GEMINI25 - Gemini 2.5 Pro/Flash reached stable enterprise lifecycle
 
-**Anchor date/period:** 2025-06-17  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Google  
+**Anchor date/period:** 2025-06-17
+**Domain:** AI / Models / Agents
+**Category:** AI / Google
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4309,7 +4316,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S023: Google Cloud Gemini model lifecycle — Gemini model version/lifecycle dates including Gemini 2.5 and 3.x releases.
+- S023: Google Cloud Gemini model lifecycle - Gemini model version/lifecycle dates including Gemini 2.5 and 3.x releases.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Google's Gemini 2.5 Pro and Flash release/lifecycle dates became part of the stable Google AI model stack. This mattered because Updates Google model baseline for coding, multimodal and low-latency AI.
@@ -4336,9 +4343,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-07-US-AI-PLAN - Trump White House AI policy favored exports and lighter state rules
 
-**Anchor date/period:** 2025-07-22  
-**Domain:** AI / Models / Agents  
-**Category:** AI policy / USA  
+**Anchor date/period:** 2025-07-22
+**Domain:** AI / Models / Agents
+**Category:** AI policy / USA
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -4359,7 +4366,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S021: Reuters: Anthropic disables top-tier models — U.S. order/foreign-access restriction led Anthropic to disable Fable 5/Mythos 5 for all users, according to Reuters.
+- S021: Reuters: Anthropic disables top-tier models - U.S. order/foreign-access restriction led Anthropic to disable Fable 5/Mythos 5 for all users, according to Reuters.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The White House prepared/published a plan to push U.S. AI abroad and restrict federal support for states with rules viewed as too restrictive. This mattered because U.S. AI governance shifted from Biden-era safety/executive-order posture toward innovation, infrastructure and export competition.
@@ -4386,9 +4393,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-08-GPT5 - OpenAI released GPT-5
 
-**Anchor date/period:** 2025-08-07  
-**Domain:** AI / Models / Agents  
-**Category:** AI / OpenAI  
+**Anchor date/period:** 2025-08-07
+**Domain:** AI / Models / Agents
+**Category:** AI / OpenAI
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4409,8 +4416,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S013: OpenAI: Introducing GPT-5 — Official announcement for GPT-5 in Aug 2025.
-- S014: OpenAI model release notes — Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
+- S013: OpenAI: Introducing GPT-5 - Official announcement for GPT-5 in Aug 2025.
+- S014: OpenAI model release notes - Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, OpenAI introduced GPT-5 as a unified system that routes between quick responses and deeper reasoning for coding, math, writing, health and multimodal work. This mattered because Major post-cutoff OpenAI milestone. Offline models should not assume GPT-4o/o1 are newest OpenAI systems.
@@ -4437,9 +4444,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-08-GPTOSS - OpenAI released gpt-oss open-weight models
 
-**Anchor date/period:** 2025-08  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Open-weight / Offline  
+**Anchor date/period:** 2025-08
+**Domain:** AI / Models / Agents
+**Category:** AI / Open-weight / Offline
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4460,7 +4467,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S001: OpenAI gpt-oss-20b model docs — gpt-oss-20b has knowledge cutoff Jun 01 2024 and 131,072 context window.
+- S001: OpenAI gpt-oss-20b model docs - gpt-oss-20b has knowledge cutoff Jun 01 2024 and 131,072 context window.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, OpenAI released gpt-oss-20b and 120b open-weight models. gpt-oss-20b is documented with Jun 01 2024 knowledge cutoff and 131,072-token context. This mattered because This is the target-model context: the offline model itself needs external post-cutoff context.
@@ -4487,9 +4494,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER RUSSIA-2025-08-ALASKA - Trump-Putin Alaska meeting attempted Ukraine diplomacy
 
-**Anchor date/period:** 2025-08  
-**Domain:** AI / Models / Agents  
-**Category:** USA / Russia / Ukraine  
+**Anchor date/period:** 2025-08
+**Domain:** AI / Models / Agents
+**Category:** USA / Russia / Ukraine
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -4510,7 +4517,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S038: Reuters: Putin birthday greeting to Trump 2026 — Putin congratulated Trump on his 80th birthday and the two spoke for 55 minutes.
+- S038: Reuters: Putin birthday greeting to Trump 2026 - Putin congratulated Trump on his 80th birthday and the two spoke for 55 minutes.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Trump and Putin met in Alaska in August 2025 to attempt negotiations around the Russia-Ukraine war, but the conflict continued into 2026. This mattered because Anchor for later Putin-Trump personal diplomacy and Trump's 2026 birthday call.
@@ -4537,9 +4544,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-09-CLAUDE45 - Claude Sonnet 4.5 emphasized agents, coding and computer use
 
-**Anchor date/period:** 2025-09  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Agents / Coding  
+**Anchor date/period:** 2025-09
+**Domain:** AI / Models / Agents
+**Category:** AI / Agents / Coding
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4560,7 +4567,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S019: Anthropic system cards — Anthropic system-card timeline for Claude 3.5/3.7/4/4.1/4.5 families.
+- S019: Anthropic system cards - Anthropic system-card timeline for Claude 3.5/3.7/4/4.1/4.5 families.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Anthropic's later 2025 Claude line positioned Sonnet 4.5 as strong for agents, coding and computer-use workflows. This mattered because Useful baseline for offline coding-agent discussions.
@@ -4587,9 +4594,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER WINDOWS-2025-10-EOL - Windows 10 reached end of support
 
-**Anchor date/period:** 2025-10-14  
-**Domain:** Programming / Cyber / Platforms  
-**Category:** Operating systems / Security  
+**Anchor date/period:** 2025-10-14
+**Domain:** Programming / Cyber / Platforms
+**Category:** Operating systems / Security
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4610,8 +4617,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: CYBER-2024-07-CROWDSTRIKE, RUNTIME-2026-05-NODE26, PY-2026-06-3146, UV-2026-06-01121, NODE-2026-06-SECURITY, CROWDSTRIKE-2026-DELTA-PROBE
 
 #### Source context, not links
-- S027: Microsoft: Windows 10 support ended — Windows 10 support ended 14 Oct 2025; no more feature/security updates without ESU.
-- S028: Microsoft Windows 10 ESU — Consumer Extended Security Updates for eligible Windows 10 22H2 devices.
+- S027: Microsoft: Windows 10 support ended - Windows 10 support ended 14 Oct 2025; no more feature/security updates without ESU.
+- S028: Microsoft Windows 10 ESU - Consumer Extended Security Updates for eligible Windows 10 22H2 devices.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Microsoft ended support for Windows 10 on 14 Oct 2025. PCs still run, but no regular security/feature updates are provided without ESU or special LTSC channels. This mattered because Highly relevant to Windows 10 users/admins: security posture changed materially after the cutoff.
@@ -4638,9 +4645,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2025-10-NOKINGS2 - Second No Kings mobilization expanded anti-Trump protest network
 
-**Anchor date/period:** 2025-10-18  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Protest  
+**Anchor date/period:** 2025-10-18
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Protest
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -4661,7 +4668,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-11-SHUTDOWN, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S037: Reuters: No Kings March 2026 — First No Kings event on Trump birthday 2025 drew estimated 4m-6m people; later mobilizations continued.
+- S037: Reuters: No Kings March 2026 - First No Kings event on Trump birthday 2025 drew estimated 4m-6m people; later mobilizations continued.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, A second No Kings protest wave took place in October 2025, reportedly involving more locations and large participation. This mattered because Shows No Kings was not a one-day June 2025 event but became an ongoing protest brand.
@@ -4688,9 +4695,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2025-11-SHUTDOWN - Longest U.S. government shutdown ended after 43 days
 
-**Anchor date/period:** 2025-11-12  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Government  
+**Anchor date/period:** 2025-11-12
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Government
 **Confidence/Staleness:** medium / low
 
 #### What happened
@@ -4711,7 +4718,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2026-03-NOKINGS3
 
 #### Source context, not links
-- S003: CFR: Ten Most Significant World Events in 2025 — High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
+- S003: CFR: Ten Most Significant World Events in 2025 - High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, A 43-day U.S. government shutdown ended in November 2025, with funding/back-pay and political fights over health care and agency funding. This mattered because Important U.S. institutional stress event during Trump's second term.
@@ -4738,9 +4745,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-11-GPT51 - GPT-5.1 reorganized OpenAI product variants
 
-**Anchor date/period:** 2025-11  
-**Domain:** AI / Models / Agents  
-**Category:** AI / OpenAI  
+**Anchor date/period:** 2025-11
+**Domain:** AI / Models / Agents
+**Category:** AI / OpenAI
 **Confidence/Staleness:** medium / low
 
 #### What happened
@@ -4761,8 +4768,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S012: OpenAI ChatGPT/model release notes — Official OpenAI release/lifecycle notes for GPT-4o, GPT-5.x, GPT-5.5 availability/retirements.
-- S014: OpenAI model release notes — Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
+- S012: OpenAI ChatGPT/model release notes - Official OpenAI release/lifecycle notes for GPT-4o, GPT-5.x, GPT-5.5 availability/retirements.
+- S014: OpenAI model release notes - Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, OpenAI's GPT-5 family evolved through 5.1-style instant/thinking variants and personalization/product-routing changes. This mattered because Shows modern AI products are systems and routers, not simply single static models.
@@ -4789,9 +4796,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER CLIMATE-2025-COP30 - COP30 in Brazil continued climate-finance/fossil-fuel disputes
 
-**Anchor date/period:** 2025-11  
-**Domain:** Science / Health / Climate / Space / Games  
-**Category:** Climate / COP30  
+**Anchor date/period:** 2025-11
+**Domain:** Science / Health / Climate / Space / Games
+**Category:** Climate / COP30
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -4812,7 +4819,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: SPORT-2024-07-PARIS, SPACE-2024-10-STARSHIP-CATCH, CLIMATE-2024-11-COP29, SPACE-2026-05-STARSHIP12, GAMES-2026-06-SGF, HEALTH-2026-06-EBOLA
 
 #### Source context, not links
-- S003: CFR: Ten Most Significant World Events in 2025 — High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
+- S003: CFR: Ten Most Significant World Events in 2025 - High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, COP30 discussions were framed by record heat, climate finance shortfalls, energy-transition disputes and the implementation gap after COP29. This mattered because Maintains climate context between COP29 and 2026 climate bulletins.
@@ -4839,9 +4846,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-12-GEMINI-TTS - Gemini API expanded TTS/live/audio capabilities
 
-**Anchor date/period:** 2025-12  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Multimodal  
+**Anchor date/period:** 2025-12
+**Domain:** AI / Models / Agents
+**Category:** AI / Multimodal
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -4862,8 +4869,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S022: Google Gemini API changelog — Gemini API model/product release notes.
-- S023: Google Cloud Gemini model lifecycle — Gemini model version/lifecycle dates including Gemini 2.5 and 3.x releases.
+- S022: Google Gemini API changelog - Gemini API model/product release notes.
+- S023: Google Cloud Gemini model lifecycle - Gemini model version/lifecycle dates including Gemini 2.5 and 3.x releases.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Google's Gemini API changelog showed continued expansion of TTS/live/multimodal capabilities in late 2025. This mattered because AI model competition increasingly included real-time audio, agents and multimodal interfaces.
@@ -4890,9 +4897,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER IRAN-2026-01-SHUTDOWN - Iran internet shutdowns became major censorship/infrastructure case
 
-**Anchor date/period:** 2026-01  
-**Domain:** Middle East / Iran / Israel / Syria  
-**Category:** Iran / Internet / Conflict  
+**Anchor date/period:** 2026-01
+**Domain:** Middle East / Iran / Israel / Syria
+**Category:** Iran / Internet / Conflict
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -4913,7 +4920,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: ME-2024-09-LEBANON, SYRIA-2024-12-ASSAD-FALL, ME-2025-GAZA-CEASEFIRE
 
 #### Source context, not links
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Research on Iran's 2026 internet shutdowns described nationwide disruptions and centralized null-routing/censorship mechanisms amid protests and conflict. This mattered because Important for internet freedom, measurement, BGP-monitoring limits and wartime communications.
@@ -4940,9 +4947,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER US-2026-03-NOKINGS3 - Third No Kings protest wave occurred amid Iran-war politics
 
-**Anchor date/period:** 2026-03-28  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Protest / Iran war  
+**Anchor date/period:** 2026-03-28
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Protest / Iran war
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -4963,7 +4970,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN
 
 #### Source context, not links
-- S037: Reuters: No Kings March 2026 — First No Kings event on Trump birthday 2025 drew estimated 4m-6m people; later mobilizations continued.
+- S037: Reuters: No Kings March 2026 - First No Kings event on Trump birthday 2025 drew estimated 4m-6m people; later mobilizations continued.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, No Kings protests continued in March 2026 with Iran-war, ICE/immigration, authoritarianism and democratic-backsliding themes. This mattered because Offline models should know No Kings became an ongoing protest series through 2026.
@@ -4990,9 +4997,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER ME-2026-03-US-IRAN-WAR - U.S.-Iran war/conflict escalated before June 2026 ceasefire talks
 
-**Anchor date/period:** 2026-03..2026-06  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** Middle East / USA / Iran  
+**Anchor date/period:** 2026-03..2026-06
+**Domain:** USA / Trump / U.S. politics
+**Category:** Middle East / USA / Iran
 **Confidence/Staleness:** medium / high
 
 #### What happened
@@ -5013,9 +5020,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN
 
 #### Source context, not links
-- S041: Reuters: U.S.-Iran interim deal 2026 — U.S.-Iran interim agreement/ceasefire and 60-day negotiation period.
-- S042: Reuters: Trump goals in Iran war — Reuters analysis: Iran war outcomes partial; missile/drone damage, navy/air defense degradation, nuclear unresolved.
-- S043: AP: Iran nuclear watchdog inspection — AP report on Iran inviting watchdog inspection and enriched uranium handling under agreement.
+- S041: Reuters: U.S.-Iran interim deal 2026 - U.S.-Iran interim agreement/ceasefire and 60-day negotiation period.
+- S042: Reuters: Trump goals in Iran war - Reuters analysis: Iran war outcomes partial; missile/drone damage, navy/air defense degradation, nuclear unresolved.
+- S043: AP: Iran nuclear watchdog inspection - AP report on Iran inviting watchdog inspection and enriched uranium handling under agreement.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, By mid-June 2026 Reuters described a three-month conflict involving U.S. airstrikes coordinated with Israel against Iran. Iran's missile/drone forces and navy/air defenses were damaged, but nuclear issues remained unresolved. This mattered because Very high-staleness anchor: regional energy security, Hormuz, Israel, Hezbollah, Gulf states and U.S. politics all became linked to the conflict.
@@ -5042,9 +5049,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2026-04-GPT55 - OpenAI GPT-5.5 generation became current frontier product line
 
-**Anchor date/period:** 2026-04  
-**Domain:** AI / Models / Agents  
-**Category:** AI / OpenAI  
+**Anchor date/period:** 2026-04
+**Domain:** AI / Models / Agents
+**Category:** AI / OpenAI
 **Confidence/Staleness:** medium / low
 
 #### What happened
@@ -5065,8 +5072,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S012: OpenAI ChatGPT/model release notes — Official OpenAI release/lifecycle notes for GPT-4o, GPT-5.x, GPT-5.5 availability/retirements.
-- S014: OpenAI model release notes — Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
+- S012: OpenAI ChatGPT/model release notes - Official OpenAI release/lifecycle notes for GPT-4o, GPT-5.x, GPT-5.5 availability/retirements.
+- S014: OpenAI model release notes - Official OpenAI model lifecycle notes including GPT-4o updates and o3 retirement timing.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, OpenAI moved the GPT-5 family to GPT-5.5-era products; GPT-5.2 was retired from ChatGPT by June 2026 while GPT-5.5 remained available. This mattered because Updates model landscape for offline AI comparing itself to online frontier systems.
@@ -5093,9 +5100,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER RUNTIME-2026-05-NODE26 - Node.js 26 appeared as current/upcoming LTS line
 
-**Anchor date/period:** 2026-05-05  
-**Domain:** Programming / Cyber / Platforms  
-**Category:** Programming / Runtime  
+**Anchor date/period:** 2026-05-05
+**Domain:** Programming / Cyber / Platforms
+**Category:** Programming / Runtime
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -5116,7 +5123,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: CYBER-2024-07-CROWDSTRIKE, WINDOWS-2025-10-EOL, PY-2026-06-3146, UV-2026-06-01121, NODE-2026-06-SECURITY, CROWDSTRIKE-2026-DELTA-PROBE
 
 #### Source context, not links
-- S034: endoflife.date Node.js — Node 26 released May 2026; Node 24 LTS, Node 22 maintenance context.
+- S034: endoflife.date Node.js - Node 26 released May 2026; Node 24 LTS, Node 22 maintenance context.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Node.js 26 was released in May 2026 and entered the ecosystem alongside Node 24 LTS and Node 22 maintenance/security lines. This mattered because Relevant for dev/admin decisions and package ecosystem compatibility.
@@ -5143,9 +5150,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER SPACE-2026-05-STARSHIP12 - Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation
 
-**Anchor date/period:** 2026-05-22  
-**Domain:** Science / Health / Climate / Space / Games  
-**Category:** Space / SpaceX  
+**Anchor date/period:** 2026-05-22
+**Domain:** Science / Health / Climate / Space / Games
+**Category:** Space / SpaceX
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -5166,8 +5173,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: SPORT-2024-07-PARIS, SPACE-2024-10-STARSHIP-CATCH, CLIMATE-2024-11-COP29, CLIMATE-2025-COP30, GAMES-2026-06-SGF, HEALTH-2026-06-EBOLA
 
 #### Source context, not links
-- S049: Reuters: Starship Flight 12/V3 — SpaceX Starship 12th test flight and V3 debut in May 2026.
-- S050: Reuters: FAA Starship investigation — FAA ordered SpaceX to investigate booster mishap after Flight 12.
+- S049: Reuters: Starship Flight 12/V3 - SpaceX Starship 12th test flight and V3 debut in May 2026.
+- S050: Reuters: FAA Starship investigation - FAA ordered SpaceX to investigate booster mishap after Flight 12.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, SpaceX launched the 12th Starship test flight and first V3 iteration. The test achieved milestones including mock satellite deployment and controlled spacecraft splashdown, but the Super Heavy booster crashed into the Gulf of Mexico and triggered an FAA-led investigation. This mattered because Important for Starship schedule, reusable launch economics, Starlink, Moon/Mars ambitions and SpaceX financing/IPO narratives.
@@ -5194,9 +5201,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2026-05-GEMINI3 - Gemini 3.x enterprise model line appeared
 
-**Anchor date/period:** 2026-05  
-**Domain:** AI / Models / Agents  
-**Category:** AI / Google  
+**Anchor date/period:** 2026-05
+**Domain:** AI / Models / Agents
+**Category:** AI / Google
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -5217,7 +5224,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S023: Google Cloud Gemini model lifecycle — Gemini model version/lifecycle dates including Gemini 2.5 and 3.x releases.
+- S023: Google Cloud Gemini model lifecycle - Gemini model version/lifecycle dates including Gemini 2.5 and 3.x releases.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Google Cloud model lifecycle listed Gemini 3.5 Flash and Gemini 3.x image/lite variants released in May 2026. This mattered because Updates Google model landscape beyond Gemini 2.5.
@@ -5244,9 +5251,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER GAMES-2026-06-SGF - Summer Game Fest 2026 ran in Los Angeles with major game announcements
 
-**Anchor date/period:** 2026-06-05..2026-06-08  
-**Domain:** Science / Health / Climate / Space / Games  
-**Category:** Games / Industry  
+**Anchor date/period:** 2026-06-05..2026-06-08
+**Domain:** Science / Health / Climate / Space / Games
+**Category:** Games / Industry
 **Confidence/Staleness:** medium / low
 
 #### What happened
@@ -5267,8 +5274,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: SPORT-2024-07-PARIS, SPACE-2024-10-STARSHIP-CATCH, CLIMATE-2024-11-COP29, CLIMATE-2025-COP30, SPACE-2026-05-STARSHIP12, HEALTH-2026-06-EBOLA
 
 #### Source context, not links
-- S051: Summer Game Fest official — Summer Game Fest 2026 main show date/venue.
-- S052: PlayStation Blog SGF 2026 — Sony/PlayStation summary of selected SGF 2026 announcements.
+- S051: Summer Game Fest official - Summer Game Fest 2026 main show date/venue.
+- S052: PlayStation Blog SGF 2026 - Sony/PlayStation summary of selected SGF 2026 announcements.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Summer Game Fest 2026 took place from June 5-8. Coverage highlighted upcoming console/PC titles and announcements including Resident Evil Veronica, Guild Wars 3 console presence, Lords of the Fallen II and other publisher showcases. This mattered because Important culture/games anchor for June 2026 and for offline models asked about gaming releases/trends.
@@ -5295,9 +5302,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER PY-2026-06-3146 - Python 3.14.6 and 3.13.14 released
 
-**Anchor date/period:** 2026-06-10  
-**Domain:** Programming / Cyber / Platforms  
-**Category:** Programming / Python  
+**Anchor date/period:** 2026-06-10
+**Domain:** Programming / Cyber / Platforms
+**Category:** Programming / Python
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -5318,8 +5325,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: CYBER-2024-07-CROWDSTRIKE, WINDOWS-2025-10-EOL, RUNTIME-2026-05-NODE26, UV-2026-06-01121, NODE-2026-06-SECURITY, CROWDSTRIKE-2026-DELTA-PROBE
 
 #### Source context, not links
-- S030: Python Insider: Python 3.14.6 — Python 3.14.6 and 3.13.14 released 10 Jun 2026; 3.14.6 has ~179 fixes.
-- S029: Python PEP 745 — Python 3.14 release schedule.
+- S030: Python Insider: Python 3.14.6 - Python 3.14.6 and 3.13.14 released 10 Jun 2026; 3.14.6 has ~179 fixes.
+- S029: Python PEP 745 - Python 3.14 release schedule.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Python 3.14.6, the sixth maintenance release of 3.14, shipped with around 179 bugfixes/build/doc changes since 3.14.5; Python 3.13.14 also shipped. This mattered because Relevant for Python project planning and installer/runtime baselines.
@@ -5346,9 +5353,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER UV-2026-06-01121 - uv 0.11.21 added CPython 3.13.14 and 3.14.6 support
 
-**Anchor date/period:** 2026-06-11  
-**Domain:** Programming / Cyber / Platforms  
-**Category:** Programming / Packaging  
+**Anchor date/period:** 2026-06-11
+**Domain:** Programming / Cyber / Platforms
+**Category:** Programming / Packaging
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -5369,8 +5376,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: CYBER-2024-07-CROWDSTRIKE, WINDOWS-2025-10-EOL, RUNTIME-2026-05-NODE26, PY-2026-06-3146, NODE-2026-06-SECURITY, CROWDSTRIKE-2026-DELTA-PROBE
 
 #### Source context, not links
-- S031: uv changelog — uv 0.11.21 released 2026-06-11; added CPython 3.13.14 and 3.14.6.
-- S032: uv PyPI/project docs — uv supports pip-compatible workflows, global cache, Windows/macOS/Linux.
+- S031: uv changelog - uv 0.11.21 released 2026-06-11; added CPython 3.13.14 and 3.14.6.
+- S032: uv PyPI/project docs - uv supports pip-compatible workflows, global cache, Windows/macOS/Linux.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Astral's uv changelog notes 0.11.21 release with CPython 3.13.14 and 3.14.6 additions. This mattered because Important for Python offline/wheelhouse/venv workflows.
@@ -5397,9 +5404,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2026-06-ANTHROPIC-EXPORT - Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order
 
-**Anchor date/period:** 2026-06-13  
-**Domain:** AI / Models / Agents  
-**Category:** AI policy / Export controls  
+**Anchor date/period:** 2026-06-13
+**Domain:** AI / Models / Agents
+**Category:** AI policy / Export controls
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -5420,8 +5427,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S020: Anthropic Claude models overview — Claude Fable 5 generally available June 9 2026; Mythos 5 limited availability.
-- S021: Reuters: Anthropic disables top-tier models — U.S. order/foreign-access restriction led Anthropic to disable Fable 5/Mythos 5 for all users, according to Reuters.
+- S020: Anthropic Claude models overview - Claude Fable 5 generally available June 9 2026; Mythos 5 limited availability.
+- S021: Reuters: Anthropic disables top-tier models - U.S. order/foreign-access restriction led Anthropic to disable Fable 5/Mythos 5 for all users, according to Reuters.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Anthropic's June 2026 top-tier Claude models became a test case for AI export controls aimed at software capabilities, not just chips. Reuters reported Anthropic disabled them globally after a U.S. order limiting foreign access. This mattered because Major AI-governance shift: model access itself became a national-security/export-control object.
@@ -5448,16 +5455,16 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER TRUMP-2026-06-BDAY - Trump's 80th birthday featured Putin call and controversial White House UFC event
 
-**Anchor date/period:** 2026-06-14  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** USA / Trump / Culture war  
+**Anchor date/period:** 2026-06-14
+**Domain:** USA / Trump / U.S. politics
+**Category:** USA / Trump / Culture war
 **Confidence/Staleness:** high / medium
 
 #### What happened
 Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue.
 
 #### Why this changed the offline baseline
-Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism. For a model whose training ended around mid-2024 or earlier, this item should be treated as a post-cutoff correction or extension. It should not be projected backward into dates before it was known. It is a dated context item, not a permanent update.
+Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism. For a model whose training ended around mid-2024 or earlier, this item should be treated as a post-cutoff correction or extension. It should not be projected backward into dates before it was known. It is a dated context item, not a permanent update.
 
 #### Safe answer boundary
 An offline model may state the event, date/period, actors explicitly named in the card, and why it matters. It should avoid adding unverified details, casualties, numbers, quotes, or later outcomes unless those details appear elsewhere in the current update package. If the user asks about the current/live state after 2026-06-19, the model should request a newer update or online verification.
@@ -5471,12 +5478,12 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN
 
 #### Source context, not links
-- S038: Reuters: Putin birthday greeting to Trump 2026 — Putin congratulated Trump on his 80th birthday and the two spoke for 55 minutes.
-- S039: Guardian: Trump UFC birthday event 2026 — Trump hosted a UFC event on the White House South Lawn; protests criticized ethics/conflicts.
+- S038: Reuters: Putin birthday greeting to Trump 2026 - Putin congratulated Trump on his 80th birthday and the two spoke for 55 minutes.
+- S039: Guardian: Trump UFC birthday event 2026 - Trump hosted a UFC event on the White House South Lawn; protests criticized ethics/conflicts.
 
 #### Model-facing phrasing
-- English: According to the 2026-06-19 offline briefing, Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. This mattered because Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
-- German: Laut dem Offline-Briefing vom 2026-06-19 gilt: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. Wichtig daran ist: Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
+- English: According to the 2026-06-19 offline briefing, Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. This mattered because Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
+- German: Laut dem Offline-Briefing vom 2026-06-19 gilt: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. Wichtig daran ist: Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
 
 #### Reasoning implications
 - Treat this as a node in a chronological chain, not as timeless truth.
@@ -5495,13 +5502,13 @@ An offline model may state the event, date/period, actors explicitly named in th
 3. What old assumption should a local model correct because of this event?
 
 #### Minimal answer template
-"As of the 2026-06-19 offline update, Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. The important point is that Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism. Confidence is high; staleness is medium."
+"As of the 2026-06-19 offline update, Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue. The important point is that Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism. Confidence is high; staleness is medium."
 
 ### DOSSIER G7-2026-06-EVIAN - G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power
 
-**Anchor date/period:** 2026-06-17..2026-06-18  
-**Domain:** AI / Models / Agents  
-**Category:** G7 / Geopolitics / AI  
+**Anchor date/period:** 2026-06-17..2026-06-18
+**Domain:** AI / Models / Agents
+**Category:** G7 / Geopolitics / AI
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -5522,7 +5529,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S040: Reuters: G7 2026 summit — G7 discussed Iran deal, Ukraine, critical minerals and AI/data-center power at Evian-les-Bains.
+- S040: Reuters: G7 2026 summit - G7 discussed Iran deal, Ukraine, critical minerals and AI/data-center power at Evian-les-Bains.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, G7 leaders met in Evian-les-Bains. Reuters described discussion of Trump's Iran deal, stronger Ukraine posture, critical-minerals supply chains, China dependency, and AI/data-center power questions involving industry figures. This mattered because Connects geopolitics, AI infrastructure, energy, minerals and U.S. alliance management in one summit.
@@ -5549,9 +5556,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER ME-2026-06-USIRANDEAL - U.S.-Iran interim agreement aimed at ceasefire and negotiations
 
-**Anchor date/period:** 2026-06-18  
-**Domain:** USA / Trump / U.S. politics  
-**Category:** Middle East / USA / Iran  
+**Anchor date/period:** 2026-06-18
+**Domain:** USA / Trump / U.S. politics
+**Category:** Middle East / USA / Iran
 **Confidence/Staleness:** medium / high
 
 #### What happened
@@ -5572,9 +5579,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: US-2024-06-DEBATE, US-2024-07-TRUMP-ASSASSINATION, US-2024-07-BIDEN-WITHDRAWAL, US-2024-11-TRUMP-WINS, US-2025-01-NEWORLEANS, CLIMATE-2025-01-LAFIRES, US-2025-01-TRUMP-INAG, US-2025-06-NOKINGS, US-2025-10-NOKINGS2, US-2025-11-SHUTDOWN
 
 #### Source context, not links
-- S041: Reuters: U.S.-Iran interim deal 2026 — U.S.-Iran interim agreement/ceasefire and 60-day negotiation period.
-- S042: Reuters: Trump goals in Iran war — Reuters analysis: Iran war outcomes partial; missile/drone damage, navy/air defense degradation, nuclear unresolved.
-- S043: AP: Iran nuclear watchdog inspection — AP report on Iran inviting watchdog inspection and enriched uranium handling under agreement.
+- S041: Reuters: U.S.-Iran interim deal 2026 - U.S.-Iran interim agreement/ceasefire and 60-day negotiation period.
+- S042: Reuters: Trump goals in Iran war - Reuters analysis: Iran war outcomes partial; missile/drone damage, navy/air defense degradation, nuclear unresolved.
+- S043: AP: Iran nuclear watchdog inspection - AP report on Iran inviting watchdog inspection and enriched uranium handling under agreement.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Reuters reported a U.S.-Iran interim agreement/deal after months of conflict, opening a 60-day negotiation period. Core issues such as nuclear capability, missile limits, proxies and regional acceptance remained uncertain. This mattered because High-staleness but critical: affects oil/Hormuz risk, Israel/Gulf security, Lebanon/Hezbollah and U.S. domestic politics.
@@ -5601,9 +5608,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER UA-2026-06-MOSCOWREFINERY - Ukrainian drone strikes hit Moscow refinery infrastructure
 
-**Anchor date/period:** 2026-06-18  
-**Domain:** AI / Models / Agents  
-**Category:** Ukraine / Russia / War  
+**Anchor date/period:** 2026-06-18
+**Domain:** AI / Models / Agents
+**Category:** Ukraine / Russia / War
 **Confidence/Staleness:** medium / high
 
 #### What happened
@@ -5624,7 +5631,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S044: Reuters: Ukraine Moscow refinery attack — Ukrainian drone attack on Moscow refinery, June 2026.
+- S044: Reuters: Ukraine Moscow refinery attack - Ukrainian drone attack on Moscow refinery, June 2026.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Reuters/Guardian live coverage reported Ukrainian drone attacks around Moscow including an oil refinery, highlighting Ukraine's ability to strike deep into Russia and pressure Moscow's air defenses. This mattered because Concrete war-development anchor for June 2026; very high staleness because battlefield dynamics change rapidly.
@@ -5651,9 +5658,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER HEALTH-2026-06-EBOLA - DRC/Uganda Bundibugyo Ebola outbreak worsened
 
-**Anchor date/period:** 2026-06-18  
-**Domain:** Science / Health / Climate / Space / Games  
-**Category:** Health / Africa / Ebola  
+**Anchor date/period:** 2026-06-18
+**Domain:** Science / Health / Climate / Space / Games
+**Category:** Health / Africa / Ebola
 **Confidence/Staleness:** high / high
 
 #### What happened
@@ -5674,10 +5681,10 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: SPORT-2024-07-PARIS, SPACE-2024-10-STARSHIP-CATCH, CLIMATE-2024-11-COP29, CLIMATE-2025-COP30, SPACE-2026-05-STARSHIP12, GAMES-2026-06-SGF
 
 #### Source context, not links
-- S045: WHO: DRC/Uganda Ebola 2026 — Ebola Bundibugyo outbreak confirmed in DRC and Uganda in May 2026.
-- S046: Reuters: DRC Ebola cases 18 Jun 2026 — DRC confirmed Ebola case/death update.
-- S047: Reuters: CDC Ebola emergency funding — CDC activated emergency Ebola response funding.
-- S048: ECDC Ebola DRC/Uganda 2026 — ECDC situation page for DRC/Uganda Ebola outbreak.
+- S045: WHO: DRC/Uganda Ebola 2026 - Ebola Bundibugyo outbreak confirmed in DRC and Uganda in May 2026.
+- S046: Reuters: DRC Ebola cases 18 Jun 2026 - DRC confirmed Ebola case/death update.
+- S047: Reuters: CDC Ebola emergency funding - CDC activated emergency Ebola response funding.
+- S048: ECDC Ebola DRC/Uganda 2026 - ECDC situation page for DRC/Uganda Ebola outbreak.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, WHO confirmed a 2026 Ebola outbreak in DRC and Uganda involving Bundibugyo virus. Reuters reported DRC confirmed cases near 900 with hundreds of deaths; CDC/Africa CDC funding and response gaps became major issues. This mattered because High-staleness public-health anchor: requires current verification before operational decisions.
@@ -5704,9 +5711,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER NODE-2026-06-SECURITY - Node.js security releases updated 26.x, 24.x and 22.x lines
 
-**Anchor date/period:** 2026-06-18  
-**Domain:** Programming / Cyber / Platforms  
-**Category:** Security / Programming  
+**Anchor date/period:** 2026-06-18
+**Domain:** Programming / Cyber / Platforms
+**Category:** Security / Programming
 **Confidence/Staleness:** high / low
 
 #### What happened
@@ -5727,8 +5734,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: CYBER-2024-07-CROWDSTRIKE, WINDOWS-2025-10-EOL, RUNTIME-2026-05-NODE26, PY-2026-06-3146, UV-2026-06-01121, CROWDSTRIKE-2026-DELTA-PROBE
 
 #### Source context, not links
-- S033: Node.js June 2026 security release — Security updates for Node 26.x, 24.x and 22.x released 18 Jun 2026.
-- S034: endoflife.date Node.js — Node 26 released May 2026; Node 24 LTS, Node 22 maintenance context.
+- S033: Node.js June 2026 security release - Security updates for Node 26.x, 24.x and 22.x released 18 Jun 2026.
+- S034: endoflife.date Node.js - Node 26 released May 2026; Node 24 LTS, Node 22 maintenance context.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Node.js shipped security releases for 26.x, 24.x and 22.x, updating dependencies including llhttp, nghttp2, OpenSSL and undici. This mattered because Useful concrete admin/dev action: update Node runtimes in supported lines.
@@ -5755,9 +5762,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER WORLD-2024-ELECTION-SUPERCYCLE - 2024 election supercycle continued
 
-**Anchor date/period:** 2024  
-**Domain:** World / Cross-domain  
-**Category:** World politics  
+**Anchor date/period:** 2024
+**Domain:** World / Cross-domain
+**Category:** World politics
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -5778,7 +5785,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: WORLD-2024-06-INDIA, TRADE-2025-TARIFFS
 
 #### Source context, not links
-- S004: Reuters: 2024 global elections graphic — 2024 had elections in countries home to almost half the world population; used as election-supercycle context.
+- S004: Reuters: 2024 global elections graphic - 2024 had elections in countries home to almost half the world population; used as election-supercycle context.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Elections in countries representing nearly half of humanity made 2024 a global political reset year, including India, EU, UK, France and U.S. This mattered because Useful background: many post-cutoff political assumptions changed in a short period.
@@ -5805,9 +5812,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER ME-2025-GAZA-CEASEFIRE - Gaza ceasefire/hostage diplomacy remained fragile
 
-**Anchor date/period:** 2025-01  
-**Domain:** Middle East / Iran / Israel / Syria  
-**Category:** Middle East / Gaza  
+**Anchor date/period:** 2025-01
+**Domain:** Middle East / Iran / Israel / Syria
+**Category:** Middle East / Gaza
 **Confidence/Staleness:** medium / high
 
 #### What happened
@@ -5828,8 +5835,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: ME-2024-09-LEBANON, SYRIA-2024-12-ASSAD-FALL, IRAN-2026-01-SHUTDOWN
 
 #### Source context, not links
-- S003: CFR: Ten Most Significant World Events in 2025 — High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S003: CFR: Ten Most Significant World Events in 2025 - High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Early 2025 saw renewed Gaza ceasefire/hostage-release diplomacy, but stability remained fragile and later regional conflicts kept evolving. This mattered because Do not assume Gaza/Israel war state from June 2024 remained unchanged.
@@ -5856,9 +5863,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER TRADE-2025-TARIFFS - Trump tariff policy reshaped global trade risk
 
-**Anchor date/period:** 2025  
-**Domain:** World / Cross-domain  
-**Category:** Economy / Trade  
+**Anchor date/period:** 2025
+**Domain:** World / Cross-domain
+**Category:** Economy / Trade
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -5879,7 +5886,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: WORLD-2024-06-INDIA, WORLD-2024-ELECTION-SUPERCYCLE
 
 #### Source context, not links
-- S003: CFR: Ten Most Significant World Events in 2025 — High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
+- S003: CFR: Ten Most Significant World Events in 2025 - High-level synthesis of 2025 world events including Trump return, AI race, trade/geopolitics.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The second Trump administration pushed aggressive tariff/trade policies, raising inflation, supply-chain and ally-tension questions. This mattered because Important for economics and geopolitics; live verification needed for exact tariff rates.
@@ -5906,9 +5913,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER AI-2025-AI-ACT-GPAI - EU AI Act GPAI/governance obligations entered staged application
 
-**Anchor date/period:** 2025-08-02  
-**Domain:** AI / Models / Agents  
-**Category:** AI regulation / EU  
+**Anchor date/period:** 2025-08-02
+**Domain:** AI / Models / Agents
+**Category:** AI regulation / EU
 **Confidence/Staleness:** high / medium
 
 #### What happened
@@ -5929,8 +5936,8 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S005: EU Commission: AI Act timeline — AI Act entered force 1 Aug 2024; full application 2 Aug 2026 with staged exceptions.
-- S006: EU AI Act implementation timeline — Supplemental staged dates for prohibited practices, GPAI and governance obligations.
+- S005: EU Commission: AI Act timeline - AI Act entered force 1 Aug 2024; full application 2 Aug 2026 with staged exceptions.
+- S006: EU AI Act implementation timeline - Supplemental staged dates for prohibited practices, GPAI and governance obligations.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, General-purpose AI obligations and governance/enforcement provisions entered their next staged application period, affecting model providers serving the EU. This mattered because Important for frontier AI model providers and open/closed model transparency debates.
@@ -5957,9 +5964,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER MEDIA-2025-DIGITALNEWS - Digital news trust/platform shifts continued
 
-**Anchor date/period:** 2025-06  
-**Domain:** AI / Models / Agents  
-**Category:** Media / AI / Society  
+**Anchor date/period:** 2025-06
+**Domain:** AI / Models / Agents
+**Category:** Media / AI / Society
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -5980,7 +5987,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: AI-2024-06-CLAUDE35, AI-2024-07-LLAMA31, EU-2024-08-AI-ACT-FORCE, WAR-2024-08-KURSK, AI-2024-09-O1, NOBEL-2024-AI, AI-2024-12-GEMINI20, AI-2024-12-O3, AI-2025-01-STARGATE, AI-2025-01-DEEPSEEK
 
 #### Source context, not links
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, Reuters Institute's 2025 Digital News Report framed journalism against uncertainty, platform fragmentation, AI and climate/conflict pressures. This mattered because Useful for understanding media ecosystem and information trust.
@@ -6007,9 +6014,9 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ### DOSSIER GAMES-2025-SWITCH2 - Nintendo Switch successor era began
 
-**Anchor date/period:** 2025  
-**Domain:** War / Ukraine / Russia  
-**Category:** Games / Hardware  
+**Anchor date/period:** 2025
+**Domain:** War / Ukraine / Russia
+**Category:** Games / Hardware
 **Confidence/Staleness:** medium / medium
 
 #### What happened
@@ -6030,7 +6037,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 - Related cards in same domain: none selected
 
 #### Source context, not links
-- S054: Wikipedia Current events portal — Discovery source for current events by month; use as secondary discovery, not sole authority.
+- S054: Wikipedia Current events portal - Discovery source for current events by month; use as secondary discovery, not sole authority.
 
 #### Model-facing phrasing
 - English: According to the 2026-06-19 offline briefing, The games industry moved into a new hardware/platform cycle around Nintendo's Switch successor and publisher showcase resets. This mattered because Useful as gaming-market context, but exact launch details should be verified in current sources.
@@ -6059,7 +6066,7 @@ An offline model may state the event, date/period, actors explicitly named in th
 
 ## 2026-06-20 Update Cards
 
-### CARD ME-2026-06-SWISSTALKS — U.S. and Iran envoys headed to Switzerland while ceasefire conditions remained fragile
+### CARD ME-2026-06-SWISSTALKS - U.S. and Iran envoys headed to Switzerland while ceasefire conditions remained fragile
 Date: 2026-06-20
 Cat: Middle East / USA / Iran / Diplomacy
 Meta: conf=medium; stale=high; src=S055,S056
@@ -6074,7 +6081,7 @@ Key details:
 - Open issues: nuclear restrictions/verification, sanctions relief, regional proxies, Lebanon ceasefire compliance, Israeli participation/objections, and Hormuz shipping/security.
 - Staleness note: fast-moving diplomacy and military incidents may have superseded this by the time it is read.
 
-### CARD ME-2026-06-LEBANON-CEASEFIRE-FRAGILE — Israel-Hezbollah ceasefire was immediately strained by deadly strikes
+### CARD ME-2026-06-LEBANON-CEASEFIRE-FRAGILE - Israel-Hezbollah ceasefire was immediately strained by deadly strikes
 Date: 2026-06-19..2026-06-20
 Cat: Middle East / Lebanon / Israel / Hezbollah / War
 Meta: conf=medium; stale=high; src=S056,S057
@@ -6088,7 +6095,7 @@ Key details:
 - Israel was not a direct party to the U.S.-Iran negotiation framework and continued to assert military-security needs.
 - Reported deaths and strikes make the Lebanon front a test case for whether the wider regional de-escalation is real or only declaratory.
 
-### CARD AI-2026-06-JUMPER-ANTHROPIC — AlphaFold co-creator John Jumper left Google DeepMind for Anthropic
+### CARD AI-2026-06-JUMPER-ANTHROPIC - AlphaFold co-creator John Jumper left Google DeepMind for Anthropic
 Date: 2026-06-19
 Cat: AI / Science / Talent / BioAI
 Meta: conf=high; stale=medium; src=S058
@@ -6101,7 +6108,7 @@ Key details:
 - Context: AI labs compete for top researchers, with startups offering focused missions and potentially less bureaucracy.
 - Offline relation: updates older assumptions that DeepMind retained most marquee AlphaFold leadership.
 
-### CARD DEV-2026-06-NODE-SECURITY-V5 — Node.js June 2026 security releases patched high-severity issues
+### CARD DEV-2026-06-NODE-SECURITY-V5 - Node.js June 2026 security releases patched high-severity issues
 Date: 2026-06-18..2026-06-20
 Cat: Programming / Security / Node.js
 Meta: conf=high; stale=low; src=S059,S060
@@ -6115,7 +6122,7 @@ Key details:
 - High-severity CVEs named in official notes: CVE-2026-48618 and CVE-2026-48933.
 - Action orientation: upgrade supported Node.js runtimes promptly, especially exposed services using TLS/WebCrypto/HTTP2/proxy paths.
 
-### CARD DEV-2026-06-PYTHON-UV — Python 3.14.6 and uv 0.11.23 anchored June 2026 Python tooling state
+### CARD DEV-2026-06-PYTHON-UV - Python 3.14.6 and uv 0.11.23 anchored June 2026 Python tooling state
 Date: 2026-06-10..2026-06-19
 Cat: Programming / Python / Packaging
 Meta: conf=high; stale=low; src=S061,S062
@@ -6128,7 +6135,7 @@ Key details:
 - uv latest observed PyPI release in this snapshot: 0.11.23 on 2026-06-19.
 - Offline install relevance: uv and local caches/wheelhouses remain useful for machines without reliable internet.
 
-### CARD OPENAI-2026-06-TASKS-ADMIN — ChatGPT Scheduled Tasks and admin usage controls matured
+### CARD OPENAI-2026-06-TASKS-ADMIN - ChatGPT Scheduled Tasks and admin usage controls matured
 Date: 2026-06-17..2026-06-20
 Cat: AI Products / OpenAI / Admin / Automation
 Meta: conf=high; stale=medium; src=S063,S064
@@ -6141,7 +6148,7 @@ Key details:
 - Enterprise/Edu: usage limits and billing/analytics controls became a workspace administration layer.
 - Offline-model relation: do not assume ChatGPT is only synchronous chat; by this snapshot it has explicit task scheduling/automation surfaces.
 
-### CARD AI-2026-06-G7-TRUSTED-PARTNERS — G7 discussed allied access to restricted frontier AI models
+### CARD AI-2026-06-G7-TRUSTED-PARTNERS - G7 discussed allied access to restricted frontier AI models
 Date: 2026-06-16..2026-06-18
 Cat: AI Governance / G7 / Security / Allies
 Meta: conf=medium; stale=medium; src=S065,S066
@@ -6153,3 +6160,87 @@ Key details:
 - Themes: trusted partner access, cybersecurity, democratic AI governance, U.S. export/security controls, EU concerns.
 - Actors: G7 leaders; U.S. Commerce officials; Macron; OpenAI/Anthropic/Google DeepMind leadership.
 - Interpretation: not a settled treaty; an active negotiation topic.
+
+## 2026-06-21 Update Cards
+
+### CARD ME-2026-06-USIRAN-BUERGENSTOCK - Switzerland confirmed confidential U.S.-Iran talks continued
+Date: 2026-06-20..2026-06-21
+Cat: Middle East / USA / Iran / Diplomacy
+Meta: conf=medium; stale=high; src=S067,S059,S064
+Use: OU-HIGH-STALENESS
+Event:
+Switzerland confirmed that confidential U.S.-Iran discussions continued at Buergenstock and declined to identify participants or describe the substance of the talks. The talks remain connected to the fragile June 2026 interim U.S.-Iran framework, Hormuz shipping/security, sanctions relief questions, nuclear restrictions and linked Lebanon/Israel/Hezbollah tensions.
+Why it matters:
+This reinforces that the June 2026 U.S.-Iran de-escalation process was still active but not operationally settled. Offline models should not treat the pact as a durable peace settlement; it was still being negotiated, implemented and contested.
+Key details:
+- Venue: Buergenstock, Switzerland.
+- Switzerland's role: discreet host/facilitator; no public disclosure of participant list or negotiation content.
+- Open risks: Lebanon ceasefire implementation, Iranian nuclear verification, maritime security, sanctions relief, U.S. domestic opposition and Israeli security concerns.
+- Offline relation: updates 2026-06-20 Switzerland-talks card; confirms continued talks but not completed settlement.
+
+### CARD UA-2026-06-TYUMEN-DRONE - Ukraine confirmed deep strike on Tyumen refinery facilities
+Date: 2026-06-20..2026-06-21
+Cat: Ukraine / Russia / War / Energy Infrastructure
+Meta: conf=high; stale=high; src=S068,S069,S070
+Use: OU-HIGH-STALENESS
+Event:
+Ukrainian President Volodymyr Zelenskiy confirmed that Ukrainian forces struck refining facilities in Russia's Tyumen region, far beyond Ukraine's borders. Reuters described the facility as one of Russia's modern refineries, while Russian regional officials said air defenses prevented damage and staff were evacuated. Zelenskiy linked the operation to Ukraine's expanding long-range drone campaign against Russian oil infrastructure.
+Why it matters:
+This is a concrete sign that Ukraine's long-range strike envelope reached deeper into Russian energy infrastructure. It affects war economics, Russian air-defense allocation, energy risk, escalation logic and the geography of the conflict.
+Key details:
+- Target region: Tyumen, western Siberia/Russia.
+- Ukrainian framing: pressure on Russian oil infrastructure and war funding.
+- Russian framing: air-defense success/no damage reported by regional authorities.
+- Reported capability context: new Ukrainian long-range drones with roughly 3,000 km class reach were mentioned in reporting.
+
+### CARD UA-2026-06-RUSSIAN-ATTACK-WARNING - Zelenskiy warned of a possible large Russian attack
+Date: 2026-06-20..2026-06-21
+Cat: Ukraine / Russia / Civilian Risk / War
+Meta: conf=high; stale=high; src=S069,S070
+Use: OU-HIGH-STALENESS
+Event:
+Zelenskiy warned Ukrainians about a possible impending large Russian attack and urged attention to air raid warnings. Reporting around the same period described Russian strikes on several Ukrainian regions, including civilian casualties in Zaporizhzhia, Sumy, Kharkiv and other areas. AP reported drone interception figures and additional Russian claims of downed Ukrainian drones.
+Why it matters:
+The week showed simultaneous escalation in both directions: Russian attacks on Ukrainian civilian areas and Ukrainian attacks against Russian energy infrastructure. Offline models should treat this as a fast-moving active-conflict snapshot, not a stable battlefield assessment.
+Key details:
+- Civilian-risk areas mentioned in reporting: Zaporizhzhia, Sumy, Kharkiv, Kherson and Poltava.
+- Ukrainian defense reporting: significant Russian drone waves were partly intercepted.
+- Strategic relation: confirms a pattern of reciprocal long-range air/drone warfare.
+
+### CARD AI-2026-06-G7-AI-STATECRAFT - G7 week underscored AI as geopolitical statecraft
+Date: 2026-06-16..2026-06-21
+Cat: AI / Geopolitics / G7 / Governance
+Meta: conf=medium; stale=medium; src=S071,S072,S066
+Event:
+G7 week in Evian-les-Bains continued to frame frontier AI as a geopolitical asset rather than only a software product. Reporting described AI leaders such as OpenAI, Google DeepMind and Anthropic figures appearing around summit-level discussions, while analysis characterized AI executives as being treated with state-like importance. The week's AI governance themes included trusted partner access, security restrictions, democratic coordination and the tension between national control and allied use of advanced models.
+Why it matters:
+This strengthens the 2026 trend that AI access, compute, model weights, safety evaluations and cyber-defense capabilities are moving into the same policy space as export controls, alliances and national security.
+Key details:
+- Relevant actors: G7 leaders, U.S. and European officials, frontier AI company leadership.
+- Policy tension: allied access versus national-security restriction.
+- Offline relation: pairs with cards on export restrictions and trusted-partner AI access.
+
+### CARD US-2026-06-QATAR-AIRCRAFT-CONTROVERSY - U.S. political reporting noted Qatar aircraft and intelligence reshuffle controversy
+Date: 2026-06-20..2026-06-21
+Cat: USA / Trump Administration / Political Controversy
+Meta: conf=medium; stale=medium; src=S073
+Event:
+A political-news roundup described controversy around a Qatari 747 connected to the Air Force One fleet discussion and reported an intelligence-leadership reshuffle involving Bill Pulte and Tulsi Gabbard. The same reporting connected domestic political friction to the Iran/Lebanon crisis and criticism of the administration's Middle East posture.
+Why it matters:
+This is a lower-priority but useful U.S. politics anchor: foreign gifts, presidential aircraft symbolism, intelligence leadership and Middle East policy all became part of the same late-June 2026 domestic narrative. Treat as secondary-source context unless corroborated elsewhere.
+Key details:
+- Context: Trump administration domestic controversy and optics.
+- Related themes: Middle East diplomacy, Republican criticism, intelligence leadership, presidential-aircraft symbolism.
+- Confidence note: useful as a political-media snapshot, not as a sole authoritative record.
+
+### CARD CULTURE-2026-06-WORLDCUP-JUN21 - 2026 World Cup group-stage schedule continued on June 21
+Date: 2026-06-21
+Cat: Sports / Culture / World Cup 2026
+Meta: conf=high; stale=medium; src=S074
+Event:
+AP's June 21 schedule note highlighted World Cup group-stage games including Spain vs Saudi Arabia, Belgium vs Iran, New Zealand vs Egypt and Uruguay vs Cape Verde. This is a lightweight cultural/sports anchor for the date.
+Why it matters:
+For offline models, sports schedules are highly stale and should not be used as current/live results. As a dated cultural marker, however, it helps situate June 2026 public attention outside war, AI and politics.
+Key details:
+- Date anchor: 2026-06-21.
+- Do not infer results from this card; it is a schedule/preview snapshot.

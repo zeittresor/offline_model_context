@@ -267,3 +267,43 @@ This file is for human/online audit only. Offline models cannot open these URLs 
 ### S066 - AP: Macron urges U.S. to share cutting-edge AI / democratic AI cooperation
 - Summary: AP reported Macron and AI leaders argued for democratic cooperation on AI regulation and model access at the G7 summit.
 - URL: https://apnews.com/article/7d783c6de4356962e338b8b8563d48ea
+
+### S067 - Reuters: Switzerland says US-Iran talks continue at Buergenstock
+- Source type: news/analysis source
+- URL: https://www.reuters.com/world/europe/switzerland-says-us-iran-talks-continue-brgenstock-declines-identify-2026-06-20/
+- Summary: Switzerland confirmed it continued hosting confidential U.S.-Iran discussions at Buergenstock and declined to identify participants or disclose content.
+
+### S068 - Reuters: Ukraine confirms drone strike on Tyumen refining facilities
+- Source type: news/analysis source
+- URL: https://www.reuters.com/business/energy/ukraines-zelenskiy-confirms-drone-strike-refining-facilities-russias-tyumen-2026-06-20/
+- Summary: Zelenskiy confirmed a Ukrainian drone strike on refining facilities in Russia's Tyumen region and linked it to Ukraine's longer-range strike campaign.
+
+### S069 - Reuters: Zelenskiy warns of impending massive Russian attack
+- Source type: news/analysis source
+- URL: https://www.reuters.com/world/europe/zelenskiy-warns-impending-massive-russian-attack-ukraine-2026-06-20/
+- Summary: Zelenskiy warned of an impending massive Russian attack while reporting ongoing civilian casualties and Ukraine's counter-campaign against Russian oil infrastructure.
+
+### S070 - AP: Russian strikes hit Ukrainian civilian areas, Kharkiv and other regions
+- Source type: news/analysis source
+- URL: https://apnews.com/article/f386a7bfc8241504376e352097ff0cbb
+- Summary: AP reported Russian strikes on residential and civilian areas in Ukraine, including Kharkiv, Sumy and Zaporizhzhia, plus drone-interception figures.
+
+### S071 - AP: G7 summit Iran/Ukraine/AI context
+- Source type: news/analysis source
+- URL: https://apnews.com/live/trump-g7-iran-updates-06-16-2026
+- Summary: AP live coverage of the G7 summit in Evian-les-Bains, including Iran, Ukraine and AI-linked appearances by technology leaders.
+
+### S072 - Axios: AI executives at G7 and AI as geopolitical power
+- Source type: news/analysis source
+- URL: https://www.axios.com/2026/06/20/ai-tech-moguls-g7
+- Summary: Analysis arguing that AI executives at the 2026 G7 were treated with state-level importance, illustrating AI's geopolitical status.
+
+### S073 - Guardian: Trump administration June 20 updates, Lebanon, Qatar aircraft and intelligence reshuffle
+- Source type: news/analysis source
+- URL: https://www.theguardian.com/us-news/2026/jun/20/trump-administration-latest-updates-today
+- Summary: Secondary political-news roundup covering Lebanon-related disruption, Qatari aircraft controversy and U.S. intelligence leadership changes.
+
+### S074 - AP: 2026 World Cup June 21 schedule note
+- Source type: news/analysis source
+- URL: https://apnews.com/article/world-cup-schedule-results-news-2c374842a24ceb81a5ade32352d51836
+- Summary: AP previewed June 21 World Cup group-stage matches including Spain vs Saudi Arabia, Belgium vs Iran, New Zealand vs Egypt and Uruguay vs Cape Verde.

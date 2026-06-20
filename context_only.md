@@ -1,7 +1,7 @@
 # Offline Model Update - context_only cumulative edition
 
-Created: 2026-06-20 (Europe/Berlin date)
-Coverage: 2024-06-01 to 2026-06-20
+Created: 2026-06-21 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-21
 Target reader: offline/local LLMs, especially gpt-oss:20b-like models with knowledge cutoff around 2024-06.
 Format: Markdown/text/JSONL only. No PDF. No images.
 Source policy: Detailed URLs and source registry are intentionally omitted to save tokens. Use full.md for provenance/audit.
@@ -39,7 +39,7 @@ Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|hi
 
 - The target model baseline is June 2024. Since then, the largest durable deltas are: Trump won the 2024 election and began a second term in Jan 2025; the EU AI Act entered force and staged obligations began; AI model competition moved through Claude 3.5/4, GPT-5/5.5, Gemini 2.5/3.x and open-weight gpt-oss/Llama progress; Windows 10 reached end of support; global software-supply-chain risk was illustrated by the CrowdStrike outage; Syria's Assad regime fell; the Russia-Ukraine war expanded with deeper strikes/cross-border dynamics; Middle East conflict evolved through Gaza/Lebanon/Iran crises; and climate/health/security risks remained unstable.
 - For normal offline sessions, use `context_only.md`. For larger contexts or retrieval, use `full.md`, `weekly_chronology.md`, `event_index.md`, and `cards_context_only.jsonl`.
-- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-20, not live truth.
+- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-21, not live truth.
 - When answering concrete event questions, prefer `weekly_chronology.md` or `event_index.md` over the compressed context.
 
 ## How to use this context-only file
@@ -47,6 +47,16 @@ Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|hi
 - Use this file as the primary compact context for offline conversations.
 - If a question asks for concrete world events, dates, persons or week-by-week developments, consult `weekly_chronology.md` or `event_index.md` as well.
 - If a question requires proof/provenance, use `full.md`.
+
+
+
+## Latest delta included: 2026-06-21
+
+- U.S.-Iran talks: Switzerland confirmed confidential talks continued at Buergenstock. This supports continuity of the negotiation channel but not a stable peace settlement. Use high-staleness caution.
+- Ukraine/Russia: Zelenskiy confirmed a Ukrainian strike on Tyumen-region refining facilities and warned of possible large Russian attacks. Reporting also described civilian casualties from Russian strikes in Ukrainian regions. Use high-staleness caution.
+- AI/G7: G7 week reinforced the trend that frontier AI is treated as geopolitical/state-security infrastructure, not merely consumer software.
+- USA politics: secondary reporting linked Middle East diplomacy, Qatar aircraft controversy and intelligence-leadership shifts in the Trump administration narrative. Treat as medium-confidence political context.
+- Culture/sports: World Cup group-stage schedule items for 2026-06-21 are date anchors only, not live results.
 
 ## Factual Update Cards - cumulative selected events
 
@@ -131,7 +141,7 @@ Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|hi
 ### AI-2024-09-O1 - OpenAI introduced o1-style reasoning models
 - Date: 2024-09
 - Category: AI / Reasoning models
-- What happened: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making “reasoning effort” a visible product concept.
+- What happened: OpenAI introduced a family of models designed to spend more compute on reasoning before answering, making "reasoning effort" a visible product concept.
 - Why it matters: Important shift from pure chat-completion framing toward explicit deliberation/reasoning modes.
 - Confidence/Staleness: high / low
 ### ME-2024-09-LEBANON - Israel-Hezbollah conflict escalated sharply in Lebanon
@@ -245,7 +255,7 @@ Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|hi
 ### US-2025-06-NOKINGS - No Kings protests and military parade on Trump's 79th birthday
 - Date: 2025-06-14
 - Category: USA / Protest / Trump
-- What happened: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
+- What happened: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
 - Why it matters: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
 - Confidence/Staleness: high / low
 ### AI-2025-06-GEMINI25 - Gemini 2.5 Pro/Flash reached stable enterprise lifecycle
@@ -390,7 +400,7 @@ Compact metadata convention: `Meta: conf=<low|medium|high>; stale=<low|medium|hi
 - Date: 2026-06-14
 - Category: USA / Trump / Culture war
 - What happened: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue.
-- Why it matters: Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
+- Why it matters: Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
 - Confidence/Staleness: high / medium
 ### G7-2026-06-EVIAN - G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power
 - Date: 2026-06-17..2026-06-18

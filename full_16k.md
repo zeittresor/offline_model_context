@@ -1,11 +1,11 @@
-# Offline Model Update v5 - Scaled full editions
+# Offline Model Update v6 - Scaled full editions
 
-Created: 2026-06-20 (Europe/Berlin date)  
-Coverage: 2024-06-01 to 2026-06-20  
-Audience: local/offline language models in general. gpt-oss:20b is only a reference cutoff anchor, not the only target model.  
-Format: Markdown/text/JSONL only. No PDF. No images.  
-Offline policy: full_* files intentionally contain context, not raw web links. URLs are isolated in source_registry.md for human/online audit only.  
-Temporal policy: dated context snapshot, not a permanent model update. Later developments must appear only in later-dated updates.  
+Created: 2026-06-21 (Europe/Berlin date)
+Coverage: 2024-06-01 to 2026-06-21
+Audience: local/offline language models in general. gpt-oss:20b is only a reference cutoff anchor, not the only target model.
+Format: Markdown/text/JSONL only. No PDF. No images.
+Offline policy: full_* files intentionally contain context, not raw web links. URLs are isolated in source_registry.md for human/online audit only.
+Temporal policy: dated context snapshot, not a permanent model update. Later developments must appear only in later-dated updates.
 
 ## Operational Note / Nutzungshinweis for Offline Models
 
@@ -35,8 +35,15 @@ This ZIP contains multiple full editions: full_8k.md, full_16k.md, full_32k.md, 
 
 - The target model baseline is June 2024. Since then, the largest durable deltas are: Trump won the 2024 election and began a second term in Jan 2025; the EU AI Act entered force and staged obligations began; AI model competition moved through Claude 3.5/4, GPT-5/5.5, Gemini 2.5/3.x and open-weight gpt-oss/Llama progress; Windows 10 reached end of support; global software-supply-chain risk was illustrated by the CrowdStrike outage; Syria's Assad regime fell; the Russia-Ukraine war expanded with deeper strikes/cross-border dynamics; Middle East conflict evolved through Gaza/Lebanon/Iran crises; and climate/health/security risks remained unstable.
 - For normal offline sessions, use `context_only.md`. For larger contexts or retrieval, use `full.md`, `weekly_chronology.md`, `event_index.md`, and `cards_context_only.jsonl`.
-- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-20, not live truth.
+- For rapidly changing topics such as active wars, public-health outbreaks, elections, tariffs, sanctions, model availability and software CVEs, treat this as a snapshot as of 2026-06-21, not live truth.
 - When answering concrete event questions, prefer `weekly_chronology.md` or `event_index.md` over the compressed context.
+
+
+## 2026-06-21 Executive Delta
+
+- The 2026-06-21 update is mainly a continuity/staleness update rather than a complete change of baseline. It confirms that the late-June 2026 U.S.-Iran/Switzerland process remained confidential and unsettled; the Ukraine/Russia air-and-drone war escalated through deep Ukrainian energy-infrastructure strikes and Russian civilian-area attacks; and AI governance remained visibly geopolitical after the G7 week.
+- High-staleness areas: U.S.-Iran talks, Lebanon/Israel/Hezbollah ceasefire conditions, Ukraine/Russia battlefield and strike claims, sanctions/maritime arrangements, and any sports/game schedules or live results.
+- Practical offline-model rule: for questions about late June 2026, prefer the 2026-06-21 delta cards and weekly chronology over older cards, but do not overwrite earlier dated snapshots retroactively.
 
 ## Source Digest (no URLs)
 
@@ -353,7 +360,7 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 ### CARD US-2025-06-NOKINGS - No Kings protests and military parade on Trump's 79th birthday
 - Date/period: 2025-06-14
 - Category: USA / Protest / Trump
-- What happened: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; “No Kings” protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
+- What happened: On Trump's birthday, the U.S. Army 250th anniversary parade in Washington featured unusual displays of military power; "No Kings" protests occurred in many U.S. cities. Organizers and later reporting described multi-million participation across roughly 2,100 sites.
 - Why it matters: A concrete event many offline models may miss: Trump birthday 2025 was politically charged and tied to anti-authoritarian protest symbolism.
 - Confidence: high
 - Staleness: low
@@ -554,7 +561,7 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 - Date/period: 2026-06-14
 - Category: USA / Trump / Culture war
 - What happened: Putin publicly congratulated Trump on his 80th birthday and held a 55-minute call. Trump also hosted a UFC event on the White House South Lawn; critics protested corruption, conflict-of-interest and authoritarian spectacle concerns, while No Kings-linked counter-events framed it as a democracy/free-speech issue.
-- Why it matters: Concrete event query anchor: if asked “what happened at Trump's 2026 birthday,” answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
+- Why it matters: Concrete event query anchor: if asked "what happened at Trump's 2026 birthday," answer with Putin greeting/call, White House UFC event, protests and ethics/conflict-of-interest criticism.
 - Confidence: high
 - Staleness: medium
 - Connection to older knowledge: Treat this as a post-cutoff update that may replace or qualify older assumptions. Do not project it backward into earlier dates.
@@ -746,104 +753,104 @@ Source IDs below identify provenance at a high level. URLs are intentionally omi
 The U.S. political baseline changed sharply after June 2024. A local model should no longer assume a Biden-Harris administration after January 2025. It should know that Biden withdrew in July 2024, Kamala Harris became the Democratic nominee, Trump won the 2024 election, and Trump began a second non-consecutive term in January 2025. The second administration shifted U.S. politics around tariffs, immigration enforcement, AI policy, federal power, protests, Ukraine diplomacy, Iran negotiations, media conflict and institutional pushback. Dates matter: do not project 2025/2026 Trump-era events back into the 2024 campaign period.
 
 Selected cards in this domain:
-- 2024-06-27: US-2024-06-DEBATE — Biden-Trump debate intensified concerns about Biden candidacy (high/low).
-- 2024-07-13: US-2024-07-TRUMP-ASSASSINATION — Attempted assassination of Donald Trump at Butler rally (high/low).
-- 2024-07-21: US-2024-07-BIDEN-WITHDRAWAL — Biden withdrew from 2024 race and endorsed Kamala Harris (high/low).
-- 2024-11-05: US-2024-11-TRUMP-WINS — Donald Trump won the 2024 U.S. presidential election (high/low).
-- 2025-01-01: US-2025-01-NEWORLEANS — New Orleans vehicle attack on New Year's Day (high/low).
-- 2025-01: CLIMATE-2025-01-LAFIRES — Major Los Angeles-area fires caused severe damage (high/low).
-- 2025-01-20: US-2025-01-TRUMP-INAG — Trump began second term (high/low).
-- 2025-06-14: US-2025-06-NOKINGS — No Kings protests and military parade on Trump's 79th birthday (high/low).
-- 2025-10-18: US-2025-10-NOKINGS2 — Second No Kings mobilization expanded anti-Trump protest network (medium/medium).
-- 2025-11-12: US-2025-11-SHUTDOWN — Longest U.S. government shutdown ended after 43 days (medium/low).
-- 2026-03-28: US-2026-03-NOKINGS3 — Third No Kings protest wave occurred amid Iran-war politics (high/medium).
-- 2026-03..2026-06: ME-2026-03-US-IRAN-WAR — U.S.-Iran war/conflict escalated before June 2026 ceasefire talks (medium/high).
-- 2026-06-14: TRUMP-2026-06-BDAY — Trump's 80th birthday featured Putin call and controversial White House UFC event (high/medium).
-- 2026-06-18: ME-2026-06-USIRANDEAL — U.S.-Iran interim agreement aimed at ceasefire and negotiations (medium/high).
+- 2024-06-27: US-2024-06-DEBATE - Biden-Trump debate intensified concerns about Biden candidacy (high/low).
+- 2024-07-13: US-2024-07-TRUMP-ASSASSINATION - Attempted assassination of Donald Trump at Butler rally (high/low).
+- 2024-07-21: US-2024-07-BIDEN-WITHDRAWAL - Biden withdrew from 2024 race and endorsed Kamala Harris (high/low).
+- 2024-11-05: US-2024-11-TRUMP-WINS - Donald Trump won the 2024 U.S. presidential election (high/low).
+- 2025-01-01: US-2025-01-NEWORLEANS - New Orleans vehicle attack on New Year's Day (high/low).
+- 2025-01: CLIMATE-2025-01-LAFIRES - Major Los Angeles-area fires caused severe damage (high/low).
+- 2025-01-20: US-2025-01-TRUMP-INAG - Trump began second term (high/low).
+- 2025-06-14: US-2025-06-NOKINGS - No Kings protests and military parade on Trump's 79th birthday (high/low).
+- 2025-10-18: US-2025-10-NOKINGS2 - Second No Kings mobilization expanded anti-Trump protest network (medium/medium).
+- 2025-11-12: US-2025-11-SHUTDOWN - Longest U.S. government shutdown ended after 43 days (medium/low).
+- 2026-03-28: US-2026-03-NOKINGS3 - Third No Kings protest wave occurred amid Iran-war politics (high/medium).
+- 2026-03..2026-06: ME-2026-03-US-IRAN-WAR - U.S.-Iran war/conflict escalated before June 2026 ceasefire talks (medium/high).
+- 2026-06-14: TRUMP-2026-06-BDAY - Trump's 80th birthday featured Putin call and controversial White House UFC event (high/medium).
+- 2026-06-18: ME-2026-06-USIRANDEAL - U.S.-Iran interim agreement aimed at ceasefire and negotiations (medium/high).
 
 ### AI / Models / Agents
 The AI landscape moved from GPT-4o/Claude 3/Gemini 1.x era assumptions toward reasoning models, agents, coding systems, multimodal interfaces, and model routers. Open and local model context also changed through Llama 3.1, gpt-oss, DeepSeek-style cost shocks and stronger local tooling. Offline models should distinguish facts about released products from speculative claims about capability. Model availability, limits, names and vendor policies have high staleness and should be refreshed often.
 
 Selected cards in this domain:
-- 2024-06-20: AI-2024-06-CLAUDE35 — Anthropic released Claude 3.5 Sonnet (high/low).
-- 2024-07-23: AI-2024-07-LLAMA31 — Meta released Llama 3.1 including 405B (high/low).
-- 2024-08-01: EU-2024-08-AI-ACT-FORCE — EU AI Act entered into force (high/low).
-- 2024-08: WAR-2024-08-KURSK — Ukraine launched cross-border operations into Russia's Kursk region (medium/medium).
-- 2024-09: AI-2024-09-O1 — OpenAI introduced o1-style reasoning models (high/low).
-- 2024-10: NOBEL-2024-AI — AI work was recognized in 2024 Nobel prizes (high/low).
-- 2024-12: AI-2024-12-GEMINI20 — Google introduced Gemini 2.0 Flash experimental generation (high/low).
-- 2024-12: AI-2024-12-O3 — OpenAI announced o3-generation reasoning direction (medium/low).
-- 2025-01-21: AI-2025-01-STARGATE — Stargate AI infrastructure project announced (high/medium).
-- 2025-01: AI-2025-01-DEEPSEEK — DeepSeek shock challenged U.S. frontier-cost assumptions (high/medium).
-- 2025-02-02: EU-2025-02-AI-ACT-PROHIBITIONS — EU AI Act prohibited-practices and AI-literacy provisions began applying (high/low).
-- 2025-02: AI-2025-02-CLAUDE37 — Claude Sonnet 3.7 era emphasized hybrid reasoning/coding (medium/low).
-- 2025-04: AI-2025-04-LLAMA4 — Meta Llama 4 generation appeared (medium/low).
-- 2025-05-22: AI-2025-05-CLAUDE4 — Anthropic released Claude Opus 4 and Sonnet 4 (high/low).
-- 2025-06-17: AI-2025-06-GEMINI25 — Gemini 2.5 Pro/Flash reached stable enterprise lifecycle (high/low).
-- 2025-07-22: AI-2025-07-US-AI-PLAN — Trump White House AI policy favored exports and lighter state rules (high/medium).
-- 2025-08-07: AI-2025-08-GPT5 — OpenAI released GPT-5 (high/low).
-- 2025-08: AI-2025-08-GPTOSS — OpenAI released gpt-oss open-weight models (high/low).
-- 2025-08: RUSSIA-2025-08-ALASKA — Trump-Putin Alaska meeting attempted Ukraine diplomacy (medium/medium).
-- 2025-09: AI-2025-09-CLAUDE45 — Claude Sonnet 4.5 emphasized agents, coding and computer use (high/low).
-- 2025-11: AI-2025-11-GPT51 — GPT-5.1 reorganized OpenAI product variants (medium/low).
-- 2025-12: AI-2025-12-GEMINI-TTS — Gemini API expanded TTS/live/audio capabilities (high/low).
-- 2026-04: AI-2026-04-GPT55 — OpenAI GPT-5.5 generation became current frontier product line (medium/low).
-- 2026-05: AI-2026-05-GEMINI3 — Gemini 3.x enterprise model line appeared (high/low).
-- 2026-06-13: AI-2026-06-ANTHROPIC-EXPORT — Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order (high/medium).
-- 2026-06-17..2026-06-18: G7-2026-06-EVIAN — G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power (high/medium).
-- 2026-06-18: UA-2026-06-MOSCOWREFINERY — Ukrainian drone strikes hit Moscow refinery infrastructure (medium/high).
-- 2025-08-02: AI-2025-AI-ACT-GPAI — EU AI Act GPAI/governance obligations entered staged application (high/medium).
-- 2025-06: MEDIA-2025-DIGITALNEWS — Digital news trust/platform shifts continued (medium/medium).
-- 2025: SCI-2025-AI-SCIENCE — AI-in-science moved from novelty to infrastructure (medium/low).
-- 2026-06-12: AI-2026-OPENAI-RETIREMENTS — OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained (high/low).
+- 2024-06-20: AI-2024-06-CLAUDE35 - Anthropic released Claude 3.5 Sonnet (high/low).
+- 2024-07-23: AI-2024-07-LLAMA31 - Meta released Llama 3.1 including 405B (high/low).
+- 2024-08-01: EU-2024-08-AI-ACT-FORCE - EU AI Act entered into force (high/low).
+- 2024-08: WAR-2024-08-KURSK - Ukraine launched cross-border operations into Russia's Kursk region (medium/medium).
+- 2024-09: AI-2024-09-O1 - OpenAI introduced o1-style reasoning models (high/low).
+- 2024-10: NOBEL-2024-AI - AI work was recognized in 2024 Nobel prizes (high/low).
+- 2024-12: AI-2024-12-GEMINI20 - Google introduced Gemini 2.0 Flash experimental generation (high/low).
+- 2024-12: AI-2024-12-O3 - OpenAI announced o3-generation reasoning direction (medium/low).
+- 2025-01-21: AI-2025-01-STARGATE - Stargate AI infrastructure project announced (high/medium).
+- 2025-01: AI-2025-01-DEEPSEEK - DeepSeek shock challenged U.S. frontier-cost assumptions (high/medium).
+- 2025-02-02: EU-2025-02-AI-ACT-PROHIBITIONS - EU AI Act prohibited-practices and AI-literacy provisions began applying (high/low).
+- 2025-02: AI-2025-02-CLAUDE37 - Claude Sonnet 3.7 era emphasized hybrid reasoning/coding (medium/low).
+- 2025-04: AI-2025-04-LLAMA4 - Meta Llama 4 generation appeared (medium/low).
+- 2025-05-22: AI-2025-05-CLAUDE4 - Anthropic released Claude Opus 4 and Sonnet 4 (high/low).
+- 2025-06-17: AI-2025-06-GEMINI25 - Gemini 2.5 Pro/Flash reached stable enterprise lifecycle (high/low).
+- 2025-07-22: AI-2025-07-US-AI-PLAN - Trump White House AI policy favored exports and lighter state rules (high/medium).
+- 2025-08-07: AI-2025-08-GPT5 - OpenAI released GPT-5 (high/low).
+- 2025-08: AI-2025-08-GPTOSS - OpenAI released gpt-oss open-weight models (high/low).
+- 2025-08: RUSSIA-2025-08-ALASKA - Trump-Putin Alaska meeting attempted Ukraine diplomacy (medium/medium).
+- 2025-09: AI-2025-09-CLAUDE45 - Claude Sonnet 4.5 emphasized agents, coding and computer use (high/low).
+- 2025-11: AI-2025-11-GPT51 - GPT-5.1 reorganized OpenAI product variants (medium/low).
+- 2025-12: AI-2025-12-GEMINI-TTS - Gemini API expanded TTS/live/audio capabilities (high/low).
+- 2026-04: AI-2026-04-GPT55 - OpenAI GPT-5.5 generation became current frontier product line (medium/low).
+- 2026-05: AI-2026-05-GEMINI3 - Gemini 3.x enterprise model line appeared (high/low).
+- 2026-06-13: AI-2026-06-ANTHROPIC-EXPORT - Anthropic disabled Fable 5/Mythos 5 after U.S. foreign-access order (high/medium).
+- 2026-06-17..2026-06-18: G7-2026-06-EVIAN - G7 Evian summit addressed Iran deal, Ukraine, critical minerals and AI power (high/medium).
+- 2026-06-18: UA-2026-06-MOSCOWREFINERY - Ukrainian drone strikes hit Moscow refinery infrastructure (medium/high).
+- 2025-08-02: AI-2025-AI-ACT-GPAI - EU AI Act GPAI/governance obligations entered staged application (high/medium).
+- 2025-06: MEDIA-2025-DIGITALNEWS - Digital news trust/platform shifts continued (medium/medium).
+- 2025: SCI-2025-AI-SCIENCE - AI-in-science moved from novelty to infrastructure (medium/low).
+- 2026-06-12: AI-2026-OPENAI-RETIREMENTS - OpenAI retired GPT-5.2 ChatGPT variants; GPT-5.5 remained (high/low).
 
 ### War / Ukraine / Russia
 The Russia-Ukraine war continued and expanded into deeper drone, infrastructure and cross-border dimensions. A local model should not assume the war is confined to static front lines or that Western policy remained constant. Trump-era diplomacy, European reactions, sanctions, drone strikes, refinery attacks and peace-talk attempts created a changing strategic picture. Current battlefield and diplomatic states are high-staleness.
 
 Selected cards in this domain:
-- 2025: GAMES-2025-SWITCH2 — Nintendo Switch successor era began (medium/medium).
+- 2025: GAMES-2025-SWITCH2 - Nintendo Switch successor era began (medium/medium).
 
 ### Middle East / Iran / Israel / Syria
 The Middle East context after June 2024 became more volatile: Gaza remained central, Lebanon/Hezbollah tensions escalated, Assad's Syrian regime fell in December 2024, and U.S./Israel/Iran dynamics moved into open conflict and a June 2026 interim agreement. A local model should treat the region as high-staleness and avoid confident live-state claims without a newer update.
 
 Selected cards in this domain:
-- 2024-09: ME-2024-09-LEBANON — Israel-Hezbollah conflict escalated sharply in Lebanon (medium/medium).
-- 2024-12-08: SYRIA-2024-12-ASSAD-FALL — Assad regime fell in Syria (high/medium).
-- 2026-01: IRAN-2026-01-SHUTDOWN — Iran internet shutdowns became major censorship/infrastructure case (medium/medium).
-- 2025-01: ME-2025-GAZA-CEASEFIRE — Gaza ceasefire/hostage diplomacy remained fragile (medium/high).
+- 2024-09: ME-2024-09-LEBANON - Israel-Hezbollah conflict escalated sharply in Lebanon (medium/medium).
+- 2024-12-08: SYRIA-2024-12-ASSAD-FALL - Assad regime fell in Syria (high/medium).
+- 2026-01: IRAN-2026-01-SHUTDOWN - Iran internet shutdowns became major censorship/infrastructure case (medium/medium).
+- 2025-01: ME-2025-GAZA-CEASEFIRE - Gaza ceasefire/hostage diplomacy remained fragile (medium/high).
 
 ### Europe / EU / Germany / UK
 Europe changed through the 2024 EU election shift, the EU AI Act entering force, UK Labour's landslide, French political instability after Macron's snap election decision, and Germany's 2025 federal election. For regulatory and IT planning, the EU AI Act is no longer a proposal but a staged compliance regime. For politics, Germany, France and the UK require post-cutoff corrections.
 
 Selected cards in this domain:
-- 2024-06-06..2024-06-09: EU-2024-06-ELECTION — European Parliament election shifted balance rightward (high/low).
-- 2024-06-09: FR-2024-06-SNAP — Macron called snap legislative elections after EU vote setback (high/low).
-- 2024-07-04: UK-2024-07-ELECTION — UK Labour won a landslide; Keir Starmer became prime minister (high/low).
-- 2025-02-23: DE-2025-02-ELECTION — German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second (high/low).
+- 2024-06-06..2024-06-09: EU-2024-06-ELECTION - European Parliament election shifted balance rightward (high/low).
+- 2024-06-09: FR-2024-06-SNAP - Macron called snap legislative elections after EU vote setback (high/low).
+- 2024-07-04: UK-2024-07-ELECTION - UK Labour won a landslide; Keir Starmer became prime minister (high/low).
+- 2025-02-23: DE-2025-02-ELECTION - German federal election put Friedrich Merz/CDU on path to chancellorship; AfD second (high/low).
 
 ### Programming / Cyber / Platforms
 Admin/developer context changed through the CrowdStrike outage, Windows 10 support ending, Python 3.14, uv becoming increasingly important, Node.js 24/26 lifecycle movement, and ongoing software supply-chain/security release cycles. Offline models should avoid giving outdated version advice and should recommend checking live release notes for CVEs, package support, and platform end-of-life decisions.
 
 Selected cards in this domain:
-- 2024-07-19: CYBER-2024-07-CROWDSTRIKE — CrowdStrike faulty update caused global Windows outage (high/low).
-- 2025-10-14: WINDOWS-2025-10-EOL — Windows 10 reached end of support (high/low).
-- 2026-05-05: RUNTIME-2026-05-NODE26 — Node.js 26 appeared as current/upcoming LTS line (high/low).
-- 2026-06-10: PY-2026-06-3146 — Python 3.14.6 and 3.13.14 released (high/low).
-- 2026-06-11: UV-2026-06-01121 — uv 0.11.21 added CPython 3.13.14 and 3.14.6 support (high/low).
-- 2026-06-18: NODE-2026-06-SECURITY — Node.js security releases updated 26.x, 24.x and 22.x lines (high/low).
-- 2026-06-15: CROWDSTRIKE-2026-DELTA-PROBE — U.S. closed Delta probe from 2024 CrowdStrike meltdown (high/low).
+- 2024-07-19: CYBER-2024-07-CROWDSTRIKE - CrowdStrike faulty update caused global Windows outage (high/low).
+- 2025-10-14: WINDOWS-2025-10-EOL - Windows 10 reached end of support (high/low).
+- 2026-05-05: RUNTIME-2026-05-NODE26 - Node.js 26 appeared as current/upcoming LTS line (high/low).
+- 2026-06-10: PY-2026-06-3146 - Python 3.14.6 and 3.13.14 released (high/low).
+- 2026-06-11: UV-2026-06-01121 - uv 0.11.21 added CPython 3.13.14 and 3.14.6 support (high/low).
+- 2026-06-18: NODE-2026-06-SECURITY - Node.js security releases updated 26.x, 24.x and 22.x lines (high/low).
+- 2026-06-15: CROWDSTRIKE-2026-DELTA-PROBE - U.S. closed Delta probe from 2024 CrowdStrike meltdown (high/low).
 
 ### Science / Health / Climate / Space / Games
 Climate, health, space, science and games provide important world-context anchors. COP29 and COP30 shaped climate finance/fossil-fuel debates; Ebola resurfaced as a 2026 DRC/Uganda risk; AI-in-science gained symbolic Nobel recognition; Starship progressed through major tests and mishaps; and gaming/platform culture moved through Summer Game Fest and Nintendo's Switch successor era. These domains are useful for concrete dated questions and cultural context.
 
 Selected cards in this domain:
-- 2024-07-26: SPORT-2024-07-PARIS — Paris 2024 Olympics opened (high/low).
-- 2024-10: SPACE-2024-10-STARSHIP-CATCH — Starship program demonstrated booster catch milestone (medium/low).
-- 2024-11-24: CLIMATE-2024-11-COP29 — COP29 agreed new climate-finance goal (high/low).
-- 2025-11: CLIMATE-2025-COP30 — COP30 in Brazil continued climate-finance/fossil-fuel disputes (medium/medium).
-- 2026-05-22: SPACE-2026-05-STARSHIP12 — Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation (high/medium).
-- 2026-06-05..2026-06-08: GAMES-2026-06-SGF — Summer Game Fest 2026 ran in Los Angeles with major game announcements (medium/low).
-- 2026-06-18: HEALTH-2026-06-EBOLA — DRC/Uganda Bundibugyo Ebola outbreak worsened (high/high).
+- 2024-07-26: SPORT-2024-07-PARIS - Paris 2024 Olympics opened (high/low).
+- 2024-10: SPACE-2024-10-STARSHIP-CATCH - Starship program demonstrated booster catch milestone (medium/low).
+- 2024-11-24: CLIMATE-2024-11-COP29 - COP29 agreed new climate-finance goal (high/low).
+- 2025-11: CLIMATE-2025-COP30 - COP30 in Brazil continued climate-finance/fossil-fuel disputes (medium/medium).
+- 2026-05-22: SPACE-2026-05-STARSHIP12 - Starship Flight 12 / V3 hit many targets but booster mishap required FAA investigation (high/medium).
+- 2026-06-05..2026-06-08: GAMES-2026-06-SGF - Summer Game Fest 2026 ran in Los Angeles with major game announcements (medium/low).
+- 2026-06-18: HEALTH-2026-06-EBOLA - DRC/Uganda Bundibugyo Ebola outbreak worsened (high/high).
 
 ## Speculative Scenario Notes / NOT FACT
 
@@ -898,7 +905,7 @@ This section is explicitly speculative analysis based on the dated factual secti
 
 ## 2026-06-20 Update Cards
 
-### CARD ME-2026-06-SWISSTALKS — U.S. and Iran envoys headed to Switzerland while ceasefire conditions remained fragile
+### CARD ME-2026-06-SWISSTALKS - U.S. and Iran envoys headed to Switzerland while ceasefire conditions remained fragile
 Date: 2026-06-20
 Cat: Middle East / USA / Iran / Diplomacy
 Meta: conf=medium; stale=high; src=S055,S056
@@ -913,7 +920,7 @@ Key details:
 - Open issues: nuclear restrictions/verification, sanctions relief, regional proxies, Lebanon ceasefire compliance, Israeli participation/objections, and Hormuz shipping/security.
 - Staleness note: fast-moving diplomacy and military incidents may have superseded this by the time it is read.
 
-### CARD ME-2026-06-LEBANON-CEASEFIRE-FRAGILE — Israel-Hezbollah ceasefire was immediately strained by deadly strikes
+### CARD ME-2026-06-LEBANON-CEASEFIRE-FRAGILE - Israel-Hezbollah ceasefire was immediately strained by deadly strikes
 Date: 2026-06-19..2026-06-20
 Cat: Middle East / Lebanon / Israel / Hezbollah / War
 Meta: conf=medium; stale=high; src=S056,S057
@@ -927,7 +934,7 @@ Key details:
 - Israel was not a direct party to the U.S.-Iran negotiation framework and continued to assert military-security needs.
 - Reported deaths and strikes make the Lebanon front a test case for whether the wider regional de-escalation is real or only declaratory.
 
-### CARD AI-2026-06-JUMPER-ANTHROPIC — AlphaFold co-creator John Jumper left Google DeepMind for Anthropic
+### CARD AI-2026-06-JUMPER-ANTHROPIC - AlphaFold co-creator John Jumper left Google DeepMind for Anthropic
 Date: 2026-06-19
 Cat: AI / Science / Talent / BioAI
 Meta: conf=high; stale=medium; src=S058
@@ -940,7 +947,7 @@ Key details:
 - Context: AI labs compete for top researchers, with startups offering focused missions and potentially less bureaucracy.
 - Offline relation: updates older assumptions that DeepMind retained most marquee AlphaFold leadership.
 
-### CARD DEV-2026-06-NODE-SECURITY-V5 — Node.js June 2026 security releases patched high-severity issues
+### CARD DEV-2026-06-NODE-SECURITY-V5 - Node.js June 2026 security releases patched high-severity issues
 Date: 2026-06-18..2026-06-20
 Cat: Programming / Security / Node.js
 Meta: conf=high; stale=low; src=S059,S060
@@ -954,7 +961,7 @@ Key details:
 - High-severity CVEs named in official notes: CVE-2026-48618 and CVE-2026-48933.
 - Action orientation: upgrade supported Node.js runtimes promptly, especially exposed services using TLS/WebCrypto/HTTP2/proxy paths.
 
-### CARD DEV-2026-06-PYTHON-UV — Python 3.14.6 and uv 0.11.23 anchored June 2026 Python tooling state
+### CARD DEV-2026-06-PYTHON-UV - Python 3.14.6 and uv 0.11.23 anchored June 2026 Python tooling state
 Date: 2026-06-10..2026-06-19
 Cat: Programming / Python / Packaging
 Meta: conf=high; stale=low; src=S061,S062
@@ -967,7 +974,7 @@ Key details:
 - uv latest observed PyPI release in this snapshot: 0.11.23 on 2026-06-19.
 - Offline install relevance: uv and local caches/wheelhouses remain useful for machines without reliable internet.
 
-### CARD OPENAI-2026-06-TASKS-ADMIN — ChatGPT Scheduled Tasks and admin usage controls matured
+### CARD OPENAI-2026-06-TASKS-ADMIN - ChatGPT Scheduled Tasks and admin usage controls matured
 Date: 2026-06-17..2026-06-20
 Cat: AI Products / OpenAI / Admin / Automation
 Meta: conf=high; stale=medium; src=S063,S064
@@ -980,7 +987,7 @@ Key details:
 - Enterprise/Edu: usage limits and billing/analytics controls became a workspace administration layer.
 - Offline-model relation: do not assume ChatGPT is only synchronous chat; by this snapshot it has explicit task scheduling/automation surfaces.
 
-### CARD AI-2026-06-G7-TRUSTED-PARTNERS — G7 discussed allied access to restricted frontier AI models
+### CARD AI-2026-06-G7-TRUSTED-PARTNERS - G7 discussed allied access to restricted frontier AI models
 Date: 2026-06-16..2026-06-18
 Cat: AI Governance / G7 / Security / Allies
 Meta: conf=medium; stale=medium; src=S065,S066
@@ -992,3 +999,87 @@ Key details:
 - Themes: trusted partner access, cybersecurity, democratic AI governance, U.S. export/security controls, EU concerns.
 - Actors: G7 leaders; U.S. Commerce officials; Macron; OpenAI/Anthropic/Google DeepMind leadership.
 - Interpretation: not a settled treaty; an active negotiation topic.
+
+## 2026-06-21 Update Cards
+
+### CARD ME-2026-06-USIRAN-BUERGENSTOCK - Switzerland confirmed confidential U.S.-Iran talks continued
+Date: 2026-06-20..2026-06-21
+Cat: Middle East / USA / Iran / Diplomacy
+Meta: conf=medium; stale=high; src=S067,S059,S064
+Use: OU-HIGH-STALENESS
+Event:
+Switzerland confirmed that confidential U.S.-Iran discussions continued at Buergenstock and declined to identify participants or describe the substance of the talks. The talks remain connected to the fragile June 2026 interim U.S.-Iran framework, Hormuz shipping/security, sanctions relief questions, nuclear restrictions and linked Lebanon/Israel/Hezbollah tensions.
+Why it matters:
+This reinforces that the June 2026 U.S.-Iran de-escalation process was still active but not operationally settled. Offline models should not treat the pact as a durable peace settlement; it was still being negotiated, implemented and contested.
+Key details:
+- Venue: Buergenstock, Switzerland.
+- Switzerland's role: discreet host/facilitator; no public disclosure of participant list or negotiation content.
+- Open risks: Lebanon ceasefire implementation, Iranian nuclear verification, maritime security, sanctions relief, U.S. domestic opposition and Israeli security concerns.
+- Offline relation: updates 2026-06-20 Switzerland-talks card; confirms continued talks but not completed settlement.
+
+### CARD UA-2026-06-TYUMEN-DRONE - Ukraine confirmed deep strike on Tyumen refinery facilities
+Date: 2026-06-20..2026-06-21
+Cat: Ukraine / Russia / War / Energy Infrastructure
+Meta: conf=high; stale=high; src=S068,S069,S070
+Use: OU-HIGH-STALENESS
+Event:
+Ukrainian President Volodymyr Zelenskiy confirmed that Ukrainian forces struck refining facilities in Russia's Tyumen region, far beyond Ukraine's borders. Reuters described the facility as one of Russia's modern refineries, while Russian regional officials said air defenses prevented damage and staff were evacuated. Zelenskiy linked the operation to Ukraine's expanding long-range drone campaign against Russian oil infrastructure.
+Why it matters:
+This is a concrete sign that Ukraine's long-range strike envelope reached deeper into Russian energy infrastructure. It affects war economics, Russian air-defense allocation, energy risk, escalation logic and the geography of the conflict.
+Key details:
+- Target region: Tyumen, western Siberia/Russia.
+- Ukrainian framing: pressure on Russian oil infrastructure and war funding.
+- Russian framing: air-defense success/no damage reported by regional authorities.
+- Reported capability context: new Ukrainian long-range drones with roughly 3,000 km class reach were mentioned in reporting.
+
+### CARD UA-2026-06-RUSSIAN-ATTACK-WARNING - Zelenskiy warned of a possible large Russian attack
+Date: 2026-06-20..2026-06-21
+Cat: Ukraine / Russia / Civilian Risk / War
+Meta: conf=high; stale=high; src=S069,S070
+Use: OU-HIGH-STALENESS
+Event:
+Zelenskiy warned Ukrainians about a possible impending large Russian attack and urged attention to air raid warnings. Reporting around the same period described Russian strikes on several Ukrainian regions, including civilian casualties in Zaporizhzhia, Sumy, Kharkiv and other areas. AP reported drone interception figures and additional Russian claims of downed Ukrainian drones.
+Why it matters:
+The week showed simultaneous escalation in both directions: Russian attacks on Ukrainian civilian areas and Ukrainian attacks against Russian energy infrastructure. Offline models should treat this as a fast-moving active-conflict snapshot, not a stable battlefield assessment.
+Key details:
+- Civilian-risk areas mentioned in reporting: Zaporizhzhia, Sumy, Kharkiv, Kherson and Poltava.
+- Ukrainian defense reporting: significant Russian drone waves were partly intercepted.
+- Strategic relation: confirms a pattern of reciprocal long-range air/drone warfare.
+
+### CARD AI-2026-06-G7-AI-STATECRAFT - G7 week underscored AI as geopolitical statecraft
+Date: 2026-06-16..2026-06-21
+Cat: AI / Geopolitics / G7 / Governance
+Meta: conf=medium; stale=medium; src=S071,S072,S066
+Event:
+G7 week in Evian-les-Bains continued to frame frontier AI as a geopolitical asset rather than only a software product. Reporting described AI leaders such as OpenAI, Google DeepMind and Anthropic figures appearing around summit-level discussions, while analysis characterized AI executives as being treated with state-like importance. The week's AI governance themes included trusted partner access, security restrictions, democratic coordination and the tension between national control and allied use of advanced models.
+Why it matters:
+This strengthens the 2026 trend that AI access, compute, model weights, safety evaluations and cyber-defense capabilities are moving into the same policy space as export controls, alliances and national security.
+Key details:
+- Relevant actors: G7 leaders, U.S. and European officials, frontier AI company leadership.
+- Policy tension: allied access versus national-security restriction.
+- Offline relation: pairs with cards on export restrictions and trusted-partner AI access.
+
+### CARD US-2026-06-QATAR-AIRCRAFT-CONTROVERSY - U.S. political reporting noted Qatar aircraft and intelligence reshuffle controversy
+Date: 2026-06-20..2026-06-21
+Cat: USA / Trump Administration / Political Controversy
+Meta: conf=medium; stale=medium; src=S073
+Event:
+A political-news roundup described controversy around a Qatari 747 connected to the Air Force One fleet discussion and reported an intelligence-leadership reshuffle involving Bill Pulte and Tulsi Gabbard. The same reporting connected domestic political friction to the Iran/Lebanon crisis and criticism of the administration's Middle East posture.
+Why it matters:
+This is a lower-priority but useful U.S. politics anchor: foreign gifts, presidential aircraft symbolism, intelligence leadership and Middle East policy all became part of the same late-June 2026 domestic narrative. Treat as secondary-source context unless corroborated elsewhere.
+Key details:
+- Context: Trump administration domestic controversy and optics.
+- Related themes: Middle East diplomacy, Republican criticism, intelligence leadership, presidential-aircraft symbolism.
+- Confidence note: useful as a political-media snapshot, not as a sole authoritative record.
+
+### CARD CULTURE-2026-06-WORLDCUP-JUN21 - 2026 World Cup group-stage schedule continued on June 21
+Date: 2026-06-21
+Cat: Sports / Culture / World Cup 2026
+Meta: conf=high; stale=medium; src=S074
+Event:
+AP's June 21 schedule note highlighted World Cup group-stage games including Spain vs Saudi Arabia, Belgium vs Iran, New Zealand vs Egypt and Uruguay vs Cape Verde. This is a lightweight cultural/sports anchor for the date.
+Why it matters:
+For offline models, sports schedules are highly stale and should not be used as current/live results. As a dated cultural marker, however, it helps situate June 2026 public attention outside war, AI and politics.
+Key details:
+- Date anchor: 2026-06-21.
+- Do not infer results from this card; it is a schedule/preview snapshot.
